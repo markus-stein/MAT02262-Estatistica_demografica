@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>MAT02051 - Métodos Estatísticos</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Markus Stein" />
+    <script src="libs/header-attrs-2.29/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, title-slide
+
+.title[
+# MAT02051 - Métodos Estatísticos
+]
+.subtitle[
+## Aula 00 - Apresentações
+]
+.author[
+### Markus Stein
+]
+.institute[
+### Departamento de Estatística, IME/UFRGS
+]
+.date[
+### 2026/1
+]
+
+---
+
+
+class: inverse, middle, center
+
+
+
+
+<div>
+<style type="text/css">.xaringan-extra-logo {
+width: 110px;
+height: 128px;
+z-index: 0;
+background-image: url(C:/Users/Markus/Documents/MAT02262-Estatistica_demografica/img/logo_dest.png);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+top:1em;right:1em;
+}
+</style>
+<script>(function () {
+  let tries = 0
+  function addLogo () {
+    if (typeof slideshow === 'undefined') {
+      tries += 1
+      if (tries < 10) {
+        setTimeout(addLogo, 100)
+      }
+    } else {
+      document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
+        .forEach(function (slide) {
+          const logo = document.createElement('div')
+          logo.classList = 'xaringan-extra-logo'
+          logo.href = null
+          slide.appendChild(logo)
+        })
+    }
+  }
+  document.addEventListener('DOMContentLoaded', addLogo)
+})()</script>
+</div>
+
+# Apresentações
+
+---
+
+
+## O professor esse semestre
+* Eu! 
+
+.center[
+&lt;iframe src="https://giphy.com/embed/3owzWkGtQ3us1pV0qc" width="480" height="206" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;&lt;p&gt;&lt;a href="https://giphy.com/gifs/starwars-movie-star-wars-3owzWkGtQ3us1pV0qc"&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;
+]
+
+---
+
+## O professor esse semestre
+### Minha experiência com Estatística 👨‍🏫 
+
+* Graduação em Estatística em **2006** aqui no DEst, título da monografia *Estudos de Correlação Ecológica - Uma aplicação a dados de saúde em Porto Alegre.*;
+
+* Mestrado em Estatística na **UFMG** com conclusão em **2008**: dissertação intitulada _Testes da Razão de Verossimilhanças em Modelos Lineares Mistos_.
+
+* Ingressei na **UFPEL** em **2009** como Professor Assistente no **Departamento de Matemática e Estatística**.
+
+* Em novembro de **2010** voltei para o **DEst**, onde estou como docente desde então.
+
+---
+
+## O professor nesse semestre
+### Minha experiência com Estatística 👨‍🏫
+
+* Em **2013** fui contemplado com bolsa de estudos e cursei o Doutorado em Estatística da __Universidade de Auckland__, Nova Zelândia; porém não concluí a tese, intitulada provisóriamente *Combining aggregate and individual level data in contingency tables*.
+
+* Continuo minha formação de Doutorado desde **2023** no **Programa de Pós-Graduação em Epidemiologia** da UFRGS. Subtitulo *Improving Odds-Ratio Estimates in Ecological Studies and Case-Control Designs*
+
+* Meus interesses de pesquisa são: **inferência paramétrica**; **teoria de verossimilhança** e **aproximações**, **melhoramentos de testes de hipóteses**, **equações de estimação ponderadas** e análise de dados de **amostragem complexa**.
+
+* Em estatística aplicada: **modelos mistos**, **dados (correlacionados) de área e/ou longitudinais**.  📊
+
+---
+
+## E sobre vocês? 👨‍🎓
+### Sugestões
+
+* Qual o seu nome e curso?  
+
+* Etapa do curso?
+
+* Quantas/quais disciplinas nesse semestre?  
+
+* O que é estatística/amostragem/inferência?  
+
+* O que espera da disciplina?
+
+* Possui alguma experiência profisional na área?
+
+* Qual sua cidade?
+
+---
+
+## A disciplina
+### Objetivos 🎯
+
+* Fornecer uma introdução aos métodos estatísticos utilizados na análise e interpretação de dados das áreas de Agronomia e Zootecnia:
+
+a. familiarizar com as técnicas estatísticas e com a terminologia mais usada nestas áreas;
+
+b. fornecer ao aluno os instrumentos mais comuns de análise estatística; ensiná-lo a usar estas técnicas e a interpretar os resultados obtidos;
+
+c. desenvolver no aluno o espírito crítico e a capacidade de julgar publicações e relatórios no que tange à análise dos dados e conseqüentes conclusões.
+
+
+---
+
+## A disciplina
+### Organização 👨‍🏫
+
+- __Disciplina:__ Métodos Estatísticos
+- __Turma:__ A1
+
+- __Modalidade:__ Ensino presencial
+- __Professor:__ Markus Chagas Stein
+    + e-mail: `markus.stein@ufrgs.br` 
+    + Sala: B120 do IME
+
+---
+
+## A disciplina
+### Aulas e material didático 📓
+
+- __Aulas__ (teóricas e práticas)
+    + Exposição e __discussão__ dos conteúdos
+        - __Leituras semanais de artigos e capítulos de livros__
+    + Exemplos
+    
+- __Notas de aula__
+    + Slides
+    + Rotinas em <svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg>
+
+- __Exercícios__
+    + Listas de exercícios
+
+---
+
+## A disciplina
+### Aulas e material didático 📓
+
+- __Canais de comunicação:__
+    + Durante as aulas
+    + Moodle: aulas, materiais e __fórum geral__
+    + e-mail do professor
+
+* **Aulas**: segundas e sextas, das 07:30 às 09:10, na Sala AGRO 07 do Prédio Central da Faculdade de Agronomia - Campus do Vale
+    + _07:30_ chegada
+    + _07:40_ início ⌚
+    + _09h_ fim/dúvidas
+    + _09:10_ saída
+
+* **Covid**, **eventos climáticos** e recomendações (Presenças).
+
+---
+
+## A disciplina
+### Tecnologias e Linguagem
+
+&lt;img src="https://media.giphy.com/media/CEYYQNKO2HDoc/giphy.gif" width="55%" style="display: block; margin: auto;" /&gt;
+*Fonte: [ghipy.com](https://giphy.com/)*
+
+
+* Exemplos e exercícios com o apoio do computador:
+    + <svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg> e `RStudio`
+    + planilhas eletrônicas
+    
+---
+
+## A disciplina
+### Tecnologias e Linguagem
+* `GitHub`, `.Rproj` e `.Rmd`.
+	+ revisão(?)
+
+
+### Porque usar <svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg>?
+* Aprendemos <svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg> para análises estatística, mas <svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg> é uma linguagem de programação (geral).
+
+* Ao contrário de linguagens específicas, como `SQL` para manipulação de bases de dados.
+
+* <svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg> foi criado na **Universidade de Auckland** em 1993,
+  + continua sendo uma das linguagens mais utilizadas porque sua comunidade cresce e desenvolve milhares de pacotes e produtos.
+
+* CRAN
+
+---
+
+## A disciplina
+### Conteúdo programático 📃
+
+* __Área 1__
+    + Introdução à Estatística e análise exploratória de dados. 
+    + Medidas descritivas. 
+    + Introdução à Probabilidade.
+
+* __Área 2__
+    + Amostragem e estimação. 
+    + Teste de hipóteses.
+
+* __Área 3__
+    + Teste de ANOVA 
+    + Princípios de Experimentação; 
+    + Relação entre duas variáveis.
+
+
+### Ler o Plano de Ensino e Instruções Gerais 📃
+
+- Conteúdo programático 📝
+
+---
+    
+## A disciplina
+### Avaliação 💣
+
+- Serão realizadas quatro atividades de avaliação (pelo menos uma em de cada área):
+    + três provas (`\(P_1\)`, `\(P_2\)` e `\(P_3\)`) presenciais e individuais;
+    + um trabalho em grupo (`\(T\)`), ou a média de outras atividades parciais.
+    
+- Cada atividade de avaliação vale 10 pontos
+
+- Será realizado uma prova presencial e individual como atividade de recuperação (`\(P_R\)`)
+    + Para os alunos que não atingirem o conceito mínimo
+    + __Esta prova abrange todo o conteúdo da disciplina__
+
+---
+
+## A disciplina
+### Avaliação ™️
+
+$$
+MF = \frac{P_1 + P_2 + P_3 + T}{4}
+$$
+
++ __A:__ `\(9 \leq MF \leq 10\)`
++ __B:__ `\(7,5 \leq MF &lt; 9\)`
++ __C:__ `\(6 \leq MF &lt; 7,5\)`
++ __D:__ `\(MF &lt; 6\)`
++ __FF:__ se o aluno tiver frequência inferior a 75% da carga horária prevista no plano da disciplina
+
+---
+
+## A disciplina
+### Avaliação 💣
+
++ Se `\(MF &lt; 6\)` e frequência mínima de 75% o aluno poderá realizar a prova de recuperação e neste caso
+
+$$
+MF' = MF \times 0,4 + P_R \times 0,6
+$$
+
+__Conceitos após a recuperação:__
+
+- __C:__ `\(MF' \geq 6\)`
+- __D:__ `\(MF' &lt; 6\)`
+
+---
+
+## A disciplina
+### Datas das avaliações 📆
+
+* `\(P_1\)`: 10/04/2026
+* `\(P_2\)`: 22/05/2026
+* `\(P_3\)`: 03/07/2026
+* `\(T\)`: a definir 
+* `\(P_R\)`: 10/07/2026
+
+### Tempo (esperado) de dedicação ⏳
+* aulas presenciais - **4h semanais**
+* listas de exercícios, laboratórios e revisão - **4h semanais** 🥇
+
+---
+
+## A disciplina
+### Referências bibliográficas (principais)📖
+
+
+
+* Callegari-Jacques, Sidia Maria. Bioestatística :princípios e aplicações. Porto Alegre, RS: Artmed, 2007. ISBN 9788536300924.
+
+* Carvalho, André Mundstock X. de.. Estatística Experimental e Observacional: Uma Nova Abordagem Sobre os Métodos Clássicos. Viçosa. Viçosa, MG: Navegando Publicações, 2024. ISBN 9786560700420.
+
+* Triola, Mario F.. Introdução à estatística. Rio de Janeiro: LTC, 2024. ISBN 9788521615866.
+
+&lt;img src="imagens/livro_sidia.jfif" width="30%" height="30%" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: inverse, middle, center
+
+# Dúvidas, sugestões, críticas, ...? ❓
+
+---
+
+class: inverse, middle, center
+
+# O que são Métodos Estatísticos?
+
+---
+
+## O que são Métodos Estatísticos?
+
+### O que sabemos sobre Probabilidade e Estatística?  
+
+* Probabilidade e Estatística = introdução à:
+  + Estatística descritiva + 
+  + Teoria da probabilidade +
+  + Inferência Estatística
+
+&lt;img src="imagens/egyptian.jfif" width="40%" /&gt;&lt;img src="imagens/bayesian_evol.png" width="40%" /&gt;
+
+---
+
+## O que é Probabilidade e Estatística?
+![](imagens/fermat.jfif) ![](imagens/galton.jfif) ![](imagens/gauss.jpg) ![](imagens/pearson.jfif)  
+![](imagens/fisher.jfif) ![](imagens/statistician.jfif)
+
+---
+
+## Conceitos básicos
+
+**Estatística**  
+- descritiva `\(\times\)` inferencial
+
+**Métodos Estatísticos**  
+
+&lt;!-- ![](cloud_biostat3.jpg){width=1%} --&gt;
+
+&lt;img src="imagens/imagem_demografica.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+## Conceitos básicos
+
+**Bioestatística**  
+![](imagens/fake_news_choc.jpg)
+![](imagens/dopamine_fake_news.png)
+![](imagens/fake_news_vaccine.jpg)
+
+---
+
+## Conceitos básicos
+
+**População**  
+- unidades experimentais / observacionais  
+- **dados** são informações obtidas de uma unidade experimental/observacional  
+  
+&lt;!-- &amp;nbsp; --&gt;
+
+**Amostra**  
+- aleatória ou por conveniência?
+
+&lt;!-- &amp;nbsp; --&gt;
+
+**Parâmetro** ( `\(\mu\)`, `\(\sigma^2\)`, `\(\pi\)` ...) `\(\times\)` **Estatística** ( `\(\bar{x}\)`, `\(s^2\)`, `\(p\)`, ...)
+
+&lt;!-- &amp;nbsp; --&gt;
+
+&lt;center&gt;
+![](imagens/pop_samp2.png)
+&lt;center&gt;
+
+---
+
+## Conceitos básicos
+
+**Variável** = Característica de uma unidade experimental  
+- resultados que variam de um indíviduo para outro
+
+**Tipos de variáveis**    
+
+- **quantitativas**:  
+discreta `\(\times\)` contínua  
+  
+- **qualitativas (categórica)**:  
+nominal `\(\times\)` ordinal  
+
+&amp;nbsp;
+
+&lt;center&gt;
+![](imagens/tipo_var2.png)
+&lt;center&gt;
+
+&lt;!-- ## De modo geral --&gt;
+&lt;!-- * teoria de **amostragem** = **planejamento** + **obtenção** + **análise**   --&gt;
+&lt;!-- de dados amostrais obtidos de populações finitas. --&gt;
+
+&lt;!-- *Em amostragem 2 estudamos diferentes formas de obtenção de dados e (des)vantajem em relação à AAS.* --&gt;
+
+&lt;!-- * **Model** *versus* **design** *approach* --&gt;
+&lt;!--   + *verossimilhança* `\(\times\)` *equação de estimação ponderada*? --&gt;
+&lt;!--   + v.a.: `\(Y_i \sim f(y,\theta)\)` ou `\(R_i \in \left\{ 0, 1\right\}\)`(?). --&gt;
+
+&lt;!-- --- --&gt;
+
+&lt;!-- ## O que é Amostragem 2? --&gt;
+&lt;!-- * Análise de dados de amostras dependentes (possivelmente) com probabilidades desiguais de seleção. --&gt;
+
+&lt;!-- * Na prática pesquisas utilizam a combinação de --&gt;
+&lt;!-- 	+ AAS (ou sistemática) --&gt;
+&lt;!-- 	+ estratos --&gt;
+&lt;!-- 	+ *clusters* --&gt;
+
+&lt;!-- * Aspectos computacionais --&gt;
+&lt;!-- 	+ tradicionalmente livros de amostragem focam nas diferentes configurações --&gt;
+&lt;!-- 	+ computacionalmente é mais eficiente implementar o caso geral (de equações de estimação ponderadas) --&gt;
+
+&lt;!-- --- --&gt;
+
+&lt;!-- ## Na prática --&gt;
+&lt;!-- * Exemplos de Pesquisas no Brasil --&gt;
+&lt;!--   + PNS do IBGE -  --&gt;
+&lt;!--   + PED do DEE? FEEE? - https://arquivofee.rs.gov.br/publicacoes/ped-rmpa/ --&gt;
+&lt;!--   + POF -  --&gt;
+&lt;!--   + PNAD -  --&gt;
+
+&lt;!-- --- --&gt;
+
+&lt;!-- ## Institutos/Organizações --&gt;
+&lt;!-- * No Brasil --&gt;
+&lt;!--   + ENCE/IBGE -  --&gt;
+&lt;!--   + DEE/RS - FEEE??? --&gt;
+
+&lt;!-- * Exterior --&gt;
+&lt;!--   + StatsNZ - Nova Zelândia --&gt;
+&lt;!--   + Statscan - Canadá --&gt;
+
+&lt;!-- * IASS/ISI - http://isi-iass.org/home/ --&gt;
+
+&lt;!-- --- --&gt;
+
+&lt;!-- ## Na prática --&gt;
+&lt;!-- * *Epicovid*  --&gt;
+&lt;!--   + EPIDEMIOLOGIA DA COVID-19 NO RIO GRANDE DO SUL: Estudo de base populacional - https://wp.ufpel.edu.br/covid19/files/2020/09/Coletiva-RS-Fase-8-20200908_v2.pdf --&gt;
+&lt;!--   + *Estimando a prevalência de covid19 no RS* - https://github.com/markus-stein/MCML-notes/blob/master/covid-prevalence_RS/prevalencia_covid19_RS2.pdf --&gt;
+
+&lt;!-- * Artigo caso-controle e Covid no RS --&gt;
+&lt;!--   + *Social Distancing, Mask Use and the Transmission of SARS-CoV-2: A Population-Based Case-Control Study* - https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3731445 --&gt;
+&lt;!--   + https://github.com/markus-stein/MCML-notes/blob/master/case-control_mask-use_and-covid/case-control_mask-use-and-covid.txt --&gt;
+
+&lt;!-- * Tenho também alguma experiência em análise de dados caso-controle em epidemiologia veterinária. --&gt;
+
+&lt;!-- --- --&gt;
+
+&lt;!-- ## Viéses em amostragem --&gt;
+&lt;!-- Definição de viés:   --&gt;
+
+&lt;!-- * Dicionário Priberam - https://dicionario.priberam.org/vi%C3%A9s --&gt;
+&lt;!-- * Cambridge dictionary - https://dictionary.cambridge.org/dictionary/english/bias --&gt;
+
+&lt;!-- ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', out.height='50%', paged.print=FALSE} --&gt;
+&lt;!-- knitr::include_graphics(here::here('img', 'bias-marketing-survey.png')) --&gt;
+&lt;!-- ``` --&gt;
+&lt;!-- Fonte: https://www.adweek.com/agencies/6-ways-you-might-be-unintentionally-introducing-bias-into-your-marketing-surveys/ --&gt;
+
+&lt;!-- --- --&gt;
+
+&lt;!-- ## Viéses em pesquisas --&gt;
+&lt;!-- ### **Nonresponse - Interviewer bias** --&gt;
+&lt;!-- ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', out.height='50%', paged.print=FALSE} --&gt;
+&lt;!-- knitr::include_graphics(here::here('img', 'halloween-pollster.jpg')) --&gt;
+&lt;!-- ``` --&gt;
+&lt;!-- Fonte: https://blog.cruxresearch.com/2013/08/27/the-top-5-errors-and-biases-in-survey-research/ --&gt;
+
+&lt;!-- --- --&gt;
+
+&lt;!-- ## Viéses em pesquisas --&gt;
+&lt;!-- ### **Response bias** --&gt;
+&lt;!-- ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='70%', out.height='70%', paged.print=FALSE} --&gt;
+&lt;!-- knitr::include_graphics(here::here('img', 'response_bias.png')) --&gt;
+&lt;!-- ``` --&gt;
+&lt;!-- Fonte: https://www.zef.fi/blog/response-bias-its-cramping-your-survey-style --&gt;
+
+&lt;!-- --- --&gt;
+
+&lt;!-- ## Viéses em pesquisas --&gt;
+&lt;!-- ### **Questionnaire bias** --&gt;
+&lt;!-- ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='40%', out.height='40%', paged.print=FALSE} --&gt;
+&lt;!-- knitr::include_graphics(here::here('img', 'questionnaire_bias.jpg')) --&gt;
+&lt;!-- ``` --&gt;
+&lt;!-- Fonte: https://news.nnlm.gov/nec/2017/03/06/the-dark-side-of-questionnaires-how-to-identify-questionnaire-bias/ --&gt;
+
+---
+
+class: inverse, middle, center
+
+# Por fim
+
+---
+## Coisas que acredito...
+
+* Estatística é uma disciplina que pode diferenciar nosso currículo 
+  + ferramentas que auxiliam em desde a coleta de dados até a tomada de decisão 
+	+ além de formar cidadã(o)s mais conscientes 
+
+* Porque estudar essa disciplina?
+	+ estimular o pensamento critico sobre o planejamento, obtencao, análise de dados e conclusões
+	+ desenvolver análises e conclusões rigorosamente seguindo a teoria
+	+ flexibilidade para trabalhar com dados na vida real
+
+![](imagens/scientific_method.png)
+![](imagens/statistical_cycle.png)
+
+---
+
+## Coisas que acredito...
+
+![](imagens/fake_news.jpg)
+
+---
+
+## Sejam bem-vinda(o)s!
+
+### Próxima aula
+
+Ler Capítulo 1 do livro-texto!  
+
+### Dúvidas, sugestões, críticas, ... ❓
+
+&lt;center&gt;
+**Bom semestre para nós!**
+&lt;center&gt;
+
+&lt;img src="imagens/imagem_demografica.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Links
+
+- SABI+: http://sabi.ufrgs.br/ ""  
+- <svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg>: https://www.r-project.org/  
+- RStudio: https://www.rstudio.com/  
+- site da disciplina Probabilidade e Estatística EAD: https://www.ufrgs.br/probabilidade-estatistica/
+- canal do youtube: https://www.youtube.com/c/ProbabilidadeeEstatísticaUFRGS
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+  "highlightStyle": "github",
+  "highlightLines": true,
+  "countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

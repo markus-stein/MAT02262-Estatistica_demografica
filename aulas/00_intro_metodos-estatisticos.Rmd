@@ -1,0 +1,549 @@
+---
+title: "MAT02051 - Métodos Estatísticos"
+subtitle: "Aula 00 - Apresentações"
+type: "lecture"
+author: "Markus Stein"
+institute: "Departamento de Estatística, IME/UFRGS"
+date: "2026/1"
+output:
+  xaringan::moon_reader:
+    # css: ["assets/remark.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      titleSlideClass: [center, middle]
+---
+
+class: inverse, middle, center
+
+```{r libs, echo=FALSE, message=FALSE, warning=FALSE}
+library(xaringanExtra)
+library(emo)
+library(fontawesome)
+```
+
+
+```{r xaringan-logo, echo=FALSE}
+# install.packages("remotes")
+# remotes::install_github('yihui/xaringan')
+# remotes::install_github("gadenbuie/xaringanExtra")
+# xaringanExtra::use_logo(
+#   image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png"
+# )
+use_logo( here::here('img/logo_dest.png'))
+```
+
+# Apresentações
+
+---
+
+
+## O professor esse semestre
+* Eu! 
+
+.center[
+<iframe src="https://giphy.com/embed/3owzWkGtQ3us1pV0qc" width="480" height="206" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/starwars-movie-star-wars-3owzWkGtQ3us1pV0qc">via GIPHY</a></p>
+]
+
+---
+
+## O professor esse semestre
+### Minha experiência com Estatística `r emo::ji("professor")` 
+
+* Graduação em Estatística em **2006** aqui no DEst, título da monografia *Estudos de Correlação Ecológica - Uma aplicação a dados de saúde em Porto Alegre.*;
+
+* Mestrado em Estatística na **UFMG** com conclusão em **2008**: dissertação intitulada _Testes da Razão de Verossimilhanças em Modelos Lineares Mistos_.
+
+* Ingressei na **UFPEL** em **2009** como Professor Assistente no **Departamento de Matemática e Estatística**.
+
+* Em novembro de **2010** voltei para o **DEst**, onde estou como docente desde então.
+
+---
+
+## O professor nesse semestre
+### Minha experiência com Estatística `r emo::ji("professor")[1]`
+
+* Em **2013** fui contemplado com bolsa de estudos e cursei o Doutorado em Estatística da __Universidade de Auckland__, Nova Zelândia; porém não concluí a tese, intitulada provisóriamente *Combining aggregate and individual level data in contingency tables*.
+
+* Continuo minha formação de Doutorado desde **2023** no **Programa de Pós-Graduação em Epidemiologia** da UFRGS. Subtitulo *Improving Odds-Ratio Estimates in Ecological Studies and Case-Control Designs*
+
+* Meus interesses de pesquisa são: **inferência paramétrica**; **teoria de verossimilhança** e **aproximações**, **melhoramentos de testes de hipóteses**, **equações de estimação ponderadas** e análise de dados de **amostragem complexa**.
+
+* Em estatística aplicada: **modelos mistos**, **dados (correlacionados) de área e/ou longitudinais**.  `r emo::ji("stats")`
+
+---
+
+## E sobre vocês? `r emo::ji("student")[1]`
+### Sugestões
+
+* Qual o seu nome e curso?  
+
+* Etapa do curso?
+
+* Quantas/quais disciplinas nesse semestre?  
+
+* O que é estatística/amostragem/inferência?  
+
+* O que espera da disciplina?
+
+* Possui alguma experiência profisional na área?
+
+* Qual sua cidade?
+
+---
+
+## A disciplina
+### Objetivos `r emo::ji("target")`
+
+* Fornecer uma introdução aos métodos estatísticos utilizados na análise e interpretação de dados das áreas de Agronomia e Zootecnia:
+
+a. familiarizar com as técnicas estatísticas e com a terminologia mais usada nestas áreas;
+
+b. fornecer ao aluno os instrumentos mais comuns de análise estatística; ensiná-lo a usar estas técnicas e a interpretar os resultados obtidos;
+
+c. desenvolver no aluno o espírito crítico e a capacidade de julgar publicações e relatórios no que tange à análise dos dados e conseqüentes conclusões.
+
+
+---
+
+## A disciplina
+### Organização `r emo::ji("professor")`
+
+- __Disciplina:__ Métodos Estatísticos
+- __Turma:__ A1
+
+- __Modalidade:__ Ensino presencial
+- __Professor:__ Markus Chagas Stein
+    + e-mail: `markus.stein@ufrgs.br` 
+    + Sala: B120 do IME
+
+---
+
+## A disciplina
+### Aulas e material didático `r emo::ji("notebook")`
+
+- __Aulas__ (teóricas e práticas)
+    + Exposição e __discussão__ dos conteúdos
+        - __Leituras semanais de artigos e capítulos de livros__
+    + Exemplos
+    
+- __Notas de aula__
+    + Slides
+    + Rotinas em `r fa("r-project", fill = "steelblue")`
+
+- __Exercícios__
+    + Listas de exercícios
+
+---
+
+## A disciplina
+### Aulas e material didático `r emo::ji("notebook")`
+
+- __Canais de comunicação:__
+    + Durante as aulas
+    + Moodle: aulas, materiais e __fórum geral__
+    + e-mail do professor
+
+* **Aulas**: segundas e sextas, das 07:30 às 09:10, na Sala AGRO 07 do Prédio Central da Faculdade de Agronomia - Campus do Vale
+    + _07:30_ chegada
+    + _07:40_ início `r emo::ji("clock")`
+    + _09h_ fim/dúvidas
+    + _09:10_ saída
+
+* **Covid**, **eventos climáticos** e recomendações (Presenças).
+
+---
+
+## A disciplina
+### Tecnologias e Linguagem
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='55%', paged.print=FALSE}
+knitr::include_graphics('https://media.giphy.com/media/CEYYQNKO2HDoc/giphy.gif')
+```
+*Fonte: [ghipy.com](https://giphy.com/)*
+
+
+* Exemplos e exercícios com o apoio do computador:
+    + `r fa("r-project", fill = "steelblue")` e `RStudio`
+    + planilhas eletrônicas
+    
+---
+
+## A disciplina
+### Tecnologias e Linguagem
+* `GitHub`, `.Rproj` e `.Rmd`.
+	+ revisão(?)
+
+
+### Porque usar `r fa("r-project", fill = "steelblue")`?
+* Aprendemos `r fa("r-project", fill = "steelblue")` para análises estatística, mas `r fa("r-project", fill = "steelblue")` é uma linguagem de programação (geral).
+
+* Ao contrário de linguagens específicas, como `SQL` para manipulação de bases de dados.
+
+* `r fa("r-project", fill = "steelblue")` foi criado na **Universidade de Auckland** em 1993,
+  + continua sendo uma das linguagens mais utilizadas porque sua comunidade cresce e desenvolve milhares de pacotes e produtos.
+
+* CRAN
+
+---
+
+## A disciplina
+### Conteúdo programático `r emo::ji("document")`
+
+* __Área 1__
+    + Introdução à Estatística e análise exploratória de dados. 
+    + Medidas descritivas. 
+    + Introdução à Probabilidade.
+
+* __Área 2__
+    + Amostragem e estimação. 
+    + Teste de hipóteses.
+
+* __Área 3__
+    + Teste de ANOVA 
+    + Princípios de Experimentação; 
+    + Relação entre duas variáveis.
+
+
+### Ler o Plano de Ensino e Instruções Gerais `r emo::ji("document")`
+
+- Conteúdo programático `r emo::ji("document")`
+
+---
+    
+## A disciplina
+### Avaliação `r emo::ji("bomb")`
+
+- Serão realizadas quatro atividades de avaliação (pelo menos uma em de cada área):
+    + três provas ($P_1$, $P_2$ e $P_3$) presenciais e individuais;
+    + um trabalho em grupo ($T$), ou a média de outras atividades parciais.
+    
+- Cada atividade de avaliação vale 10 pontos
+
+- Será realizado uma prova presencial e individual como atividade de recuperação ($P_R$)
+    + Para os alunos que não atingirem o conceito mínimo
+    + __Esta prova abrange todo o conteúdo da disciplina__
+
+---
+
+## A disciplina
+### Avaliação `r emo::ji("mark")`
+
+$$
+MF = \frac{P_1 + P_2 + P_3 + T}{4}
+$$
+
++ __A:__ $9 \leq MF \leq 10$
++ __B:__ $7,5 \leq MF < 9$
++ __C:__ $6 \leq MF < 7,5$
++ __D:__ $MF < 6$
++ __FF:__ se o aluno tiver frequência inferior a 75% da carga horária prevista no plano da disciplina
+
+---
+
+## A disciplina
+### Avaliação `r emo::ji("bomb")`
+
++ Se $MF < 6$ e frequência mínima de 75% o aluno poderá realizar a prova de recuperação e neste caso
+
+$$
+MF' = MF \times 0,4 + P_R \times 0,6
+$$
+
+__Conceitos após a recuperação:__
+
+- __C:__ $MF' \geq 6$
+- __D:__ $MF' < 6$
+
+---
+
+## A disciplina
+### Datas das avaliações `r emo::ji("calendar")`
+
+* $P_1$: 10/04/2026
+* $P_2$: 22/05/2026
+* $P_3$: 03/07/2026
+* $T$: a definir 
+* $P_R$: 10/07/2026
+
+### Tempo (esperado) de dedicação `r emo::ji("time")`
+* aulas presenciais - **4h semanais**
+* listas de exercícios, laboratórios e revisão - **4h semanais** `r emo::ji("1st_place_medal")`
+
+---
+
+## A disciplina
+### Referências bibliográficas (principais)`r emo::ji("book")[1]`
+
+```{r echo=FALSE, fig.align='right', message=FALSE, warning=FALSE, out.width='15%', paged.print=FALSE}
+# knitr::include_graphics(here('images','ctanlion.png'))
+```
+
+* Callegari-Jacques, Sidia Maria. Bioestatística :princípios e aplicações. Porto Alegre, RS: Artmed, 2007. ISBN 9788536300924.
+
+* Carvalho, André Mundstock X. de.. Estatística Experimental e Observacional: Uma Nova Abordagem Sobre os Métodos Clássicos. Viçosa. Viçosa, MG: Navegando Publicações, 2024. ISBN 9786560700420.
+
+* Triola, Mario F.. Introdução à estatística. Rio de Janeiro: LTC, 2024. ISBN 9788521615866.
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='30%', out.height='30%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'livro_sidia.jfif'))
+```
+
+---
+
+class: inverse, middle, center
+
+# Dúvidas, sugestões, críticas, ...? `r emo::ji("question")[1]`
+
+---
+
+class: inverse, middle, center
+
+# O que são Métodos Estatísticos?
+
+---
+
+## O que são Métodos Estatísticos?
+
+### O que sabemos sobre Probabilidade e Estatística?  
+
+* Probabilidade e Estatística = introdução à:
+  + Estatística descritiva + 
+  + Teoria da probabilidade +
+  + Inferência Estatística
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width='40%', fig.show="hold"}
+knitr::include_graphics(here::here('aulas/imagens', 'egyptian.jfif'))
+knitr::include_graphics(here::here('aulas/imagens', 'bayesian_evol.png'))
+```
+
+---
+
+## O que é Probabilidade e Estatística?
+![](imagens/fermat.jfif) ![](imagens/galton.jfif) ![](imagens/gauss.jpg) ![](imagens/pearson.jfif)  
+![](imagens/fisher.jfif) ![](imagens/statistician.jfif)
+
+---
+
+## Conceitos básicos
+
+**Estatística**  
+- descritiva $\times$ inferencial
+
+**Métodos Estatísticos**  
+
+<!-- ![](cloud_biostat3.jpg){width=1%} -->
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+
+
+---
+
+## Conceitos básicos
+
+**Bioestatística**  
+![](imagens/fake_news_choc.jpg)
+![](imagens/dopamine_fake_news.png)
+![](imagens/fake_news_vaccine.jpg)
+
+---
+
+## Conceitos básicos
+
+**População**  
+- unidades experimentais / observacionais  
+- **dados** são informações obtidas de uma unidade experimental/observacional  
+  
+<!-- &nbsp; -->
+
+**Amostra**  
+- aleatória ou por conveniência?
+
+<!-- &nbsp; -->
+
+**Parâmetro** ( $\mu$, $\sigma^2$, $\pi$ ...) $\times$ **Estatística** ( $\bar{x}$, $s^2$, $p$, ...)
+
+<!-- &nbsp; -->
+
+<center>
+![](imagens/pop_samp2.png)
+<center>
+
+---
+
+## Conceitos básicos
+
+**Variável** = Característica de uma unidade experimental  
+- resultados que variam de um indíviduo para outro
+
+**Tipos de variáveis**    
+
+- **quantitativas**:  
+discreta $\times$ contínua  
+  
+- **qualitativas (categórica)**:  
+nominal $\times$ ordinal  
+
+&nbsp;
+
+<center>
+![](imagens/tipo_var2.png)
+<center>
+
+<!-- ## De modo geral -->
+<!-- * teoria de **amostragem** = **planejamento** + **obtenção** + **análise**   -->
+<!-- de dados amostrais obtidos de populações finitas. -->
+
+<!-- *Em amostragem 2 estudamos diferentes formas de obtenção de dados e (des)vantajem em relação à AAS.* -->
+
+<!-- * **Model** *versus* **design** *approach* -->
+<!--   + *verossimilhança* $\times$ *equação de estimação ponderada*? -->
+<!--   + v.a.: $Y_i \sim f(y,\theta)$ ou $R_i \in \left\{ 0, 1\right\}$(?). -->
+
+<!-- --- -->
+
+<!-- ## O que é Amostragem 2? -->
+<!-- * Análise de dados de amostras dependentes (possivelmente) com probabilidades desiguais de seleção. -->
+
+<!-- * Na prática pesquisas utilizam a combinação de -->
+<!-- 	+ AAS (ou sistemática) -->
+<!-- 	+ estratos -->
+<!-- 	+ *clusters* -->
+
+<!-- * Aspectos computacionais -->
+<!-- 	+ tradicionalmente livros de amostragem focam nas diferentes configurações -->
+<!-- 	+ computacionalmente é mais eficiente implementar o caso geral (de equações de estimação ponderadas) -->
+
+<!-- --- -->
+
+<!-- ## Na prática -->
+<!-- * Exemplos de Pesquisas no Brasil -->
+<!--   + PNS do IBGE -  -->
+<!--   + PED do DEE? FEEE? - https://arquivofee.rs.gov.br/publicacoes/ped-rmpa/ -->
+<!--   + POF -  -->
+<!--   + PNAD -  -->
+
+<!-- --- -->
+
+<!-- ## Institutos/Organizações -->
+<!-- * No Brasil -->
+<!--   + ENCE/IBGE -  -->
+<!--   + DEE/RS - FEEE??? -->
+
+<!-- * Exterior -->
+<!--   + StatsNZ - Nova Zelândia -->
+<!--   + Statscan - Canadá -->
+
+<!-- * IASS/ISI - http://isi-iass.org/home/ -->
+
+<!-- --- -->
+
+<!-- ## Na prática -->
+<!-- * *Epicovid*  -->
+<!--   + EPIDEMIOLOGIA DA COVID-19 NO RIO GRANDE DO SUL: Estudo de base populacional - https://wp.ufpel.edu.br/covid19/files/2020/09/Coletiva-RS-Fase-8-20200908_v2.pdf -->
+<!--   + *Estimando a prevalência de covid19 no RS* - https://github.com/markus-stein/MCML-notes/blob/master/covid-prevalence_RS/prevalencia_covid19_RS2.pdf -->
+
+<!-- * Artigo caso-controle e Covid no RS -->
+<!--   + *Social Distancing, Mask Use and the Transmission of SARS-CoV-2: A Population-Based Case-Control Study* - https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3731445 -->
+<!--   + https://github.com/markus-stein/MCML-notes/blob/master/case-control_mask-use_and-covid/case-control_mask-use-and-covid.txt -->
+
+<!-- * Tenho também alguma experiência em análise de dados caso-controle em epidemiologia veterinária. -->
+
+<!-- --- -->
+
+<!-- ## Viéses em amostragem -->
+<!-- Definição de viés:   -->
+
+<!-- * Dicionário Priberam - https://dicionario.priberam.org/vi%C3%A9s -->
+<!-- * Cambridge dictionary - https://dictionary.cambridge.org/dictionary/english/bias -->
+
+<!-- ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', out.height='50%', paged.print=FALSE} -->
+<!-- knitr::include_graphics(here::here('img', 'bias-marketing-survey.png')) -->
+<!-- ``` -->
+<!-- Fonte: https://www.adweek.com/agencies/6-ways-you-might-be-unintentionally-introducing-bias-into-your-marketing-surveys/ -->
+
+<!-- --- -->
+
+<!-- ## Viéses em pesquisas -->
+<!-- ### **Nonresponse - Interviewer bias** -->
+<!-- ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', out.height='50%', paged.print=FALSE} -->
+<!-- knitr::include_graphics(here::here('img', 'halloween-pollster.jpg')) -->
+<!-- ``` -->
+<!-- Fonte: https://blog.cruxresearch.com/2013/08/27/the-top-5-errors-and-biases-in-survey-research/ -->
+
+<!-- --- -->
+
+<!-- ## Viéses em pesquisas -->
+<!-- ### **Response bias** -->
+<!-- ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='70%', out.height='70%', paged.print=FALSE} -->
+<!-- knitr::include_graphics(here::here('img', 'response_bias.png')) -->
+<!-- ``` -->
+<!-- Fonte: https://www.zef.fi/blog/response-bias-its-cramping-your-survey-style -->
+
+<!-- --- -->
+
+<!-- ## Viéses em pesquisas -->
+<!-- ### **Questionnaire bias** -->
+<!-- ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='40%', out.height='40%', paged.print=FALSE} -->
+<!-- knitr::include_graphics(here::here('img', 'questionnaire_bias.jpg')) -->
+<!-- ``` -->
+<!-- Fonte: https://news.nnlm.gov/nec/2017/03/06/the-dark-side-of-questionnaires-how-to-identify-questionnaire-bias/ -->
+
+---
+
+class: inverse, middle, center
+
+# Por fim
+
+---
+## Coisas que acredito...
+
+* Estatística é uma disciplina que pode diferenciar nosso currículo 
+  + ferramentas que auxiliam em desde a coleta de dados até a tomada de decisão 
+	+ além de formar cidadã(o)s mais conscientes 
+
+* Porque estudar essa disciplina?
+	+ estimular o pensamento critico sobre o planejamento, obtencao, análise de dados e conclusões
+	+ desenvolver análises e conclusões rigorosamente seguindo a teoria
+	+ flexibilidade para trabalhar com dados na vida real
+
+![](imagens/scientific_method.png)
+![](imagens/statistical_cycle.png)
+
+---
+
+## Coisas que acredito...
+
+![](imagens/fake_news.jpg)
+
+---
+
+## Sejam bem-vinda(o)s!
+
+### Próxima aula
+
+Ler Capítulo 1 do livro-texto!  
+
+### Dúvidas, sugestões, críticas, ... `r emo::ji("question")[1]`
+
+<center>
+**Bom semestre para nós!**
+<center>
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+
+---
+
+## Links
+
+- SABI+: http://sabi.ufrgs.br/ ""  
+- `r fa("r-project", fill = "steelblue")`: https://www.r-project.org/  
+- RStudio: https://www.rstudio.com/  
+- site da disciplina Probabilidade e Estatística EAD: https://www.ufrgs.br/probabilidade-estatistica/
+- canal do youtube: https://www.youtube.com/c/ProbabilidadeeEstatísticaUFRGS
