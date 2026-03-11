@@ -135,6 +135,9 @@ Da leitura dos slides [Uma breve história da demografia](https://github.com/rdo
   + para futuramente reproduzir em alguma região e ou tempo diferente. 
   + trabalhar em duplas.
 
+https://unstats.un.org/unsd/demographic-social/products/dyb/index.cshtml
+https://population.un.org/dataportal/home?df=3dfaea38-a333-417d-a497-f7a0868a986b
+
 * ler capítulo 3 de [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
 demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
 
