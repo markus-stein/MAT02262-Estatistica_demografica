@@ -1,0 +1,462 @@
+---
+title: "MAT02262 - Estatística Demográfica I"
+subtitle: "Capitulo 01 - Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa"
+type: "lecture"
+author: "Markus Stein"
+institute: "Departamento de Estatística, IME/UFRGS"
+date: "2026/1"
+output:
+  xaringan::moon_reader:
+    # css: ["assets/remark.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      titleSlideClass: [center, middle]
+---
+
+class: inverse, middle, center
+
+```{r libs, echo=FALSE, message=FALSE, warning=FALSE}
+library(xaringanExtra)
+library(emo)
+library(fontawesome)
+```
+
+
+```{r xaringan-logo, echo=FALSE}
+# install.packages("remotes")
+# remotes::install_github('yihui/xaringan')
+# remotes::install_github("gadenbuie/xaringanExtra")
+# xaringanExtra::use_logo(
+#   image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png"
+# )
+use_logo( here::here('img/logo_dest.png'))
+```
+
+# DEMOGRAFIA, ESTATÍSTICA SOCIAL, GEOGRAFIA DE POPULAÇÃO E OUTRAS ABORDAGENS DO ESTUDO DA POPULAÇÃO
+
+---
+
+# Objetivos da aula
+
+Seguindo a leitura da Capítulo 1 de [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837):
+
+* Compreender o **campo de estudo da demografia**
+
+* Identificar os **principais componentes da dinâmica populacional**
+
+* Diferenciar **estado** e **dinâmica da população**
+
+* Reconhecer a natureza **interdisciplinar** da demografia
+
+* Distinguir **demografia formal** e **demografia social**
+
+---
+
+# O que é Demografia?
+
+A palavra deriva do grego:
+
+* *demos* = povo, habitantes de uma 
+área
+* *graphein* = escrever, escrita
+
+Assim, o significado literal é **"descrição da população"**. **Demologia/Demometria?**
+
+O campo da demografia inclui principalmente o estudo de:
+
+* tamanho das populações
+* densidade e distribuição geográfica
+* composição etária, gênero, etnia, ...
+* crescimento populacional
+* componentes do crescimento: **nascimentos, óbitos e migrações**
+
+*Em sentido amplo, todos os temas investigados no censo podem ser considerados parte do estudo da população.*
+
+
+* Certo consenso de que a demografia trata do **estudo estatístico das populações humanas**, com maior **ênfase nos conjuntos de pessoas** do que nos indivíduos que as compõem (*falácia ecológica?*)
+
+---
+
+# O que é Demografia?
+
+### Objeto de estudo da demografia
+
+Um fenômeno interessa à demografia quando influencia diretamente:
+
+* o número de **nascimentos**
+* o número de **óbitos**
+* os **movimentos migratórios**
+
+Esses eventos determinam:
+
+* o **tamanho da população**
+* a **estrutura etaria, de gênero, etnia, ...**
+* a **evolução da população ao longo do tempo**
+
+Tradicionalmente distingue-se:
+
+* **Demografia formal (ou análise demográfica)**: estudo quantitativo dos fenômenos populacionais
+* **Estudos de população (demografia social)**: análise dos determinantes sociais, econômicos e culturais.
+
+---
+
+# O que é Demografia?
+
+### Pontos fortes
+
+A demografia apresenta algumas características importantes:
+
+* ``disciplina'' ou ``ciência''(?), tem seu próprio corpo de pesquisa, objetos de análise, métodos e paradigmas;
+
+* tem suas próprias associações profissionais, programas acadêmicos, veículos de publicação e mecanismos de financiamento;
+
+* pelo forte **rigor metodológico** e uso sistemático de **métodos estatísticos**;
+
+* crescente disponibilidade de **dados populacionais** e recursos computacionais mais potentes.
+
+
+*Por essas características, a demografia é frequentemente considerada uma das áreas mais quantitativas das ciências sociais*.
+
+
+---
+
+# O que é Demografia?
+
+### Desafios da demografia
+
+Algumas limitações frequentemente apontadas na literatura:
+
+* relativo **isolamento intelectual** em relação a outras ciências sociais;
+
+* tendência à **fragmentação temática**;
+
+* deficiente em termos de debates ideológicos e teóricos. reversão do avanço do quadro explicativo, em que as explicações voltam a ser deixadas para outras disciplinas;
+
+* dependência da **qualidade das fontes de dados**.
+
+*Além disso, o uso crescente de métodos estatísticos muito complexos pode dificultar o diálogo com outras áreas e com o público em geral.*
+
+
+---
+
+# O que é Demografia?
+
+A demografia busca responder perguntas como:
+
+* Quantas pessoas existem em uma população?
+* Como essa população está distribuída por **idade e sexo**?
+* Como o tamanho da população **muda ao longo do tempo**?
+* Quais processos explicam essas mudanças?
+
+Para responder essas perguntas, a demografia utiliza:
+
+* dados populacionais
+* indicadores demográficos
+* modelos probabilísticos e estatísticos
+
+---
+
+# Componentes da dinâmica populacional
+
+A evolução de uma população depende de três processos fundamentais:
+
+* **Fecundidade**: 
+  + Número de **nascimentos** em uma população.
+
+* **Mortalidade**
+  + Ocorrência de **óbitos**.
+
+* **Migração**
+  + Movimento de pessoas **entre regiões ou países**.
+
+Esses três componentes determinam:
+
+* crescimento ou declínio populacional
+* mudanças na estrutura etária
+* redistribuição espacial da população
+
+---
+
+# Crescimento populacional
+
+O crescimento de uma população pode ser representado pela equação demográfica básica:
+
+[
+Crescimento\ populacional = Nascimentos - Óbitos + Migração\ líquida
+]
+
+Essa identidade resume a lógica fundamental da dinâmica populacional.
+
+Em termos conceituais, podemos distinguir:
+
+* **crescimento natural** = nascimentos − óbitos
+* **crescimento total** = crescimento natural + migração líquida
+
+---
+
+# Estado da população
+
+O **estado da população** refere‑se às características observadas em um determinado momento no tempo.
+
+Exemplos:
+
+* tamanho total da população
+* distribuição por idade
+* proporção de homens e mulheres
+* distribuição geográfica
+
+Essas características descrevem **como a população está estruturada em um dado momento**.
+
+---
+
+# Dinâmica da população
+
+A **dinâmica populacional** refere‑se às mudanças que ocorrem ao longo do tempo.
+
+Essas mudanças são produzidas pelos três componentes demográficos.
+
+Indicadores frequentemente utilizados incluem:
+
+* taxa bruta de natalidade
+* taxa de mortalidade
+* taxa de fecundidade
+* esperança de vida
+* saldo migratório
+
+A análise desses indicadores permite compreender **tendências demográficas de longo prazo**.
+
+---
+
+# Estrutura etária da população
+
+A distribuição da população por idade é um dos aspectos centrais da análise demográfica.
+
+Uma forma clássica de representar essa estrutura é a **pirâmide etária**.
+
+```{r echo=FALSE, out.width="65%", fig.align="center"}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Population_pyramid.svg/640px-Population_pyramid.svg.png")
+```
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Population_pyramid.svg/640px-Population_pyramid.svg.png"
+width="65%" style="display:block;margin:auto;">
+
+A forma da pirâmide fornece informações importantes sobre:
+
+* padrões de fecundidade
+* níveis de mortalidade
+* processo de envelhecimento populacional
+
+---
+
+# Transição demográfica
+
+A teoria da **transição demográfica** descreve mudanças históricas nas taxas de mortalidade e fecundidade.
+
+```{r echo=FALSE, out.width="75%", fig.align="center"}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Demographic_transition_model.svg/800px-Demographic_transition_model.svg.png")
+```
+
+De forma simplificada, o modelo descreve a passagem de:
+
+* altas taxas de mortalidade e fecundidade
+
+para
+
+* baixas taxas de mortalidade e fecundidade.
+
+Esse processo explica grande parte das transformações demográficas observadas nos últimos dois séculos.
+
+---
+
+# Demografia e outras disciplinas
+
+O estudo da população possui forte caráter **interdisciplinar**.
+
+Principais conexões:
+
+**Estatística**
+fornece métodos para análise de dados populacionais
+
+**Geografia**
+estuda a distribuição espacial da população
+
+**Sociologia**
+analisa comportamento familiar e reprodutivo
+
+**Economia**
+examina relações entre população, trabalho e desenvolvimento
+
+**Ciência atuarial**  
+utiliza informações demográficas para modelar riscos relacionados à mortalidade, longevidade e previdência
+
+---
+
+# Demografia formal
+
+A **demografia formal** concentra‑se no desenvolvimento de métodos analíticos para o estudo das populações.
+
+Características principais:
+
+* forte base **matemática e estatística**
+* uso de **modelos demográficos**
+* foco na mensuração precisa de fenômenos populacionais
+
+Exemplos de ferramentas analíticas:
+
+* tábuas de vida
+* modelos de crescimento populacional
+* projeções demográficas
+
+---
+
+# Demografia Social
+
+A **demografia social** busca explicar os fatores sociais que influenciam os fenômenos demográficos.
+
+Questões típicas incluem:
+
+* Por que a fecundidade diminui em determinadas sociedades?
+* Quais fatores influenciam os padrões de migração?
+* Como o envelhecimento populacional afeta a economia?
+
+Assim, a demografia social conecta os processos demográficos com:
+
+* transformações sociais
+* mudanças econômicas
+* políticas públicas
+
+---
+
+# Importância da demografia
+
+O conhecimento demográfico é essencial para o planejamento de políticas públicas.
+
+Alguns exemplos incluem:
+
+* planejamento de sistemas de **saúde**
+* organização da **educação**
+* sustentabilidade da **previdência social**
+* **planejamento urbano** e habitação
+
+Mudanças na estrutura etária da população podem alterar profundamente a demanda por serviços públicos.
+
+---
+
+# Fontes de informação demográfica
+
+O estudo da população depende da existência de dados confiáveis.
+
+As principais fontes são:
+
+Censos demográficos
+
+Registros civis
+
+Pesquisas amostrais
+
+---
+
+# Fontes de informação demográfica
+
+### Censos demográficos
+
+O censo é a principal fonte de dados populacionais.
+
+Características:
+
+cobertura de toda a população
+
+realizado periodicamente
+
+fornece informações sobre:
+
+idade
+
+sexo
+
+educação
+
+ocupação
+
+migração
+
+---
+
+# Fontes de informação demográfica
+
+### Registros civis
+
+São registros contínuos de eventos demográficos:
+
+nascimentos
+
+óbitos
+
+casamentos
+
+Esses registros permitem calcular indicadores como:
+
+mortalidade infantil
+
+esperança de vida
+
+taxas de fecundidade
+
+---
+
+# Fontes de informação demográfica
+
+Pesquisas domiciliares
+
+Complementam os censos e registros civis
+
+* Exemplos de Pesquisas/survey do IBGE
+  + [PNS - Pesquisa Nacional de Saúde](https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html?=&t=o-que-e) 
+  + [POF - Pesquisa de Orçamentos Familiares](https://www.ibge.gov.br/pof2024/)
+  + [PNAD - Pesquisa Nacional por Amostras de Domicílios](https://www.ibge.gov.br/estatisticas/sociais/trabalho/9171-pesquisa-nacional-por-amostra-de-domicilios-continua-mensal.html?=&t=o-que-e) 
+  + [PeNSE - Pesquisa Nacional de Saúde do Escolar](https://www.ibge.gov.br/estatisticas/sociais/saude/9134-pesquisa-nacional-de-saude-do-escolar.html?=&t=o-que-e)
+
+* Permitem estudar:
+  + fecundidade
+  + saúde
+  + condições socioeconômicas
+
+---
+
+# Perguntas para reflexão
+
+* O que diferencia a demografia de outras áreas que estudam a população?
+* Por que fecundidade, mortalidade e migração são considerados os componentes fundamentais da dinâmica populacional?
+* De que forma mudanças na estrutura etária podem afetar a economia e as políticas públicas?
+
+# Tarefa
+
+
+---
+
+## Para casa `r emo::ji("house")`
+
+* Ler slides [A demografia como campo do conhecimento: conceitos e definições](https://github.com/rdosreis/MAT02262/blob/main/output_pdf/01_conceitos_e_definicoes.pdf) e [Uma breve história da demografia](https://github.com/rdosreis/MAT02262/blob/main/output_pdf/02_uma_breve_historia_da_demografia.pdf), do Prof. rodrigo Citton P. dos Reis, para discussão na próxima aula.
+
+
+## Próxima aula `r emo::ji("stats")`
+
+* Conceitos e definições e história da demografia.
+
+<!-- * Laboratório de `r fa("r-project", fill = "steelblue")` -->
+
+---
+<center>
+# Dúvidas, sugestões, críticas, ...? `r emo::ji("question")[1]`
+
+## Muito obrigado!
+<center>
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+Fonte: Imagem criada por IA.

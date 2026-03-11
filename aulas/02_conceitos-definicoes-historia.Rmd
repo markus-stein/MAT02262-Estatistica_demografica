@@ -1,0 +1,159 @@
+---
+title: "MAT02262 - Estatística Demográfica I"
+subtitle: "Discussão - conceitos e definições e história da demografia"
+type: "lecture"
+author: "Markus Stein"
+institute: "Departamento de Estatística, IME/UFRGS"
+date: "2026/1"
+output:
+  xaringan::moon_reader:
+    # css: ["assets/remark.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      titleSlideClass: [center, middle]
+---
+
+class: inverse, middle, center
+
+```{r libs, echo=FALSE, message=FALSE, warning=FALSE}
+library(xaringanExtra)
+library(emo)
+library(fontawesome)
+```
+
+
+```{r xaringan-logo, echo=FALSE}
+# install.packages("remotes")
+# remotes::install_github('yihui/xaringan')
+# remotes::install_github("gadenbuie/xaringanExtra")
+# xaringanExtra::use_logo(
+#   image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png"
+# )
+use_logo( here::here('img/logo_dest.png'))
+```
+
+# Conceitos e definições e história da demografia
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+
+---
+
+# Conceitos e definições `r emo::ji("light_bulb")`
+### Discussão `r emo::ji("speaking")`
+
+A partir da leitura da Capítulo 1 de [Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837) e dos slides [A demografia como campo do conhecimento: conceitos e definições](https://github.com/rdosreis/MAT02262/blob/main/output_pdf/01_conceitos_e_definicoes.pdf):
+
+* O que chamou atencao na definição de demografia? 
+  + Se fosse resumir em uma ou poucas palavras. (interdisciplinar?) 
+
+* Campo da demografia: Foco em populacao humana? Todos os organismos vivos? 
+  + Ex. One health, interface humano-animal-meioambiente.
+
+* Foco no conjunto de elementos, agrupamento (falácia ecológica?).
+
+* Demografia pura x demografia social? 
+
+---
+
+# Conceitos e definições `r emo::ji("light_bulb")`
+### Discussão `r emo::ji("speaking")`
+
+* O que os slides trazem além do Capítulo 1?
+  + Demografia e estatística? 
+      + Busca mitigar causas e efeitos? 
+  + E demografia e saúde?
+
+* O que é Estatística Demográfica? 
+  * Demografia pura (formal)? 
+  
+* Comentários? Curiosidades?
+
+---
+
+# História da demografia `r emo::ji("scroll")`
+### Discussão `r emo::ji("speaking")`
+
+Da leitura dos slides [Uma breve história da demografia](https://github.com/rdosreis/MAT02262/blob/main/output_pdf/02_uma_breve_historia_da_demografia.pdf) o que podemos resumir: 
+
+* **Abrangência** e **periodicidade**,
+  + o que isso tem a ver com a história da demografia? 
+
+* Período **pré-estatístico**:
+  + paleodemografia? 6 milhoes a 10 mil a.c. 
+  + censo na china 2200 a.c.
+  + gregos e romanos e demografia medieval, 
+      + pre-colombia, maias e incas (quipus)...
+  + Caracteristicas do período pré? 
+      + Inicio dos censos, mas estanque no tempo e tendem a excluir elementos da sociedade. 
+
+---
+
+# História da demografia `r emo::ji("scroll")`
+### Discussão `r emo::ji("speaking")`
+
+* Período **proto-estatístico**:
+  + qual evolução ocorreu? 
+      + coleta de dados populacionais mais sistemática, registros, listas, contratos, testamentos. 
+      + primeiros cálculos demográficos, mortalidade e tábuas de vida.
+  + o que tem a ver com a evolucao dos métodos quantitativos?
+      + probabilidade impulsionando novas abordagens?
+
+* Período **estatístico**: 
+  + abrangência e periodicidade, 
+      + censos sendo realizados em todo planeta. 
+      + mais caracteristicas sendo observadas. 
+      + (padronizacao ?) 
+  + quais os quatro principais fatores explicam o salto quantitativo?
+      <!-- + consolidação de países e nações, métodos de probabilidade, amostragem e inferência estatística, agencias de pesquisa, estatísticas governamentais e acadêmicos. -->
+  + qual o papel da ONU nesse período?
+
+---
+
+# Por fim `r emo::ji("package")`
+### Discussão `r emo::ji("speaking")`
+
+* Sobre as leituras de conceitos e definições e história da demografia, 
+
+  + o que eh mais importante destacar para as áreas de vocês? 
+  
+      + Mais dados maior pop e mais variaveis, 
+      + como trata-los, diferentes fontes e diferentes níveis, 
+      + como combina-los.
+
+---
+
+## Para casa `r emo::ji("house")`
+
+* Visitar portal da ONU
+  + Escolher um tema de interesse, que chama tua atenção, curiosidade, ...
+  + para futuramente reproduzir em alguma região e ou tempo diferente. 
+  + trabalhar em duplas.
+
+* ler capítulo 3 de [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
+
+## Próxima aula `r emo::ji("stats")`
+
+* Apresentar o tema?
+
+* Teorias demográficas. `r emo::ji("light_bulb")`
+
+<!-- * Laboratório de `r fa("r-project", fill = "steelblue")` -->
+
+---
+<center>
+# Dúvidas, sugestões, críticas, ...? `r emo::ji("question")[1]`
+
+## Muito obrigado!
+<center>
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+Fonte: Imagem criada por IA.

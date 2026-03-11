@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>MAT02262 - Estatística Demográfica I</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Markus Stein" />
+    <script src="libs/header-attrs-2.29/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, title-slide
+
+.title[
+# MAT02262 - Estatística Demográfica I
+]
+.subtitle[
+## Capitulo 01 - Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa
+]
+.author[
+### Markus Stein
+]
+.institute[
+### Departamento de Estatística, IME/UFRGS
+]
+.date[
+### 2026/1
+]
+
+---
+
+
+class: inverse, middle, center
+
+
+
+
+<div>
+<style type="text/css">.xaringan-extra-logo {
+width: 110px;
+height: 128px;
+z-index: 0;
+background-image: url(C:/Users/Markus/Documents/MAT02262-Estatistica_demografica/img/logo_dest.png);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+top:1em;right:1em;
+}
+</style>
+<script>(function () {
+  let tries = 0
+  function addLogo () {
+    if (typeof slideshow === 'undefined') {
+      tries += 1
+      if (tries < 10) {
+        setTimeout(addLogo, 100)
+      }
+    } else {
+      document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
+        .forEach(function (slide) {
+          const logo = document.createElement('div')
+          logo.classList = 'xaringan-extra-logo'
+          logo.href = null
+          slide.appendChild(logo)
+        })
+    }
+  }
+  document.addEventListener('DOMContentLoaded', addLogo)
+})()</script>
+</div>
+
+# DEMOGRAFIA, ESTATÍSTICA SOCIAL, GEOGRAFIA DE POPULAÇÃO E OUTRAS ABORDAGENS DO ESTUDO DA POPULAÇÃO
+
+---
+
+# Objetivos da aula
+
+Seguindo a leitura da Capítulo 1 de [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837):
+
+* Compreender o **campo de estudo da demografia**
+
+* Identificar os **principais componentes da dinâmica populacional**
+
+* Diferenciar **estado** e **dinâmica da população**
+
+* Reconhecer a natureza **interdisciplinar** da demografia
+
+* Distinguir **demografia formal** e **demografia social**
+
+---
+
+# O que é Demografia?
+
+A palavra deriva do grego:
+
+* *demos* = povo, habitantes de uma 
+área
+* *graphein* = escrever, escrita
+
+Assim, o significado literal é **"descrição da população"**. **Demologia/Demometria?**
+
+O campo da demografia inclui principalmente o estudo de:
+
+* tamanho das populações
+* densidade e distribuição geográfica
+* composição etária, gênero, etnia, ...
+* crescimento populacional
+* componentes do crescimento: **nascimentos, óbitos e migrações**
+
+*Em sentido amplo, todos os temas investigados no censo podem ser considerados parte do estudo da população.*
+
+
+* Certo consenso de que a demografia trata do **estudo estatístico das populações humanas**, com maior **ênfase nos conjuntos de pessoas** do que nos indivíduos que as compõem (*falácia ecológica?*)
+
+---
+
+# O que é Demografia?
+
+### Objeto de estudo da demografia
+
+Um fenômeno interessa à demografia quando influencia diretamente:
+
+* o número de **nascimentos**
+* o número de **óbitos**
+* os **movimentos migratórios**
+
+Esses eventos determinam:
+
+* o **tamanho da população**
+* a **estrutura etaria, de gênero, etnia, ...**
+* a **evolução da população ao longo do tempo**
+
+Tradicionalmente distingue-se:
+
+* **Demografia formal (ou análise demográfica)**: estudo quantitativo dos fenômenos populacionais
+* **Estudos de população (demografia social)**: análise dos determinantes sociais, econômicos e culturais.
+
+---
+
+# O que é Demografia?
+
+### Pontos fortes
+
+A demografia apresenta algumas características importantes:
+
+* ``disciplina'' ou ``ciência''(?), tem seu próprio corpo de pesquisa, objetos de análise, métodos e paradigmas;
+
+* tem suas próprias associações profissionais, programas acadêmicos, veículos de publicação e mecanismos de financiamento;
+
+* pelo forte **rigor metodológico** e uso sistemático de **métodos estatísticos**;
+
+* crescente disponibilidade de **dados populacionais** e recursos computacionais mais potentes.
+
+
+*Por essas características, a demografia é frequentemente considerada uma das áreas mais quantitativas das ciências sociais*.
+
+
+---
+
+# O que é Demografia?
+
+### Desafios da demografia
+
+Algumas limitações frequentemente apontadas na literatura:
+
+* relativo **isolamento intelectual** em relação a outras ciências sociais;
+
+* tendência à **fragmentação temática**;
+
+* deficiente em termos de debates ideológicos e teóricos. reversão do avanço do quadro explicativo, em que as explicações voltam a ser deixadas para outras disciplinas;
+
+* dependência da **qualidade das fontes de dados**.
+
+*Além disso, o uso crescente de métodos estatísticos muito complexos pode dificultar o diálogo com outras áreas e com o público em geral.*
+
+
+---
+
+# O que é Demografia?
+
+A demografia busca responder perguntas como:
+
+* Quantas pessoas existem em uma população?
+* Como essa população está distribuída por **idade e sexo**?
+* Como o tamanho da população **muda ao longo do tempo**?
+* Quais processos explicam essas mudanças?
+
+Para responder essas perguntas, a demografia utiliza:
+
+* dados populacionais
+* indicadores demográficos
+* modelos probabilísticos e estatísticos
+
+---
+
+# Componentes da dinâmica populacional
+
+A evolução de uma população depende de três processos fundamentais:
+
+* **Fecundidade**: 
+  + Número de **nascimentos** em uma população.
+
+* **Mortalidade**
+  + Ocorrência de **óbitos**.
+
+* **Migração**
+  + Movimento de pessoas **entre regiões ou países**.
+
+Esses três componentes determinam:
+
+* crescimento ou declínio populacional
+* mudanças na estrutura etária
+* redistribuição espacial da população
+
+---
+
+# Crescimento populacional
+
+O crescimento de uma população pode ser representado pela equação demográfica básica:
+
+[
+Crescimento\ populacional = Nascimentos - Óbitos + Migração\ líquida
+]
+
+Essa identidade resume a lógica fundamental da dinâmica populacional.
+
+Em termos conceituais, podemos distinguir:
+
+* **crescimento natural** = nascimentos − óbitos
+* **crescimento total** = crescimento natural + migração líquida
+
+---
+
+# Estado da população
+
+O **estado da população** refere‑se às características observadas em um determinado momento no tempo.
+
+Exemplos:
+
+* tamanho total da população
+* distribuição por idade
+* proporção de homens e mulheres
+* distribuição geográfica
+
+Essas características descrevem **como a população está estruturada em um dado momento**.
+
+---
+
+# Dinâmica da população
+
+A **dinâmica populacional** refere‑se às mudanças que ocorrem ao longo do tempo.
+
+Essas mudanças são produzidas pelos três componentes demográficos.
+
+Indicadores frequentemente utilizados incluem:
+
+* taxa bruta de natalidade
+* taxa de mortalidade
+* taxa de fecundidade
+* esperança de vida
+* saldo migratório
+
+A análise desses indicadores permite compreender **tendências demográficas de longo prazo**.
+
+---
+
+# Estrutura etária da população
+
+A distribuição da população por idade é um dos aspectos centrais da análise demográfica.
+
+Uma forma clássica de representar essa estrutura é a **pirâmide etária**.
+
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Population_pyramid.svg/640px-Population_pyramid.svg.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Population_pyramid.svg/640px-Population_pyramid.svg.png"
+width="65%" style="display:block;margin:auto;"&gt;
+
+A forma da pirâmide fornece informações importantes sobre:
+
+* padrões de fecundidade
+* níveis de mortalidade
+* processo de envelhecimento populacional
+
+---
+
+# Transição demográfica
+
+A teoria da **transição demográfica** descreve mudanças históricas nas taxas de mortalidade e fecundidade.
+
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Demographic_transition_model.svg/800px-Demographic_transition_model.svg.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+De forma simplificada, o modelo descreve a passagem de:
+
+* altas taxas de mortalidade e fecundidade
+
+para
+
+* baixas taxas de mortalidade e fecundidade.
+
+Esse processo explica grande parte das transformações demográficas observadas nos últimos dois séculos.
+
+---
+
+# Demografia e outras disciplinas
+
+O estudo da população possui forte caráter **interdisciplinar**.
+
+Principais conexões:
+
+**Estatística**
+fornece métodos para análise de dados populacionais
+
+**Geografia**
+estuda a distribuição espacial da população
+
+**Sociologia**
+analisa comportamento familiar e reprodutivo
+
+**Economia**
+examina relações entre população, trabalho e desenvolvimento
+
+**Ciência atuarial**  
+utiliza informações demográficas para modelar riscos relacionados à mortalidade, longevidade e previdência
+
+---
+
+# Demografia formal
+
+A **demografia formal** concentra‑se no desenvolvimento de métodos analíticos para o estudo das populações.
+
+Características principais:
+
+* forte base **matemática e estatística**
+* uso de **modelos demográficos**
+* foco na mensuração precisa de fenômenos populacionais
+
+Exemplos de ferramentas analíticas:
+
+* tábuas de vida
+* modelos de crescimento populacional
+* projeções demográficas
+
+---
+
+# Demografia Social
+
+A **demografia social** busca explicar os fatores sociais que influenciam os fenômenos demográficos.
+
+Questões típicas incluem:
+
+* Por que a fecundidade diminui em determinadas sociedades?
+* Quais fatores influenciam os padrões de migração?
+* Como o envelhecimento populacional afeta a economia?
+
+Assim, a demografia social conecta os processos demográficos com:
+
+* transformações sociais
+* mudanças econômicas
+* políticas públicas
+
+---
+
+# Importância da demografia
+
+O conhecimento demográfico é essencial para o planejamento de políticas públicas.
+
+Alguns exemplos incluem:
+
+* planejamento de sistemas de **saúde**
+* organização da **educação**
+* sustentabilidade da **previdência social**
+* **planejamento urbano** e habitação
+
+Mudanças na estrutura etária da população podem alterar profundamente a demanda por serviços públicos.
+
+---
+
+# Fontes de informação demográfica
+
+O estudo da população depende da existência de dados confiáveis.
+
+As principais fontes são:
+
+Censos demográficos
+
+Registros civis
+
+Pesquisas amostrais
+
+---
+
+# Fontes de informação demográfica
+
+### Censos demográficos
+
+O censo é a principal fonte de dados populacionais.
+
+Características:
+
+cobertura de toda a população
+
+realizado periodicamente
+
+fornece informações sobre:
+
+idade
+
+sexo
+
+educação
+
+ocupação
+
+migração
+
+---
+
+# Fontes de informação demográfica
+
+### Registros civis
+
+São registros contínuos de eventos demográficos:
+
+nascimentos
+
+óbitos
+
+casamentos
+
+Esses registros permitem calcular indicadores como:
+
+mortalidade infantil
+
+esperança de vida
+
+taxas de fecundidade
+
+---
+
+# Fontes de informação demográfica
+
+Pesquisas domiciliares
+
+Complementam os censos e registros civis
+
+* Exemplos de Pesquisas/survey do IBGE
+  + [PNS - Pesquisa Nacional de Saúde](https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html?=&amp;t=o-que-e) 
+  + [POF - Pesquisa de Orçamentos Familiares](https://www.ibge.gov.br/pof2024/)
+  + [PNAD - Pesquisa Nacional por Amostras de Domicílios](https://www.ibge.gov.br/estatisticas/sociais/trabalho/9171-pesquisa-nacional-por-amostra-de-domicilios-continua-mensal.html?=&amp;t=o-que-e) 
+  + [PeNSE - Pesquisa Nacional de Saúde do Escolar](https://www.ibge.gov.br/estatisticas/sociais/saude/9134-pesquisa-nacional-de-saude-do-escolar.html?=&amp;t=o-que-e)
+
+* Permitem estudar:
+  + fecundidade
+  + saúde
+  + condições socioeconômicas
+
+---
+
+# Perguntas para reflexão
+
+* O que diferencia a demografia de outras áreas que estudam a população?
+* Por que fecundidade, mortalidade e migração são considerados os componentes fundamentais da dinâmica populacional?
+* De que forma mudanças na estrutura etária podem afetar a economia e as políticas públicas?
+
+# Tarefa
+
+
+---
+
+## Para casa 🏠
+
+* Ler slides [A demografia como campo do conhecimento: conceitos e definições](https://github.com/rdosreis/MAT02262/blob/main/output_pdf/01_conceitos_e_definicoes.pdf) e [Uma breve história da demografia](https://github.com/rdosreis/MAT02262/blob/main/output_pdf/02_uma_breve_historia_da_demografia.pdf), do Prof. rodrigo Citton P. dos Reis, para discussão na próxima aula.
+
+
+## Próxima aula 📊
+
+* Conceitos e definições e história da demografia.
+
+&lt;!-- * Laboratório de <svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg> --&gt;
+
+---
+&lt;center&gt;
+# Dúvidas, sugestões, críticas, ...? ❓
+
+## Muito obrigado!
+&lt;center&gt;
+
+&lt;img src="imagens/imagem_demografica.png" width="50%" style="display: block; margin: auto;" /&gt;
+Fonte: Imagem criada por IA.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+  "highlightStyle": "github",
+  "highlightLines": true,
+  "countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

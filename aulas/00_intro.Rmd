@@ -590,7 +590,8 @@ class: inverse, middle, center
 
 ### Próxima aula
 
-Ler Capítulo 1 do livro-texto!  
+Ler Capítulo 1 do livro [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).  
 
 ### Dúvidas, sugestões, críticas, ... `r emo::ji("question")[1]`
 
