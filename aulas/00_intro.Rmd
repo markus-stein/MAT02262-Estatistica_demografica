@@ -15,6 +15,17 @@ output:
       countIncrementalSlides: false
       titleSlideClass: [center, middle]
 ---
+# Plano da aula `r emo::ji("target")`
+
+Apresentações:
+
+1. o professor e alunos;
+
+2. a disciplina;
+
+3. estatística demográfica.
+
+---
 
 class: inverse, middle, center
 
@@ -23,7 +34,6 @@ library(xaringanExtra)
 library(emo)
 library(fontawesome)
 ```
-
 
 ```{r xaringan-logo, echo=FALSE}
 # install.packages("remotes")
@@ -39,8 +49,7 @@ use_logo( here::here('img/logo_dest.png'))
 
 ---
 
-
-## O professor esse semestre
+# O professor esse semestre
 * Eu! 
 
 .center[
