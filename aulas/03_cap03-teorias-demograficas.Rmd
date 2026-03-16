@@ -1,0 +1,230 @@
+---
+title: "MAT02262 - Estatística Demográfica I"
+subtitle: "Discussão - Teorias Demográficas"
+type: "lecture"
+author: "Markus Stein"
+institute: "Departamento de Estatística, IME/UFRGS"
+date: "2026/1"
+output:
+  xaringan::moon_reader:
+    # css: ["assets/remark.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      titleSlideClass: [center, middle]
+---
+
+class: inverse, middle, center
+
+```{r libs, echo=FALSE, message=FALSE, warning=FALSE}
+library(xaringanExtra)
+library(emo)
+library(fontawesome)
+```
+
+
+```{r xaringan-logo, echo=FALSE}
+# install.packages("remotes")
+# remotes::install_github('yihui/xaringan')
+# remotes::install_github("gadenbuie/xaringanExtra")
+# xaringanExtra::use_logo(
+#   image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png"
+# )
+use_logo( here::here('img/logo_dest.png'))
+```
+
+# Teorias Demográficas
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+
+---
+
+# Teorias Demográficas `r emo::ji("light_bulb")`
+### Discussão `r emo::ji("speaking")`
+
+A partir da leitura da Capítulo 3 de [Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837) e dos slides [A demografia como campo do conhecimento: conceitos e definições](https://github.com/rdosreis/MAT02262/blob/main/output_pdf/01_conceitos_e_definicoes.pdf):
+
+* O que chamou atencao sobra as teorias demográficas? 
+  + Alguma relação com a história da demografia?
+
+* Políticas públicas sociais e fatores demográficos:
+  + indicadores e politicas baseadas em dados demográficos
+
+* Projecao populacional tem papel especial para planejamento de politicas.
+  <!-- + Ex.: impacto do crescimento futuro da economia sobre o equilíbrio das contas da Previdência Social = , ao passo que o crescente desequilíbrio do número de beneficiários e contribuintes tem um nível de incerteza significativamente meno -->
+	+ desafio projetar subgrupos?
+
+
+---
+
+# Teorias Demográficas `r emo::ji("light_bulb")`
+### Discussão `r emo::ji("speaking")`
+
+Projeções são baseadas em teorias demográficas.
+
+* Qual o melhor tamanho e a melhor taxa de crescimento da população de um país ou do mundo como um todo?
+  + Benefícios de uma população numerosa, caracterizava quase todas as religiões.
+  + Necessidade de algum tipo de equilíbrio entre a população e os recursos nos quais ela se sustenta.
+
+* Debate moderno sobre crescimento populacional para o desenvolvimento, final do século XVIII, no contexto de outras controvérsias, sobre a economia, política e o combate à pobreza.
+
+* Comentários? Curiosidades?
+
+---
+
+# Teorias Demográficas `r emo::ji("light_bulb")`
+### Discussão `r emo::ji("speaking")`
+
+* Teorias de população e crescimento populacional
+	+ Crescimento populacional = vegetativo + migratorio
+
+* Otimistas e pessimistas
+* principio da populacao Thomas Malthus, fim seculo 18.
+	+ capacidade de reproducao maior do que a capacidade de producao de alimentos
+	+ um cresce a taxa geometrica, outro aritmetica.
+	+ catastrofe Mathusiana - crescimento levaria a fome; miséria; e barbárie
+	+ inevitabilidade da pobreza, "vontade divina"
+
+---
+
+# Teorias Demográficas `r emo::ji("light_bulb")`
+### Discussão `r emo::ji("speaking")`
+
+* Se o crescimento populcional é de domínio humano:
+  + seria puramente individual ou se o estado ou a coletividade teriam o 
+direito de interferir;
+  + tendência do crescimento da população e o ritmo de expansão dos meios de subsistência.
+
+* Condenação do Malthusianismo por Marx sobre a inevitabilidade da pobreza por causa de uma “lei natural” de população.
+  + termo “população” não se refere à população em geral, mas hoje em dia seria a “força de trabalho”
+  + Propôs que cada modo de produção tem a sua própria lei de população.
+  
+---
+
+# Teorias Demográficas `r emo::ji("light_bulb")`
+### Discussão `r emo::ji("speaking")`
+
+* Tese Malthusiana se mostrando empiricamente errada, Marx e Engels não viam muitos motivos para preocupar-se com o crescimento populacional 
+  + na década de 60 já estava diminuindo, tanto na Inglaterra como 
+na França, 
+  + tampouco se mostraram contrários à ideia de que em algum momento pudesse 
+haver uma necessidade de intervir no processo.
+
+
+* Depois de Malthus e Marx surgiram outras motivações para justificar o controle da po
+pulação, particularmente o **pensamento eugênico** e o **ambientalismo moderno**.
+  +  não procriação de certos segmentos "inferiores" da raça humana.
+  +  a ideia dos "limites ao crescimento", uso cada vez mais agressivo e não sustentável dos re
+cursos do planeta.
+
+
+---
+
+# Teorias Demográficas `r emo::ji("light_bulb")`
+### Discussão `r emo::ji("speaking")`
+
+* Qual é efetivamente a relação entre o crescimento da população 
+e o crescimento econômico ?
+  +  visão otimista sobre a criatividade humana e sua capacidade de resposta a novos desafios.
+  + pouca ou nenhuma relação entre o crescimento demográfico e o crescimento econômico
+
+* Neo malthusiano, noção de que o ritmo de crescimento demográfico em certas circunstân
+cias podia ser disfuncional para as necessidades do desenvolvimento econômico
+
+* Independentemente de se o controle de fecundidade é puramente individual ou se é o resultado de uma política pública visando a sua redução, 
+  + quais meios podem ou devem ser usados e de que forma devem ser administrados.
+
+---
+
+# Teorias Demográficas `r emo::ji("light_bulb")`
+### Discussão `r emo::ji("speaking")`
+
+Controvérsia atual: além dos métodos artificiais de controle da fecundidade, o aborto (provocado) também deve ser considerado um método admissível?
+
+
+
+
+<!-- Da leitura dos slides [Uma breve história da demografia](https://github.com/rdosreis/MAT02262/blob/main/output_pdf/02_uma_breve_historia_da_demografia.pdf) o que podemos resumir:  -->
+
+<!-- * **Abrangência** e **periodicidade**, -->
+<!--   + o que isso tem a ver com a história da demografia?  -->
+
+<!-- * Período **pré-estatístico**: -->
+<!--   + paleodemografia? 6 milhoes a 10 mil a.c.  -->
+<!--   + censo na china 2200 a.c. -->
+<!--   + gregos e romanos e demografia medieval,  -->
+<!--       + pre-colombia, maias e incas (quipus)... -->
+<!--   + Caracteristicas do período pré?  -->
+<!--       + Inicio dos censos, mas estanque no tempo e tendem a excluir elementos da sociedade.  -->
+
+<!-- --- -->
+
+<!-- # História da demografia `r emo::ji("scroll")` -->
+<!-- ### Discussão `r emo::ji("speaking")` -->
+
+<!-- * Período **proto-estatístico**: -->
+<!--   + qual evolução ocorreu?  -->
+<!--       + coleta de dados populacionais mais sistemática, registros, listas, contratos, testamentos.  -->
+<!--       + primeiros cálculos demográficos, mortalidade e tábuas de vida. -->
+<!--   + o que tem a ver com a evolucao dos métodos quantitativos? -->
+<!--       + probabilidade impulsionando novas abordagens? -->
+
+<!-- * Período **estatístico**:  -->
+<!--   + abrangência e periodicidade,  -->
+<!--       + censos sendo realizados em todo planeta.  -->
+<!--       + mais caracteristicas sendo observadas.  -->
+<!--       + (padronizacao ?)  -->
+<!--   + quais os quatro principais fatores explicam o salto quantitativo? -->
+<!--       <!-- + consolidação de países e nações, métodos de probabilidade, amostragem e inferência estatística, agencias de pesquisa, estatísticas governamentais e acadêmicos. --> -->
+<!--   + qual o papel da ONU nesse período? -->
+
+<!-- --- -->
+
+<!-- # Por fim `r emo::ji("package")` -->
+<!-- ### Discussão `r emo::ji("speaking")` -->
+
+<!-- * Sobre as leituras de conceitos e definições e história da demografia,  -->
+
+<!--   + o que eh mais importante destacar para as áreas de vocês?  -->
+
+<!--       + Mais dados maior pop e mais variaveis,  -->
+<!--       + como trata-los, diferentes fontes e diferentes níveis,  -->
+<!--       + como combina-los. -->
+
+---
+
+## Para casa `r emo::ji("house")`
+
+* Escolher um tópico dos subitens 3.3 ao 3.8 e fazer um resumo dos principais tópicos para apresentar
+  + trabalhar em duplas ou trios.
+
+<!-- https://unstats.un.org/unsd/demographic-social/products/dyb/index.cshtml -->
+<!-- https://population.un.org/dataportal/home?df=3dfaea38-a333-417d-a497-f7a0868a986b -->
+
+* ler capítulo 2 de [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
+
+## Próxima aula `r emo::ji("stats")`
+
+* Apresentar o resumo do tópico escolhido?
+
+* Teoria da transição demográfica. `r emo::ji("light_bulb")`
+
+<!-- * Laboratório de `r fa("r-project", fill = "steelblue")` -->
+
+---
+<center>
+# Dúvidas, sugestões, críticas, ...? `r emo::ji("question")[1]`
+
+## Muito obrigado!
+<center>
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+Fonte: Imagem criada por IA.
