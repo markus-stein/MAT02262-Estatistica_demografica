@@ -200,7 +200,7 @@ Controvérsia atual: além dos métodos artificiais de controle da fecundidade, 
 
 ## Para casa `r emo::ji("house")`
 
-* Escolher um tópico dos subitens 3.3 ao 3.8 e fazer um resumo dos principais tópicos para apresentar
+* Escolher um tópico dos subitens 3.3 ao 3.11 e fazer um resumo dos principais tópicos para apresentar
   + trabalhar em duplas ou trios.
 
 <!-- https://unstats.un.org/unsd/demographic-social/products/dyb/index.cshtml -->
