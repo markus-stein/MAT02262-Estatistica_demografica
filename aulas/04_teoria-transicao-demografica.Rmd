@@ -1,0 +1,326 @@
+---
+title: "MAT02262 - Estatística Demográfica I"
+subtitle: "Discussão - Teoria da Transição Demográfica"
+type: "lecture"
+author: "Markus Stein"
+institute: "Departamento de Estatística, IME/UFRGS"
+date: "2026/1"
+output:
+  xaringan::moon_reader:
+    # css: ["assets/remark.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      titleSlideClass: [center, middle]
+---
+
+class: inverse, middle, center
+
+```{r libs, echo=FALSE, message=FALSE, warning=FALSE}
+library(xaringanExtra)
+library(emo)
+library(fontawesome)
+```
+
+
+```{r xaringan-logo, echo=FALSE}
+# install.packages("remotes")
+# remotes::install_github('yihui/xaringan')
+# remotes::install_github("gadenbuie/xaringanExtra")
+# xaringanExtra::use_logo(
+#   image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png"
+# )
+use_logo( here::here('img/logo_dest.png'))
+```
+
+# Teoria da Transição Demográfica
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+
+---
+
+## Teoria da Transição Demográfica `r emo::ji("light_bulb")`
+### Discussão `r emo::ji("speaking")`
+
+A partir da leitura da Capítulo 2 de [Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837):
+
+* O que chamou atencao sobre as teoria da transição demográfica? 
+  + Alguma relação com as teorias anteriores, Malthus, reformista e neo-malthusiana?
+
+* Quais as principais tendências demográficas no mundo? Eles são universais
+
+* Comentários? Curiosidades?
+
+Lembrando: Crescimento populacional = vegetativo (nascimentos - mortes) + migratório (imigração - emigração)
+---
+
+## Teoria da Transição Demográfica `r emo::ji("light_bulb")`
+### Discussão `r emo::ji("speaking")`
+
+* Noção intuitiva de **termos importantes** para explicar dinâmica populacional (veremos cada um deles mais adiante):
+  + mortalidade `r emo::ji("funeral")`, 
+  + natalidade `r emo::ji("baby")`, 
+  + fecundidade (total) `r emo::ji("pregnant")`, 
+  + mortalidade infantil `r emo::ji("angel")` e 
+  + esperança de vida (ao nascer) `r emo::ji("hatching_chick")`.
+
+
+*Transição Demográfica*:
+* processo histórico de **transição** do equilíbrio entre 
+  + uma **mortalidade** e **natalidade** **elevadas** e **instáveis** (sociedades “tradicionais”)
+  + para um padrão ("moderno") de **níveis baixos** e mais **estáveis**.
+
+
+---
+
+## Teoria da Transição Demográfica `r emo::ji("light_bulb")`
+### Discussão `r emo::ji("speaking")`
+
+* Teoria “clássica” da transição demográfica inspirada nas transformações a Inglaterra, meados do século XVIII e começo do século XX (industrialização),
+  + outros países europeus (ex. França) apresentaram um padrão um pouco diferente,
+  + África e América Latina seguiram rumos bastante distintos.
+  
+.pull-left[
+* Esquema que consiste de quatro fases.
+  + Versões mais modernas consideram uma quinta fase, às vezes até uma sexta fase.
+]
+.pull-right[
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='200%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'transicao_demografica.png'))
+```
+]
+---
+
+## Teoria da Transição Demográfica `r emo::ji("light_bulb")`
+
+.pull-left[
+
+### Fase 1 `r emo::ji("chart_with_upwards_trend")`
+
+**Equilíbrio** “tradicional” entre a **mortalidade** e a **fecundidade**: 
+
+* ambas em **níveis** relativamente **elevados**;
+
+* de longo prazo, a curto prazo podem ocorrer oscilações significativas, principalmente da mortalidade, 
+  + ex. episódios de fome,  Peste Negra (1346-1353), recente epidemia da COVID-19;
+
+]
+.pull-right[
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='70%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'transicao_demografica1.png'))
+```
+
+]
+
+* O **crescimento da população** também oscila, mas no longo prazo é **nulo** ou **ligeiramente positivo**, 
+  + **nenhum país** no mundo ainda se encontra **nesta fase**.
+
+
+
+---
+
+## Teoria da Transição Demográfica `r emo::ji("light_bulb")`
+
+.pull-left[
+### Fase 2 `r emo::ji("chart_with_upwards_trend")`
+
+**Mortalidade diminui** significativamente antes que ocorra uma 
+diminuição da fecundidade. 
+
+* Marco teórico secundário: **teoria da transição epidemiológica**,
+
+* **melhorias** nas **condições de vida** e a **tecnologia de saúde pública**.
+]
+.pull-right[
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='70%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'transicao_demografica2.png'))
+```
+]
+
+* **Natalidade** ainda continua **elevada**, enquanto a **mortalidade cai**, **rápido crescimento demográfico**, 1% países europeus podendo chegar a 3%.
+
+  + Mais de 90% da população mundial já passou desta fase.
+  
+<!-- --- -->
+
+<!-- # História da demografia `r emo::ji("scroll")` -->
+<!-- ### Discussão `r emo::ji("speaking")` -->
+
+<!-- --- -->
+---
+
+## Teoria da Transição Demográfica `r emo::ji("light_bulb")`
+
+.pull-left[
+
+### Fase 3 `r emo::ji("chart_with_downwards_trend")`
+
+**Declínio** da **fecundidade**. 
+* *Ideia: demora para as pessoas perceberem a diminuição da mortalidade e decidam que já não é necessário ter tantos filhos para garantir um certo número de sobreviventes.*
+
+* Diminuição da fecundidade, **requer decisões por parte dos indivíduos** baseadas na mudança de **percepções** sobre o **ambiente** em que vivem.
+]
+.pull-right[
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='80%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'transicao_demografica3.png'))
+```
+]
+
+* Decisões afetadas fortemente pela **cultura** e pelas **instituições sociais**.
+
+---
+
+## Teoria da Transição Demográfica `r emo::ji("light_bulb")`
+
+
+.pull-left[
+### Fase 4 `r emo::ji("chart_with_downwards_trend")`
+
+* **Novo equilíbrio**, taxas de **mortalidade** e **natalidade** **baixas** e aproximadamente **iguais**.
+
+  + geralmente se caracteriza por uma **maior estabilidade da mortalidade do que a fecundidade**.
+
+* **Controvérsia**: a **fecundidade** deveria **parar de cair** quando se **equilibrasse** com a **mortalidade**?
+]
+.pull-right[
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='70%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'transicao_demografica4.png'))
+```
+]
+
+---
+
+## Segunda Transição Demográfica `r emo::ji("light_bulb")``r emo::ji("light_bulb")`
+
+.pull-left[
+### Fase 5? `r emo::ji("chart_with_downwards_trend")`
+
+Continuidade de algumas tendências já perceptíveis na primeira transição?
+
+* Adiamento da reprodução, mulheres entrando na força de trabalho e querem consolidar as suas carreiras. 
+
+* Percepção crescente de que a reprodução é opcional. 
+
+* Mais casais que optam por não ter filhos 
+
+]
+.pull-right[
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='70%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'transicao_demografica4.png'))
+```
+]
+
+* Aumento das formas não convencionais de coabitação, com ou sem filhos, além do casamento "tradicional".
+---
+
+## Segunda Transição Demográfica `r emo::ji("light_bulb")``r emo::ji("light_bulb")`
+
+A Segunda Transição Demográfica (STD) não constitui necessariamente uma crítica 
+à teoria clássica, mas a complementa.
+
+*  A teoria da transição demográfica efetivamente pode ser considerada uma teoria?
+  + Ou se se trata da generalização empírica de um processo que, apesar das suas especificidades em diferentes países, tem certos traços comuns?
+
+*Uma teoria propriamente dita deveria não apenas descrever as tendências observadas, mas também explicá-las.*
+
+* A teoria permite fazer previsões? 
+  + Na prática tem se mostrado difícil.
+
+* Ausência de uma consideração sistemática da migração.
+
+---
+
+## Segunda Transição Demográfica `r emo::ji("light_bulb")``r emo::ji("light_bulb")`
+
+* Mais controvérsia, particularmente a explicação das causas exatas que levam ao início da queda da fecundidade, fase 3.
+
+  1. O desenvolvimento econômico é uma condição prévia necessária para que os países entrem na terceira fase da transição? 
+  
+  2. Se sim, quais as dimensões principais do desenvolvimento que determinam a queda da fecundidade?
+
+  3. Até que ponto é possível, na atualidade, acelerar o processo por meio de políticas públicas que visam uma redução da fecundidade ? 
+
+---
+
+## Transições Paralelas `r emo::ji("twisted_rightwards_arrows")`
+
+* A TRANSIÇÃO EPIDEMIOLÓGICA
+  + substituição das doenças transmissíveis por doenças não transmissíveis e causas externas (violências, acidentes de transporte etc.); 
+  + adiamento da maior carga de morbimortalidade dos grupos mais jovens aos mais 
+idosos e; 
+  + mudança do predomínio da mortalidade para o predomínio da morbidade.
+
+* A TRANSIÇÃO URBANA
+  + A urbanização acelerada do Brasil.
+
+* A TRANSIÇÃO DA ESTRUTURA ETÁRIA
+  + Formato das pirâmides em cada fase.
+  + E no Brasil?
+  
+---
+
+## Tendências de crescimento `r emo::ji("earth_americas")`
+
+* Qual a situação atual em termos das fases da transição?
+  + Brasil e Mundo.
+  
+* Alguns links com dados sobre crescimento populacional:
+  + Mundo
+      + [Population growth (annual %) - World Bank Group](https://data.worldbank.org/indicator/SP.POP.GROW)
+      + [Population Growth - Our World in Data](https://ourworldindata.org/population-growth)
+  + Brasil
+      + [Panorama do Censo2022](https://censo2022.ibge.gov.br/panorama/?localidade=BR)
+      + [População do Brasil alcança marca de 213,4 milhões de habitantes, divulga IBGE](https://www.gov.br/secom/pt-br/acompanhe-a-secom/noticias/2025/08/populacao-do-brasil-alcanca-marca-de-213-4-milhoes-de-habitantes-divulga-ibge)
+      + [Censo Demográfico 2022](https://censo2022.ibge.gov.br/apps/pgi/#/home/)
+  + Município de SP - Fundação Seade(?) 
+      + [Município de São Paulo - Crescimento da população nos últimos 100 anos](https://informa.seade.gov.br/crescimento-populacao-ultimos-100-anos/)
+  +   E no RS? Secretaria de planejamento, ...(?)    
+      + [Atlas Sócioeconômico RS - Crescimento populacional](https://atlassocioeconomico.rs.gov.br/crescimento-populacional)
+
+---
+
+## Por fim `r emo::ji("package")`
+### Discussão `r emo::ji("speaking")`
+
+* Sobre a leitura da teoria da transição demográfica,
+
+  + o que eh mais importante destacar que ainda não destacamos?
+
+<!--       + Mais dados maior pop e mais variaveis,  -->
+<!--       + como trata-los, diferentes fontes e diferentes níveis,  -->
+<!--       + como combina-los. -->
+
+---
+
+## Para casa `r emo::ji("house")`
+
+* Explorar as páginas indicadas acima com informações de crescimento demográfico no Mundo, Brasil e RS.
+
+* Ler capítulo 4 de [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
+
+## Próxima aula `r emo::ji("stats")`
+
+* Apresentar o resumo do tópico escolhido do capítulo 3.
+
+* Fonte de dados demográficos. `r emo::ji("light_bulb")`
+
+<!-- * Laboratório de `r fa("r-project", fill = "steelblue")` -->
+
+---
+<center>
+## Dúvidas, sugestões, críticas, ...? `r emo::ji("question")[1]`
+
+### Muito obrigado!
+<center>
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+Fonte: Imagem criada por IA.
