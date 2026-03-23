@@ -215,23 +215,40 @@ em 2004 (Sosa, 2004; Durr, 2012).
 
 ---
 
+## Censos `r emo::ji("japan")`
+
+* Um pouco mais sobre história do censo
+  + ... no Brasil
+  
+* Processo do censo, três etapas:
+
+  + pré-recenseamento, ex. levantamento cartográfico,
+      + no Brasil os setores censitários (áreas de enumeração) costumam ter um tamanho de 300 domicílios em áreas urbanas e 150 em áreas rurais,variação de 50 para cima ou para baixo;
+
+  + enumeração consiste no trabalho de campo e na sua supervisão;
+
+  + pós-enumeração, captação eletrônica da informação e sua passagem para uma base de microdados que identifica a informação obtida de cada questionário.
+
+* Avaliação da Qualidade dos Censos
+
+* Conteúdo e os Resultados do Censo
+
+* Divulgação e ANálise Secundária do Censo
+---
+
+
 ## Censo no Brasil `r emo::ji("earth_americas")`
 
-* Qual a situação dos censos?
-  + Brasil e Mundo.
+* Instituo Brasileiro de Geografia e Estatística (IBGE), dois questionários:
+  + Básico, para toda população, e da amostra.
   
-* Alguns links com dados sobre censos:
-  + Mundo
-      + [Population growth (annual %) - World Bank Group](https://data.worldbank.org/indicator/SP.POP.GROW)
-      + [Population Growth - Our World in Data](https://ourworldindata.org/population-growth)
-  + Brasil
-      + [Panorama do Censo2022](https://censo2022.ibge.gov.br/panorama/?localidade=BR)
-      + [População do Brasil alcança marca de 213,4 milhões de habitantes, divulga IBGE](https://www.gov.br/secom/pt-br/acompanhe-a-secom/noticias/2025/08/populacao-do-brasil-alcanca-marca-de-213-4-milhoes-de-habitantes-divulga-ibge)
-      + [Censo Demográfico 2022](https://censo2022.ibge.gov.br/apps/pgi/#/home/)
-  + Município de SP - Fundação Seade(?) 
-      + [Município de São Paulo - Crescimento da população nos últimos 100 anos](https://informa.seade.gov.br/crescimento-populacao-ultimos-100-anos/)
-  +   E no RS? Secretaria de planejamento, ...(?)    
-      + [Atlas Sócioeconômico RS - Crescimento populacional](https://atlassocioeconomico.rs.gov.br/crescimento-populacional)
+* Alguns links com dados sobre o Censo de 2022: 
+
+[Divulgação dos resultados]([https://censo2022.ibge.gov.br/etapas/divulgacao-dos-resultados.html)
+
+[Censo Demográfico 2022: População e domicílios - Primeiros resultados](https://biblioteca.ibge.gov.br/visualizacao/livros/liv102011.pdf)
+
+[Sistema IBGE de Recuperação Automática - SIDRA](https://sidra.ibge.gov.br)
 
 ---
 
@@ -246,20 +263,26 @@ em 2004 (Sosa, 2004; Durr, 2012).
 <!--       + como trata-los, diferentes fontes e diferentes níveis,  -->
 <!--       + como combina-los. -->
 
+Responda após a leitura do capítulo e a discussão:
+
+* Uma coisa nova que aprendeu sobre os censos.
+* Uma dúvida.
+* Uma pergunta que faria para o autor.
+
 ---
 
 ## Para casa `r emo::ji("house")`
 
-* Explorar as páginas indicadas acima com informações de crescimento demográfico no Mundo, Brasil e RS.
+* Explorar as páginas indicadas acima com informações do Censo 2022 no Brasil.
 
-* Ler capítulo 4 de [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
+* Ler capítulo 5 de [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
 demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
 
 ## Próxima aula `r emo::ji("stats")`
 
 * Apresentar o resumo do tópico escolhido do capítulo 3.
 
-* Fonte de dados demográficos. `r emo::ji("light_bulb")`
+* cont. Fonte de dados demográficos - registros civis. `r emo::ji("light_bulb")`
 
 <!-- * Laboratório de `r fa("r-project", fill = "steelblue")` -->
 
