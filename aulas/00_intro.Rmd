@@ -312,8 +312,7 @@ __Conceitos após a recuperação:__
 ```
 
 
-* [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
-demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837)
+* [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. São Paulo: Blucher, 2021.](https://openaccess.blucher.com.br/article-list/9786555500837-504/list/#undefined)
 
 * Hakker, Ralph. Fontes de Dados Demográficos. Belo Horizonte: ABEP, 1996. Disponível em: http://www.abep.nepo.unicamp.br/docs/outraspub/textosdidaticos/tdv03.pdf
 
@@ -599,8 +598,7 @@ class: inverse, middle, center
 
 ### Próxima aula
 
-Ler Capítulo 1 do livro [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
-demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).  
+Ler Capítulo 1 do livro [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://openaccess.blucher.com.br/article-list/9786555500837-504/list/#undefined).  
 
 ### Dúvidas, sugestões, críticas, ... `r emo::ji("question")[1]`
 

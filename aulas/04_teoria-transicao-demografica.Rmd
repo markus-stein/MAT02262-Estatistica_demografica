@@ -46,8 +46,7 @@ knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
 ## Teoria da Transição Demográfica `r emo::ji("light_bulb")`
 ### Discussão `r emo::ji("speaking")`
 
-A partir da leitura da Capítulo 2 de [Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa](https://www.blucher.com.br/metodos
-demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837):
+A partir da leitura da Capítulo 2 de [Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa](https://openaccess.blucher.com.br/article-list/9786555500837-504/list/#undefined):
 
 * O que chamou atencao sobre as teoria da transição demográfica? 
   + Alguma relação com as teorias anteriores, Malthus, reformista e neo-malthusiana?
@@ -302,8 +301,7 @@ idosos e;
 
 * Explorar as páginas indicadas acima com informações de crescimento demográfico no Mundo, Brasil e RS.
 
-* Ler capítulo 4 de [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
-demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
+* Ler capítulo 4 de [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://openaccess.blucher.com.br/article-list/9786555500837-504/list/#undefined).
 
 ## Próxima aula `r emo::ji("stats")`
 

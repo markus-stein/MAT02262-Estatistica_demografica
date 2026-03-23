@@ -1,0 +1,276 @@
+---
+title: "MAT02262 - Estatística Demográfica I"
+subtitle: "Fontes de Dados Demográficos - Censo"
+type: "lecture"
+author: "Markus Stein"
+institute: "Departamento de Estatística, IME/UFRGS"
+date: "2026/1"
+output:
+  xaringan::moon_reader:
+    # css: ["assets/remark.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      titleSlideClass: [center, middle]
+---
+
+class: inverse, middle, center
+
+```{r libs, echo=FALSE, message=FALSE, warning=FALSE}
+library(xaringanExtra)
+library(emo)
+library(fontawesome)
+```
+
+
+```{r xaringan-logo, echo=FALSE}
+# install.packages("remotes")
+# remotes::install_github('yihui/xaringan')
+# remotes::install_github("gadenbuie/xaringanExtra")
+# xaringanExtra::use_logo(
+#   image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png"
+# )
+use_logo( here::here('img/logo_dest.png'))
+```
+
+# Fontes de Dados Demográficos
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+
+---
+
+## Fontes de Dados Demográficos `r emo::ji("fountain")`
+### Discussão `r emo::ji("speaking")`
+
+A partir da leitura do Capítulo 4 de [Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837):
+
+* O que chamou atencao sobre as fontes de dados demográficos? 
+  + E sobre Censos? Qual sua importância...
+  + Algo novo sobre censos que tenha aprendido nessa leitura?
+
+* Quais os principais desafios na realização de um censo? Possíveis erros.
+  + Entrevistar toda a população é a única forma de recenseamento?
+
+* Comentários? Curiosidades?
+
+Lembrando: a **demografia** tende a tratar mais da **descrição** e **sistematização** dos **fenômenos** estudados do que da sua explicação teórica.
+
+---
+
+## Fontes de Dados Demográficos `r emo::ji("fountain")`
+
+* A coleta (recolha), a crítica e a correção dos dados cumprem papel fundamental na demografia.
+  + O **demógrafo** tradicionalmente se baseia em observações referentes a 
+todo o universo estudado, 
+  + mas ao mesmo tempo o seu controle sobre a natureza da informação é limitado. 
+  
+* Normalmente **observações** são **produzidas** por **órgãos administrativos**, com outras finalidade finalidades além te interesse cinetífico.
+  + Dados tradicionais podem ser complementados por levantamentos especiais, para investigar questões de interesse específico.
+  + * **Tamanhos amostrais** tendem a ser **grandes** para investigar muitos fenômenos demográficos, geralmente precisam algum **respaldo institucional**. 
+
+* A posição do **demógrafo** (assim como o epidemiólogo) é intermediária entre aquela do historiador, que se baseia inteiramente na informação disponível, e o psicólogo ou antropólogo, que podem realizar pesquisas com perguntas muito direcionadas e amostras muito reduzidas.
+
+---
+
+## Fontes de Dados Demográficos `r emo::ji("fountain")`
+
+Critérios para avaliar a **qualidade** da **informação demográfica**:
+* **Relevância**: informação produzida deve corresponder às necessidades dos usuários.
+* **Precisão**: descrever corretamente os fenômenos que pretende medir.
+* **Confiabilidade**: variação dos resultados quando são medidos repetidas vezes.
+* **Oportunidade**: tempo entre o momento da medição da informação e a sua disponibilidade efetiva.
+* **Coerência** e **comparabilidade**: internamente consistente e mesmos critérios de produção de outros resultados (ao longo do tempo ou outros lugares).
+* **Acessibilidade**: facilidade com que usuários podem ter acesso à informação.
+* **Clareza**: resultados apresentados de forma clara, legível e compreensível (metadados, outras explicações para avaliar significado e forma de produção).
+* **Independência**: liberdade de interferências políticas ou comerciais (podem 
+afetar padrões, procedimentos, conteúdo, tempo de divulgação,...).
+* Disponibilidade de **recursos**: recursos humanos, financeiros e técnicos investido.
+
+---
+
+## Fontes de Dados Demográficos `r emo::ji("fountain")`
+
+* Dado propriamente demográfico normalmente pode ser classificado 
+como **estatística** de **estoque** ou de **fluxo**.
+  + Estudar população requer uma variedade de informações (inclusive do tipo qualitativo). 
+
+* Estoque: **características estáticas** de uma população num determinado momento: 
+  + tamanho da população, distribuição territorial, por sexo, por idade ou por características socioeconômicas;
+  + tipicamente obtida por meio de censos ou inquéritos amostrais (“surveys”).
+
+* Fluxo = **dinâmica populacional**, ou seja, dos eventos que transformam essas características:
+  + nascimentos, óbitos, migração e mobilidade entre categorias socioeconômicas; 
+  + realizada por meio de um sistema de registro de eventos ou, mais raramente, um levantamento de passagens repetidas (“multi-round survey”).
+
+
+---
+
+## Fontes de Dados Demográficos `r emo::ji("fountain")`
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='80%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'variaveis-estoque-fluxo.png'))
+```
+
+* Técnicas **diretas** e **indiretas** de análise.
+  
+* (*Lembrando*) As principais fontes de dados demográficos são:
+  + Censos;
+  + Registros civis;
+  + Pesquisas por amostragem.
+
+---
+
+## Censos `r emo::ji("japan")`
+
+* Definição de censo = recenseamento (?)
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='80%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'criterios-censo-UN.png'))
+```
+
+* O censo (em alguns países se usa mais o termo “recenseamento”?) ainda é o principal instrumento para obter dados de estoque.
+  + desvantagens:
+      + alto custo, 
+      + divulgação demorada e 
+      + frequência reduzida, 
+  + a des peito de existirem hoje várias alternativas de obtenção de informação(?).
+
+---
+
+## Censos `r emo::ji("japan")`
+
+* O **censo convencional**, por meio de **entrevistas** a cada domicílio (agregado familiar), 
+
+  + alto custo, logística de dimensões quase militares. 
+
+  + Para o censo brasileiro  de 2010 foram necessários 
+      + mais de 190 mil recenseadores e 
+      + um orçamento de mais de 5 bilhões de dólares para 
+      + percorrer os mais de 8,5 milhões de quilômetros quadrados, 
+      + com um custo aproximado de quase 90 dólares por domicílio. 
+      + o censo de 2010 dos EUA custou 92 dólares por domicílio enumerado. 
+      
+
+---
+
+## Censos `r emo::ji("japan")`
+
+* Número crescente de países que realizam os seus **censos administrativamente** (desde os anos 70). 
+  + tendência dos 48 países da Comissão Econômica das Nações 
+Unidas para Europa (UNECE), 
+  + 14 realizem o Censo com base exclusivamente em registros 
+administrativos, 
+  + 12 países adotem o modelo de transição (25%) e 
+  + 22 ainda façam o Censo tradicional (46%). 
+
+* Portugal considera a possibilidade de um censo administrativo para 2021. 
+
+*  O procedimento consiste em consolidar a informação já contida em diversas bases de dados 
+mantidas para outros propósitos
+  + o mais essencial é o registro de população, deve conter dados básicos atualizados, sem ele um censo administrativo é praticamente impossível. 
+  + existência de um número único de identificação de cada pessoa, ex. Cadastro da Pessoa Física (CPF) no Brasil, preferencialmente emitido no momento do nascimento. 
+
+---
+
+## Censos `r emo::ji("japan")`
+
+* **Vantagens** do **censo** baseado em cruzamento de **dados administrativos**:
+  + o baixo custo – consideravelmente menor do que o custo de um censo convencional e 
+  + o fato de não exigir a cooperação da população
+
+* A principal **desvantagem** do censo administrativo 
+  + só cobre informação que já está contida nos registros administrativos existentes. 
+      + Estes registros são mantidos para finalidades específicas, definição da população nem sempre coincide com a do censo. 
+      + Há dados que costumam ser levantados nos censos, mas que não constam nos registros administrativos. Cruzamento com inquéritos por amostragem ou a aplicação de um formulário censitário curto. 
+      
+* O uso ou não uso de **fontes de dados adicionais**, além dos contidos nos registros administrativos existentes, atualmente constitui a maior diferença metodológica dentro da categoria de censos realizados com base em registros administrativos.
+  + Possibilidade de combinar dados em niveis e fontes diferentes!!!(?)
+
+
+---
+
+## Censos `r emo::ji("japan")`
+
+* Ainda existe um terceiro tipo de censo, conhecido como o **“censo rolante”**, 
+  + o universo  é dividido em 5 partes, 
+  + cada uma observada exaustivamente durante um ano, 
+  + durante um ciclo de 5 anos. 
+
+* Até agora o único país que utiliza este modelo é a França que o aplicou pela primeira vez 
+em 2004 (Sosa, 2004; Durr, 2012).
+
+* o modelo tem como vantagem a diluição dos custos ao longo dos anos, mas além da sua complexidade ele não permite a caraterização simul tânea do universo num momento específico de referência.
+
+<!-- --- -->
+
+<!-- # História da demografia `r emo::ji("scroll")` -->
+<!-- ### Discussão `r emo::ji("speaking")` -->
+
+<!-- --- -->
+
+---
+
+## Censo no Brasil `r emo::ji("earth_americas")`
+
+* Qual a situação dos censos?
+  + Brasil e Mundo.
+  
+* Alguns links com dados sobre censos:
+  + Mundo
+      + [Population growth (annual %) - World Bank Group](https://data.worldbank.org/indicator/SP.POP.GROW)
+      + [Population Growth - Our World in Data](https://ourworldindata.org/population-growth)
+  + Brasil
+      + [Panorama do Censo2022](https://censo2022.ibge.gov.br/panorama/?localidade=BR)
+      + [População do Brasil alcança marca de 213,4 milhões de habitantes, divulga IBGE](https://www.gov.br/secom/pt-br/acompanhe-a-secom/noticias/2025/08/populacao-do-brasil-alcanca-marca-de-213-4-milhoes-de-habitantes-divulga-ibge)
+      + [Censo Demográfico 2022](https://censo2022.ibge.gov.br/apps/pgi/#/home/)
+  + Município de SP - Fundação Seade(?) 
+      + [Município de São Paulo - Crescimento da população nos últimos 100 anos](https://informa.seade.gov.br/crescimento-populacao-ultimos-100-anos/)
+  +   E no RS? Secretaria de planejamento, ...(?)    
+      + [Atlas Sócioeconômico RS - Crescimento populacional](https://atlassocioeconomico.rs.gov.br/crescimento-populacional)
+
+---
+
+## Por fim `r emo::ji("package")`
+### Discussão `r emo::ji("speaking")`
+
+* Sobre a leitura da teoria da transição demográfica,
+
+  + o que eh mais importante destacar que ainda não destacamos?
+
+<!--       + Mais dados maior pop e mais variaveis,  -->
+<!--       + como trata-los, diferentes fontes e diferentes níveis,  -->
+<!--       + como combina-los. -->
+
+---
+
+## Para casa `r emo::ji("house")`
+
+* Explorar as páginas indicadas acima com informações de crescimento demográfico no Mundo, Brasil e RS.
+
+* Ler capítulo 4 de [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
+
+## Próxima aula `r emo::ji("stats")`
+
+* Apresentar o resumo do tópico escolhido do capítulo 3.
+
+* Fonte de dados demográficos. `r emo::ji("light_bulb")`
+
+<!-- * Laboratório de `r fa("r-project", fill = "steelblue")` -->
+
+---
+<center>
+## Dúvidas, sugestões, críticas, ...? `r emo::ji("question")[1]`
+
+### Muito obrigado!
+<center>
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+Fonte: Imagem criada por IA.
