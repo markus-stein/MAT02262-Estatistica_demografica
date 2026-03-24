@@ -223,7 +223,6 @@ em 2004 (Sosa, 2004; Durr, 2012).
 * Processo do censo, três etapas:
 
   + pré-recenseamento, ex. levantamento cartográfico,
-      + no Brasil os setores censitários (áreas de enumeração) costumam ter um tamanho de 300 domicílios em áreas urbanas e 150 em áreas rurais,variação de 50 para cima ou para baixo;
 
   + enumeração consiste no trabalho de campo e na sua supervisão;
 
@@ -233,16 +232,39 @@ em 2004 (Sosa, 2004; Durr, 2012).
 
 * Conteúdo e os Resultados do Censo
 
-* Divulgação e ANálise Secundária do Censo
----
+* Divulgação e Análise Secundária do Censo
 
+---
 
 ## Censo no Brasil `r emo::ji("earth_americas")`
 
-* Instituo Brasileiro de Geografia e Estatística (IBGE), dois questionários:
-  + Básico, para toda população, e da amostra.
-  
-* Alguns links com dados sobre o Censo de 2022: 
+* Instituo Brasileiro de Geografia e Estatística (IBGE), 
+
+  + Os **setores censitários** (áreas de enumeração) são a menor unidade de divulgação dos dados da população;
+      + tamanho de 300 domicílios em áreas urbanas e 150 em áreas rurais aproximadamente, variação de 50 para cima ou para baixo.
+
+* A pesquisa possui **dois questionários**.
+
+  + [**Questionário Básico**:](https://anda.ibge.gov.br/np_download/censo2022/questionario_basico_completo_CD2022_atualizado_20220906.pdf), para toda população; **26 questões** sobre as **principais características** do **domicílio** e dos **moradores**;
+      
+  + [**Questionário da Amostra**:](https://anda.ibge.gov.br/np_download/censo2022/questionario_amostra_completo_CD2022_atualizado_20220906.pdf) __77 questões__; características dos domicílios, identificação étnico-racial, nupcialidade, núcleo familiar, fecundidade, religião ou culto, deficiência, migração interna ou internacional, educação, deslocamento para estudo, trabalho e rendimento, deslocamento para trabalho, mortalidade e autismo.
+    
+---
+
+## Censo no Brasil `r emo::ji("earth_americas")`
+
+* No **Censo 2022**, foram **investigados** cerca de **75 milhões de domicílios** particulares permanentes do País.
+
+    + Foram **amostrados** aproximadamente **11%** desse contingente, cerca de **8,5 milhões de domicílios**.
+
+* **Representatividade territorial** das informações:
+
+  + **população**: Grandes regiões, Meso e Microrregiões, Unidades Federativas, Municípios, Distritos e \structure{Setor Censitário};
+
+  + **Amostra**:__ Grande regiões, Meso e Microrregiões, Unidades Federativas, Municípios e \structure{Áreas de Ponderação}.
+
+
+* Alguns links com **resultados do Censo de 2022**: 
 
 [Divulgação dos resultados]([https://censo2022.ibge.gov.br/etapas/divulgacao-dos-resultados.html)
 
@@ -282,7 +304,7 @@ demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
 
 * Apresentar o resumo do tópico escolhido do capítulo 3.
 
-* cont. Fonte de dados demográficos - registros civis. `r emo::ji("light_bulb")`
+* cont. Fonte de dados demográficos - registros civis. `r emo::ji("fountain")`
 
 <!-- * Laboratório de `r fa("r-project", fill = "steelblue")` -->
 
