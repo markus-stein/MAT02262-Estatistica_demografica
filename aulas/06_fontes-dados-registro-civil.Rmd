@@ -1,0 +1,362 @@
+---
+title: "MAT02262 - Estatística Demográfica I"
+subtitle: "Outras Fontes de Dados Demográficos"
+type: "lecture"
+author: "Markus Stein"
+institute: "Departamento de Estatística, IME/UFRGS"
+date: "2026/1"
+output:
+  xaringan::moon_reader:
+    # css: ["assets/remark.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      titleSlideClass: [center, middle]
+---
+
+class: inverse, middle, center
+
+```{r libs, echo=FALSE, message=FALSE, warning=FALSE}
+library(xaringanExtra)
+library(emo)
+library(fontawesome)
+```
+
+
+```{r xaringan-logo, echo=FALSE}
+# install.packages("remotes")
+# remotes::install_github('yihui/xaringan')
+# remotes::install_github("gadenbuie/xaringanExtra")
+# xaringanExtra::use_logo(
+#   image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png"
+# )
+use_logo( here::here('img/logo_dest.png'))
+```
+
+# Outras Fontes de Dados Demográficos
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+
+---
+
+## Outras Fontes de Dados Demográficos `r emo::ji("fountain")`
+### Discussão `r emo::ji("speaking")`
+
+A partir da leitura do Capítulo 5 de [Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837):
+
+* O que chamou atencao sobre as demais fontes de dados demográficos? 
+  + Sobre registros civis como fonte? Qual sua importância...
+  + Sobre pesquisas oir amostragem? Qual sua importância...
+  + Algo novo que tenha aprendido nessa leitura?
+
+* Quais os principais desafios das fontes alternativas ao censo? 
+  + vantagens e desvantagens?
+
+* Comentários? Curiosidades?
+
+*Lembrando*: O **censo** é a fonte por excelência para o estudo da situação demográfica de uma população, principalmente em países em desenvolvimento e com sistemas estatísticos incompletos.
+
+---
+
+## Outras Fontes de Dados Demográficos `r emo::ji("fountain")`
+
+* Outras fontes de dados são **igualmente importantes** e **complementares**.
+
+1. Considerandoas **estatísticas contínuas** de **eventos vitais**. 
+
+  * No **cálculo de taxas** e **probabilidades** associadas a certos processos demográficos, 
+  
+      + os **censos** costumam fornecer o denominador (a população sujeita ao risco de sofrer um evento); 
+      
+      + as **estatísticas vitais** têm importância por fornecer o numerador (o evento demográfico), ex. sistema de estatísticas contínuas de nascimentos, com 
+especial referência ao nascido vivo, e os óbitos. 
+
+2. **Registros contínuos*** de população (“population registry”). 
+
+3. **Pesquisas amostrais**,  **complementar(?)* as informações disponíveis a partir dos censos e das estatísticas contínuas.
+
+4. **Fontes não convencionais*** e bases especiais
+
+---
+
+## Registro Civil `r emo::ji("notebook_with_decorative_cover")`
+
+* **Censo** **coleta** informação de **todos os indivíduos** de uma população em **momentos preestabelecidos**.
+
+  + Unidade de enumeração é o **indivíduo**.
+
+* Sistemas de estatísticas contínuas, ex. **registro civil**, **documentam** e legitimam as ocorrências de **eventos que modificam** o **tamanho** ou a **composição** da população 
+no tempo.
+
+  + Unidade de enumeração é o **evento demográfico**.
+  
+* **Importante fonte** para o estudo da **dinâmica demográfica**.
+
+  + Fins **puramente jurídico** até **saúde** e **demografia**, para o **próprio governo** como para **agências privadas**. 
+  
+  + Dificultada pela **baixa cobertura** dos registros em muitos países e pelo **número** muito **limitado** de **informações** levantadas. 
+  
+* O **tema** também é **de grande interesse** para o Fundo das Nações para a Infância (**UNICEF**).
+
+---
+
+## Registro Civil `r emo::ji("notebook_with_decorative_cover")`
+
+* Cumpre uma função legal, pois os eventos registrados modificam a situação das pessoas perante a lei; 
+
+  + **a cargo** de **instâncias burocráticas** legais denominadas **cartórios**, **notariados**, **conservatórias** ou similares. 
+
+      + Assegura o **acesso a documentos** fundamentais para o exercício da cidadania: ex. registro de identidade, título de eleitor; formalização de uniões; adoções; transmissão de heranças, etc. 
+
+      + **Função também administrativa**, constituem uma prova legal do fato vital, da data e do local de ocorrência, ex. registros nascimentos, casamentos, divórcio, óbito.
+
+* As leis que regem a função legal do registro civil **variam no tempo** e de **país** para país.
+  
+  + A mudança de práticas sociais e regulamentações legais requer que as formas de registro também mudem.
+
+---
+
+## Registro Civil `r emo::ji("notebook_with_decorative_cover")`
+
+* No Brasil o registro pertence ao **Poder Judiciário**, que **controla as concessões** de cartórios, cuja **gestão é privada** e tem **fins lucrativos**. 
+
+* **Diferenças** do ponto de vista legal **dificultam** a implementação de **normas internacionais**. 
+
+  + A Divisão de Estatística das Nações Unidas tem se esforçado na padronização destes 
+sistemas. 
+
+* Manuais técnicos United Nations (2014 e 2018).
+
+  + Localização dos eventos vitais: local de ocorrência versus residência habitual.
+      
+      + Local de ocorrência (United Nations, 2018) facilita e acelera o processo de registro.
+
+      + Local de residência oferece informação sobre condicionantes ou determinantes da ocorrência do evento.
+
+
+---
+
+## Registro Civil `r emo::ji("notebook_with_decorative_cover")`
+
+* Mais história: 
+  + registros antigos, sistema contábil Inca; 
+  
+  + registros de nascimentos, casamentos e mortes pela Igreja Luterana na Suécia, 1608, e Igreja Católica de Québec, 1621;
+
+  + Publicação das primeiras estatísticas vitais no Brasil data de 1894.
+
+* O registro de nascidos vivos
+
+  + SINASC
+
+* O registro de óbitos
+
+  + SINAM
+
+---
+
+## Registros Contínuo de População `r emo::ji("chart_with_upwards_trend")`
+
+* Sistema que combina as características de um registro de estoques e fluxos de população.
+  
+* Uso principal como base de dados para
+
+  + emissão de documentos (passaportes, carteiras de motorista, carteiras de identidade etc.),
+  
+  + pagamento de diversos tipos de pensões e subsídios governamentais, 
+  
+  + alistamento militar, 
+  
+  + convocações para eleições e 
+  
+  + outras obrigações cívicas. 
+  
+* (*lembrando*) Número crescente de países que realizam os seus **censos administrativamente**
+
+
+---
+
+## Registros Contínuo de População `r emo::ji("chart_with_upwards_trend")`
+
+* Requer uma grande agilidade na integração das diversas bases de dados administrativos mantidos pelos diferentes níveis de governo. 
+
+  + Custo e dificuldades operacionais implícitas neste nível de integração, 
+  
+  + mais sucesso em países relativamente pequenos, com níveis baixos ou moderados de migração internacional, estruturas administrativas eficientes e níveis relativamente altos de educação.
+
+* (Outros registros) Registros parciais que podem derivar estimativas demográficas: 
+
+  + população previdenciária, 
+  
+  + o registro do programa Bolsa Família, 
+  
+  + contribuintes do imposto de renda, 
+  
+  + residentes estrangeiros ou outras subpopulações.
+
+---
+
+## Pesquisas por Amostragens `r emo::ji("iphone")`
+
+* Informação demográfica e social que precisam ser conhecidos em detalhe em todas as unidades geográficas do território nacional, 
+
+  + se não captadss por registros administrativos, 
+  
+  + devem ser recolhidos no censo. 
+  
+* Porém existem muitos outros tipos de informação que não exigem tanto detalhe geográfico, 
+
+  + mas visam uma **compreensão** mais aprofundada de **processos** e **causas** ao nível nacional ou regional.
+      
+ 
+* Por exemplo: pode não haver uma boa alternativa para o censo quando se trata de avaliar o número de crianças que se encontram fora do sistema escolar em todas as unidades administrativas do país. 
+
+  + Mas para avaliar em mais detalhe quais são as razões pelas quais as crianças não frequentam a escola, talvez não haja necessidade de realizar uma investigação em cada distrito escolar.
+
+---
+
+## Pesquisas por Amostragens `r emo::ji("iphone")`
+
+* No Brasil, o IBGE vem promovendo o **Sistema Integrado de Pesquisas Domiciliares** (SIPD) que inclui:
+
+  + Pesquisa Nacional por Amostra de Domicílios Contínua (PNADc), 
+  
+  + Pesquisa Nacional de Saúde (PNS), 
+  
+  + Pesquisa de Orçamentos Familiares (POF) e a POF Simplificada, além de pesquisas sobre outros 
+  
+* Geralmente, **levantamentos por amostra** coletam variáveis do tipo **estoque**e de **fluxo**. 
+  
+* Se o interesse é  fluxo podemos distinguir entre levantamentos: 
+  
+  + **prospectivos** (ou longitudinais, coorte(?)), uma amostra de pessoas é entrevistada periodicamente, para detectar as mudanças ocorridas na sua situação, 
+  
+  + **retrospectivos**, uma amostra coletada em apenas uma entrevista e, 
+  
+      + na medida em que precisar de dados de **fluxo**, reconstrói os eventos relevantes do passado com base na **memória do entrevistado**, 
+      
+      + geralmente preferida devido à sua menor complexidade e custo, 
+      
+<!-- --- -->
+
+<!-- # História da demografia `r emo::ji("scroll")` -->
+<!-- ### Discussão `r emo::ji("speaking")` -->
+
+<!-- --- -->
+
+---
+
+## Pesquisas por Amostragens - Coorte `r emo::ji("iphone")`
+
+* Exemplo: Estudo Longitudinal de Saúde do Adulto (ELSA), Ministério da Saúde e pelo Ministério da Ciência e Tecnologia do Brasil, investigação multicêntrica,
+      
+      + amostra de 15 mil funcionários, com idades de 35-74 anos, de seis instituições públicas de ensino superior e pesquisa das regiões Nordeste, Sul e Sudeste do Brasil, para investigar a incidência e os fatores de risco para doenças crônicas, especialmente as cardiovasculares e o diabetes;
+      
+* Amostra não representativa, mas podemos melhorar??? Combinar fontes diferentes e nível de informações diferentes?
+
+<!-- --- -->
+
+<!-- ## Censo no Brasil `r emo::ji("earth_americas")` -->
+
+<!-- * Instituo Brasileiro de Geografia e Estatística (IBGE),  -->
+
+<!--   + Os **setores censitários** (áreas de enumeração) são a menor unidade de divulgação dos dados da população; -->
+<!--       + tamanho de 300 domicílios em áreas urbanas e 150 em áreas rurais aproximadamente, variação de 50 para cima ou para baixo. -->
+
+<!-- * A pesquisa possui **dois questionários**. -->
+
+<!--   + [**Questionário Básico**:](https://anda.ibge.gov.br/np_download/censo2022/questionario_basico_completo_CD2022_atualizado_20220906.pdf), para toda população; **26 questões** sobre as **principais características** do **domicílio** e dos **moradores**; -->
+
+<!--   + [**Questionário da Amostra**:](https://anda.ibge.gov.br/np_download/censo2022/questionario_amostra_completo_CD2022_atualizado_20220906.pdf) __77 questões__; características dos domicílios, identificação étnico-racial, nupcialidade, núcleo familiar, fecundidade, religião ou culto, deficiência, migração interna ou internacional, educação, deslocamento para estudo, trabalho e rendimento, deslocamento para trabalho, mortalidade e autismo. -->
+
+<!-- --- -->
+
+<!-- ## Censo no Brasil `r emo::ji("earth_americas")` -->
+
+<!-- * No **Censo 2022**, foram **investigados** cerca de **75 milhões de domicílios** particulares permanentes do País. -->
+
+<!--     + Foram **amostrados** aproximadamente **11%** desse contingente, cerca de **8,5 milhões de domicílios**. -->
+
+<!-- * **Representatividade territorial** das informações: -->
+
+<!--   + **população**: Grandes regiões, Meso e Microrregiões, Unidades Federativas, Municípios, Distritos e \structure{Setor Censitário}; -->
+
+<!--   + **Amostra**:__ Grande regiões, Meso e Microrregiões, Unidades Federativas, Municípios e \structure{Áreas de Ponderação}. -->
+
+
+<!-- * Alguns links com **resultados do Censo de 2022**:  -->
+
+<!-- [Divulgação dos resultados]([https://censo2022.ibge.gov.br/etapas/divulgacao-dos-resultados.html) -->
+
+<!-- [Censo Demográfico 2022: População e domicílios - Primeiros resultados](https://biblioteca.ibge.gov.br/visualizacao/livros/liv102011.pdf) -->
+
+<!-- [Sistema IBGE de Recuperação Automática - SIDRA](https://sidra.ibge.gov.br) -->
+
+<!-- --- -->
+
+<!-- ## Por fim `r emo::ji("package")` -->
+<!-- ### Discussão `r emo::ji("speaking")` -->
+
+<!-- * Sobre a leitura da teoria da transição demográfica, -->
+
+<!--   + o que eh mais importante destacar que ainda não destacamos? -->
+
+<!-- <!--       + Mais dados maior pop e mais variaveis,  --> -->
+<!-- <!--       + como trata-los, diferentes fontes e diferentes níveis,  --> -->
+<!-- <!--       + como combina-los. --> -->
+
+<!-- Responda após a leitura do capítulo e a discussão: -->
+
+<!-- * Uma coisa nova que aprendeu sobre os censos. -->
+<!-- * Uma dúvida. -->
+<!-- * Uma pergunta que faria para o autor. -->
+
+---
+
+## Para casa `r emo::ji("house")`
+
+* Explorar as páginas indicadas acima com informações do Censo 2022 no Brasil.
+
+* Ler capítulo 5 de [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
+
+## Próxima aula `r emo::ji("stats")`
+
+* Apresentar o resumo do tópico escolhido do capítulo 3.
+
+* cont. Fonte de dados demográficos - pesquisas por amostragem. `r emo::ji("fountain")`
+
+<!-- * Laboratório de `r fa("r-project", fill = "steelblue")` -->
+
+---
+
+## Para casa `r emo::ji("house")`
+
+### Avaliacao area 1
+
+Escolher um artigo, noticia, ... que envolva afirmacoes sobre caracter[isticas demogr[aficas para que possamos repetir as an[alises, extender, diferente periodo e regiao. Aprofundar a discussao mostrando diferencas por regiao, genero, etaria, entia, ...
+
+* Usar as diferentes fontes de dados: censo, registro civil, pesquisas por amostragem.
+  Combinar?
+
+* teoria demografica, crescimento populacional, taxas,...
+
+* usar planilhas com tabelas prontas dos sites SIDRA, DATASUS/Tabnet, ..., ou R/python... `r fa("r-project", fill = "steelblue")`
+
+
+---
+<center>
+## Dúvidas, sugestões, críticas, ...? `r emo::ji("question")[1]`
+
+### Muito obrigado!
+<center>
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+Fonte: Imagem criada por IA.
