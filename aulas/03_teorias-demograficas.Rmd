@@ -1,0 +1,203 @@
+---
+title: "MAT02262 - Estatística Demográfica I"
+subtitle: "Discussão - Teorias Demográficas"
+type: "lecture"
+author: "Markus Stein"
+institute: "Departamento de Estatística, IME/UFRGS"
+date: "2026/1"
+output:
+  xaringan::moon_reader:
+    # css: ["assets/remark.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      titleSlideClass: [center, middle]
+---
+
+class: inverse, middle, center
+
+```{r libs, echo=FALSE, message=FALSE, warning=FALSE}
+library(xaringanExtra)
+library(emo)
+library(fontawesome)
+```
+
+
+```{r xaringan-logo, echo=FALSE}
+# install.packages("remotes")
+# remotes::install_github('yihui/xaringan')
+# remotes::install_github("gadenbuie/xaringanExtra")
+# xaringanExtra::use_logo(
+#   image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png"
+# )
+use_logo( here::here('img/logo_dest.png'))
+```
+
+# Teorias Demográficas
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+
+---
+
+## Teorias Demográficas `r emo::ji("light_bulb")`
+### Discussão `r emo::ji("speaking")`
+
+A partir da leitura da Capítulo 3 de [Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa](https://openaccess.blucher.com.br/article-list/9786555500837-504/list/#undefined):
+
+* O que chamou atencao sobre as teorias demográficas? 
+  + Alguma relação com a história da demografia?
+
+* Políticas públicas sociais e fatores demográficos:
+  + indicadores e politicas baseadas em dados demográficos
+
+* Projecao populacional tem papel especial para planejamento de politicas.
+  <!-- + Ex.: impacto do crescimento futuro da economia sobre o equilíbrio das contas da Previdência Social = , ao passo que o crescente desequilíbrio do número de beneficiários e contribuintes tem um nível de incerteza significativamente meno -->
+	+ desafio projetar subgrupos?
+
+
+---
+
+## Teorias Demográficas `r emo::ji("light_bulb")`
+### Discussão `r emo::ji("speaking")`
+
+Projeções são baseadas em teorias demográficas.
+
+* Qual o melhor tamanho e a melhor taxa de crescimento da população de um país ou do mundo como um todo?
+  + Benefícios de uma população numerosa, caracterizava quase todas as religiões.
+  + Necessidade de algum tipo de equilíbrio entre a população e os recursos nos quais ela se sustenta.
+
+* Debate moderno sobre crescimento populacional para o desenvolvimento, final do século XVIII, no contexto de outras controvérsias, sobre a economia, política e o combate à pobreza.
+
+* Comentários? Curiosidades?
+
+---
+
+## Teorias Demográficas `r emo::ji("light_bulb")`
+### Discussão `r emo::ji("speaking")`
+
+* Teorias de população e crescimento populacional
+	+ Crescimento populacional = vegetativo (nascimentos - mortes) + migratório (imigração - emigração)
+
+* Otimistas e pessimistas
+
+* Thomas Malthus, fim seculo 18, princípio da população.
+	+ Capacidade de reproducao maior do que a capacidade de producao de alimentos.
+	+ Um cresce a taxa geometrica, outro aritmetica.
+	+ Catástrofe Malthusiana - crescimento levaria a fome; miséria; e barbárie.
+	+ Inevitabilidade da pobreza, "vontade divina".
+
+---
+
+## Teorias Demográficas `r emo::ji("light_bulb")`
+### Discussão `r emo::ji("speaking")`
+
+Outras teorias:
+1. teoria crítica ao malthusianismo, ou reformista;
+2. teoria neomalthusiana, ou teoria da explosão demográfica;
+3. teoria da transição demográfica.
+
+* Se o crescimento populcional é de domínio humano:
+  + seria puramente individual ou se o estado ou a coletividade teriam o 
+direito de interferir;
+  + tendência do crescimento da população e o ritmo de expansão dos meios de subsistência.
+
+* Na teoria reformista, Marx condena o Malthusianismo sobre a inevitabilidade da pobreza por causa de uma “lei natural” de população.
+  + Termo “população” não se refere à população em geral, mas hoje em dia seria a “força de trabalho”.
+  
+---
+
+## Teorias Demográficas `r emo::ji("light_bulb")`
+### Discussão `r emo::ji("speaking")`
+
+* Os reformistas propõem que cada modo de produção tem a sua própria lei de população.
+
+* Tese Malthusiana se mostrando empiricamente errada, Marx e Engels não viam muitos motivos para preocupar-se com o crescimento populacional 
+  + na década de 60 já estava diminuindo, tanto Inglaterra como França, 
+  + tampouco se mostraram contrários à ideia de que em algum momento pudesse 
+haver uma necessidade de intervir no processo.
+
+* Depois de Malthus e Marx surgiram outras motivações para justificar o controle da população, * 
+
+* Neo-Malthusianos eram a favor da contracepção, com o desenvolvimento de métodos contraceptivos em escala mundial nos últimos dois séculos.
+  + Relação entre população e riqueza pode ser de vontade individual, dadas sua vontade e condições de ter filho.
+
+---
+
+## Teorias Demográficas `r emo::ji("light_bulb")`
+### Discussão `r emo::ji("speaking")`
+
+* Outras formas de controle são, particularmente, o **pensamento eugênico** e o **ambientalismo moderno**.
+  +  não procriação de certos segmentos "inferiores" da raça humana.
+  +  a ideia dos "limites ao crescimento", uso cada vez mais agressivo e não sustentável dos re
+cursos do planeta.
+
+* Qual é efetivamente a relação entre o crescimento da população 
+e o crescimento econômico ?
+  +  visão otimista sobre a criatividade humana e sua capacidade de resposta a novos desafios.
+  + pouca ou nenhuma relação entre o crescimento demográfico e o crescimento econômico
+
+* Neo malthusiano, noção de que o ritmo de crescimento demográfico em certas circunstân
+cias podia ser disfuncional para as necessidades do desenvolvimento econômico
+
+---
+
+## Teorias Demográficas `r emo::ji("light_bulb")`
+### Discussão `r emo::ji("speaking")`
+
+* Independentemente de se o controle de fecundidade é puramente individual ou se é o resultado de uma política pública visando a sua redução, 
+  + quais meios podem ou devem ser usados e de que forma devem ser administrados.
+
+Controvérsia atual: além dos métodos artificiais de controle da fecundidade, o aborto (provocado) também deve ser considerado um método admissível?
+
+---
+
+## Por fim `r emo::ji("package")`
+### Discussão `r emo::ji("speaking")`
+
+* Sobre a leitura de teorias demográficas,
+
+  + o que eh mais importante destacar para as áreas de vocês?
+
+      <!-- + Mais dados maior pop e mais variaveis, -->
+      <!-- + como trata-los, diferentes fontes e diferentes níveis, -->
+      <!-- + como combina-los. -->
+
+* Teorias são universais?
+
+
+---
+
+## Para casa `r emo::ji("house")`
+
+* Escolher um tópico dos subitens 3.3 ao 3.11 e fazer um resumo dos principais tópicos para apresentar
+  + trabalhar em duplas ou trios.
+  + Apresentar nas próximas aulas.
+
+<!-- https://unstats.un.org/unsd/demographic-social/products/dyb/index.cshtml -->
+<!-- https://population.un.org/dataportal/home?df=3dfaea38-a333-417d-a497-f7a0868a986b -->
+
+* ler capítulo 2 de [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://openaccess.blucher.com.br/article-list/9786555500837-504/list/#undefined).
+
+## Próxima aula `r emo::ji("stats")`
+
+* Apresentar o resumo do tópico escolhido(?)
+
+* Teoria da transição demográfica. `r emo::ji("light_bulb")`
+
+<!-- * Laboratório de `r fa("r-project", fill = "steelblue")` -->
+
+---
+<center>
+## Dúvidas, sugestões, críticas, ...? `r emo::ji("question")[1]`
+
+### Muito obrigado!
+<center>
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+Fonte: Imagem criada por IA.
