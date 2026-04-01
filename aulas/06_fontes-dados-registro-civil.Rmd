@@ -291,11 +291,38 @@ knitr::include_graphics(here::here('aulas/imagens', 'hist-SINASC.png'))
 
 ## Pesquisas por Amostragens - Coorte `r emo::ji("iphone")`
 
+* Coorte é um grupo de indivíduos que compartilham uma experiência, característica demográfica (ex: ano de nascimento) ou evento comum ao longo de um período definido.
+
 * Exemplo: Estudo Longitudinal de Saúde do Adulto (ELSA), Ministério da Saúde e pelo Ministério da Ciência e Tecnologia do Brasil, investigação multicêntrica,
       
       + amostra de 15 mil funcionários, com idades de 35-74 anos, de seis instituições públicas de ensino superior e pesquisa das regiões Nordeste, Sul e Sudeste do Brasil, para investigar a incidência e os fatores de risco para doenças crônicas, especialmente as cardiovasculares e o diabetes;
       
 * Amostra não representativa, mas podemos melhorar??? Combinar fontes diferentes e nível de informações diferentes?
+
+---
+
+## Pesquisas por Amostragens - Retrospectivo `r emo::ji("iphone")`
+
+* **Levantamento retrospectivo** realiza apenas **uma entrevista**, **se precisar de dados de fluxo**, reconstrói os eventos relevantes do passado com **base na memória** do entrevistado. 
+
+  + Menor complexidade e custo
+
+  + Viéses sistemáticos: 
+  
+      + certos eventos não podem ser registrados, por **falta de um informante**, ex. filhos órfãos;
+      
+      + seletividade como efeito do contexto passado, ex. entrevistados sobreviventes.
+
+
+
+
+---
+
+## Pesquisas por Amostragens `r emo::ji("iphone")`
+
+* Viéses em Pesquisas Por amostragem
+
+  + Tanto no desenho como na sua execução.
 
 <!-- --- -->
 
@@ -377,18 +404,36 @@ demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
 
 ### Avaliacao area 1 `r emo::ji("bomb")`
 
-Escolher um artigo, notícia, ..., que envolva afirmações sobre características demográficas para que possamos repetir/estender as análises, em período diferente e/ou região. Aprofundar a discussão mostrando diferenças por região, gênero, etária, entia, ... . (Desigualdades, inequidades e vulnerabilidade?)
+Escolher um artigo, notícia, ..., que envolva afirmações sobre características demográficas para que possamos repetir/estender as análises, em período diferente e/ou região. Aprofundar a discussão mostrando diferenças por região, gênero, etária, entia, ... . (Desigualdades, inequidades e vulnerabilidade, diversidade, inclusão/inclusividade?)
 
 * Usar as diferentes fontes de dados: censo, registro civil, pesquisas por amostragem. Combinar?
 
-* Olhar teoria demográfica, projeção populacional e seus componentes, ou descrever algum fenômeno demográfico, 
-* ou tentar explicar possíveis fatores/determinantes/causas do relacionamento entre características demográficas escolhidas. 
+* Teoria demográfica, projeção populacional e seus componentes, ou descrever um fenômeno demográfico, 
+* ou levantar possíveis fatores/determinantes/causas do relacionamento entre características demográficas escolhidas. 
 	+ Quais variáveis utilizará?
 	+ Dados de estoque ou fluxo: prospectivo ou retrospectivo. 
 	+ Análise direta ou indireta.
 
 * usar planilhas com tabelas prontas (IBGE/SIDRA, DATASUS/Tabnet) ou R/python... `r fa("r-project", fill = "steelblue")`
 
+---
+
+## Para casa `r emo::ji("house")`
+
+### Avaliacao area 1 `r emo::ji("bomb")`
+
+* Exemplo de Informação de Redes Sociais
+
+.pull-left[
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='60%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'pesquisa_pense_drogas.png'))
+```
+]
+.pull-right[
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='70%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'pesquisa_pense_drogas2.png'))
+```
+]
 ---
 <center>
 ## Dúvidas, sugestões, críticas, ...? `r emo::ji("question")[1]`
