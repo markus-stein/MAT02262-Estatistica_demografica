@@ -239,6 +239,18 @@ knitr::include_graphics(here::here('aulas/imagens', 'hist-SINASC.png'))
 
 ---
 
+## Resultados do Registro Civil - Brasil
+
+* No site do [IBGE](https://www.ibge.gov.br/), ir em *Estatísticas > Sociais > População*
+  
+  + então [Sistema de Estatísticas Vitais](https://www.ibge.gov.br/estatisticas/sociais/populacao/26176-estimativa-do-sub-registro.html).
+  
+  + Gráficos, tabelas, [Estatísticas do registro civil](https://biblioteca.ibge.gov.br/index.php/biblioteca-catalogo?view=detalhes&id=7135), entre outros.
+
+* [Portal do Registro Civil](https://registrocivil.org.br/) também apresenta algumas análises e arquivos de dados para *download*.
+
+---
+
 ## Pesquisas por Amostragens `r emo::ji("iphone")`
 
 * Informação demográfica e social que precisam ser conhecidos em detalhe em todas as unidades geográficas do território nacional, 
@@ -266,9 +278,15 @@ knitr::include_graphics(here::here('aulas/imagens', 'hist-SINASC.png'))
   
   + Pesquisa Nacional de Saúde (PNS), 
   
-  + Pesquisa de Orçamentos Familiares (POF) e a POF Simplificada, além de pesquisas sobre outros 
+  + Pesquisa de Orçamentos Familiares (POF), 
   
-* Geralmente, **levantamentos por amostra** coletam variáveis do tipo **estoque**e de **fluxo**. 
+  + dentre outras pesquisas. 
+  
+* Geralmente, **levantamentos por amostra** coletam variáveis do tipo **estoque** e de **fluxo**. 
+---
+
+## Pesquisas por Amostragens `r emo::ji("iphone")`
+
   
 * Se o interesse é  fluxo podemos distinguir entre levantamentos: 
   
@@ -291,7 +309,7 @@ knitr::include_graphics(here::here('aulas/imagens', 'hist-SINASC.png'))
 
 ## Pesquisas por Amostragens - Coorte `r emo::ji("iphone")`
 
-* Coorte é um grupo de indivíduos que compartilham uma experiência, característica demográfica (ex: ano de nascimento) ou evento comum ao longo de um período definido.
+* **Coorte** é um grupo de indivíduos que compartilham uma experiência, característica demográfica (ex: ano de nascimento) ou evento comum ao longo de um período definido.
 
 * Exemplo: Estudo Longitudinal de Saúde do Adulto (ELSA), Ministério da Saúde e pelo Ministério da Ciência e Tecnologia do Brasil, investigação multicêntrica,
       
@@ -315,7 +333,6 @@ knitr::include_graphics(here::here('aulas/imagens', 'hist-SINASC.png'))
 
 
 
-
 ---
 
 ## Pesquisas por Amostragens `r emo::ji("iphone")`
@@ -323,6 +340,41 @@ knitr::include_graphics(here::here('aulas/imagens', 'hist-SINASC.png'))
 * Viéses em Pesquisas Por amostragem
 
   + Tanto no desenho como na sua execução.
+
+
+* Mais sobre **Sistema Integrado de Pesquisas Domiciliares** (SIPD).
+
+  + Amostra Mestra e operacionalização.
+  
+* Como analisar pesquisas por amostragem?
+  
+  + Pesos amostrais.
+  
+  + Pacotes `survey` e `SIPDIBGE` do *software* `r fa("r-project", fill = "steelblue")`.
+
+      + integração SIDRA + `r fa("r-project", fill = "steelblue")` pacote `sidrar`.
+
+
+
+---
+
+## Fontes Não Convencionais `r emo::ji("fountain")`
+
+* Nos EUA, Registros das Receitas Federal e Estadual do imposto de renda, cadastro das autori
+zações para a construção civil.
+
+* No Brasil, a Relação Anual de Informações Sociais (RAIS), Ministério do Trabalho/Economia
+  
+  + dados sobre a força de trabalho que as empresas obrigatoriamente fornecem todos os anos.
+
+* Dados das companhias telefônicas sobre o deslocamento dos telefones móveis (celulares).
+
+* *Social media* e outros tipos de *big data*
+
+* Registros administrativos sobre pessoas passando a fronteira para es
+timar a migração internacional.
+  
+  + Banco Mundial e ONU.
 
 <!-- --- -->
 
@@ -371,9 +423,9 @@ knitr::include_graphics(here::here('aulas/imagens', 'hist-SINASC.png'))
 
 <!--   + o que eh mais importante destacar que ainda não destacamos? -->
 
-<!-- <!--       + Mais dados maior pop e mais variaveis,  --> -->
-<!-- <!--       + como trata-los, diferentes fontes e diferentes níveis,  --> -->
-<!-- <!--       + como combina-los. --> -->
+<!--       + Mais dados maior pop e mais variaveis,  -->
+<!--       + como trata-los, diferentes fontes e diferentes níveis,  -->
+<!--       + como combina-los. -->
 
 <!-- Responda após a leitura do capítulo e a discussão: -->
 
@@ -404,17 +456,50 @@ demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
 
 ### Avaliacao area 1 `r emo::ji("bomb")`
 
-Escolher um artigo, notícia, ..., que envolva afirmações sobre características demográficas para que possamos repetir/estender as análises, em período diferente e/ou região. Aprofundar a discussão mostrando diferenças por região, gênero, etária, entia, ... . (Desigualdades, inequidades e vulnerabilidade, diversidade, inclusão/inclusividade?)
+Escolher um artigo, notícia, ..., que envolva afirmações sobre características demográficas para que possamos repetir/estender as análises, em período diferente ou região. 
 
-* Usar as diferentes fontes de dados: censo, registro civil, pesquisas por amostragem. Combinar?
+* Aprofundar a discussão mostrando diferenças por região, gênero, etária, entia, ... . (Desigualdades, inequidades e vulnerabilidade, diversidade, inclusão/inclusividade)?
 
-* Teoria demográfica, projeção populacional e seus componentes, ou descrever um fenômeno demográfico, 
+Possíveis caminhos:
+
+* teoria demográfica, projeção populacional e seus componentes, ou descrever um fenômeno demográfico;
+  
 * ou levantar possíveis fatores/determinantes/causas do relacionamento entre características demográficas escolhidas. 
-	+ Quais variáveis utilizará?
-	+ Dados de estoque ou fluxo: prospectivo ou retrospectivo. 
-	+ Análise direta ou indireta.
 
-* usar planilhas com tabelas prontas (IBGE/SIDRA, DATASUS/Tabnet) ou R/python... `r fa("r-project", fill = "steelblue")`
+
+---
+
+## Para casa `r emo::ji("house")`
+
+### Avaliacao area 1 `r emo::ji("bomb")`
+
+Usar diferentes fontes de dados: censo, registro civil, pesquisas por amostragem. Combinar?
+
+* Planilhas prontas (IBGE/SIDRA, DATASUS/Tabnet) ou 
+
+* códigos R/python... `r fa("r-project", fill = "steelblue")`.
+  
+  
+---
+
+## Para casa `r emo::ji("house")`
+
+### Avaliacao area 1 `r emo::ji("bomb")`
+
+Requisitos da avaliação.
+
+1. Qual a hipótese inicial? População alvo.
+
+2. Quais variáveis utilizará? Período e região analisadas.
+
+3. Dados de estoque ou fluxo: prospectivo ou retrospectivo; análise direta ou indireta.
+
+4. Quais fontes de dados foram utilizadas? usar uma pesquisa por amostragem e outra fonte.
+
+5. Resumir os dados e apresentar a informação: tabelas, gráficos/mapas, medidas.
+
+6. Discussão da hipótese inicial com base na informação produzida.
+
 
 ---
 
