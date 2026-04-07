@@ -277,15 +277,17 @@ em 2004 (Sosa, 2004; Durr, 2012).
 ## Por fim `r emo::ji("package")`
 ### Discussão `r emo::ji("speaking")`
 
-* Sobre a leitura da teoria da transição demográfica,
+* Sobre a leitura das fontes de dados demográficos e o papel dos censos,
 
-  + o que eh mais importante destacar que ainda não destacamos?
+  + o que eh mais importante destacar para a Estatística e Atuariais?
 
-<!--       + Mais dados maior pop e mais variaveis,  -->
+<!-- + Mais dados maior pop e mais variaveis, -->
 <!--       + como trata-los, diferentes fontes e diferentes níveis,  -->
 <!--       + como combina-los. -->
 
-Responda após a leitura do capítulo e a discussão:
+<!-- Responda após a leitura do capítulo e a discussão: -->
+
+Para pensar:
 
 * Uma coisa nova que aprendeu sobre os censos.
 * Uma dúvida.
@@ -304,7 +306,7 @@ demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
 
 * Apresentar o resumo do tópico escolhido do capítulo 3.
 
-* cont. fontes de dados demográficos - registros civis e pesquisas por amostragem. `r emo::ji("fountain")`
+* cont. fontes de dados demográficos - registros civis. `r emo::ji("fountain")`
 
 <!-- * Laboratório de `r fa("r-project", fill = "steelblue")` -->
 
