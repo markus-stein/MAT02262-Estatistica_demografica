@@ -1,0 +1,157 @@
+---
+title: "MAT02262 - Estatística Demográfica I"
+subtitle: "Aspectos estáticos da análise de população: a idade"
+type: "lecture"
+author: "Markus Stein"
+institute: "Departamento de Estatística, IME/UFRGS"
+date: "2026/1"
+output:
+  xaringan::moon_reader:
+    # css: ["assets/remark.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      titleSlideClass: [center, middle]
+---
+
+class: inverse, middle, center
+
+```{r libs, echo=FALSE, message=FALSE, warning=FALSE}
+library(xaringanExtra)
+library(emo)
+library(fontawesome)
+```
+
+
+```{r xaringan-logo, echo=FALSE}
+# install.packages("remotes")
+# remotes::install_github('yihui/xaringan')
+# remotes::install_github("gadenbuie/xaringanExtra")
+# xaringanExtra::use_logo(
+#   image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png"
+# )
+use_logo( here::here('img/logo_dest.png'))
+```
+
+# Aspectos estáticos da análise de população: a idade
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+
+---
+
+## A idade como conceito demográfico central `r emo::ji("key")`
+
+### Discussão `r emo::ji("speaking")`
+
+A partir da leitura do Capítulo 6 de [Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837):
+
+* Algo novo que tenha aprendido sobre o conceito de idade e sua importância? 
+  + E sobre pirâmide etária?
+
+* Comentários? Curiosidades?
+
+---
+
+## A idade como conceito demográfico central `r emo::ji("key")`
+
+### Discussão `r emo::ji("speaking")`
+
+*Lembrando*: 
+
+Estatísticas demográficas se dividem entre quantidades de:
+
+* estoque (descrevem uma característica ou situação num determinado momento);
+
+* fluxo (quantificam os processos que mudam tal situação). 
+
+A **maior parte** da **análise demográfica** se ocupa com a **dinâmica da população**, forma como as variáveis de fluxo (nascimentos, óbitos e migrações) afetam as variáveis de estoque.
+
+---
+
+## A idade como conceito demográfico central `r emo::ji("key")`
+
+* Dados analisados na demografia possuem algumas particularidades e alguns instrumentos específicos para 
+ajudar a análise. 
+
+	+ Uma destas particularidades tem a ver com a centralidade do conceito de “idade” 
+na demografia.
+
+	+ conceito de **idade exata** e idade em **anos completos**.
+
+
+* 15 anos é exatamente 15,0000000 anos, não 15,0000001, nem 14,99999999
+
+	+ não existe nenhuma pessoa que tenha exatamente 15 anos neste sentido exces
+sivamente restrito
+
+
+---
+
+## A idade como conceito demográfico central `r emo::ji("key")`
+
+* O conceito exato de idade não é usado para identificar as idades de pessoas específicas, mas delimitar faixas etárias ("grupos etários")
+
+	+ Ex., **pessoas com menos de 15 anos**, a idade exata de 14,9999…… anos é incluída neste grupo, mas a idade 
+exata de 15,0000... anos não. 
+
+	+ **uma pessoa com a idade de 14 anos** , sem algarismos atrás da vírgula, a ideia subjacente é a de idade em anos completos. Em 
+realidade, uma pessoa assim descrita pode ter qualquer idade exata entre 14,0000..... e 14,9999…… 
+anos, mas não pode ter 15,0000 anos. 
+
+* Notação padronizada de quantidades demográficas: $_{n}P_x$.
+
+---
+
+## Piramide etária `r emo::ji("key")`
+
+* Um dos recursos mais conhecidos para representar a distribuição das idades numa população.
+
+  + Estrutura e determinantes.
+
+* ver slides do Prof. Rodrigo Citton P. dos Reis
+
+  + Planilha e no `r fa("r-project", fill = "steelblue")`.
+
+Páginas com pirâmides de todo munndo:
+
+* populationpyramid.net - versão mais recente das estimativas e projeções da Divisão de População das Nações Unidas de 1950 até 2100
+
+* www.gapminder.org
+
+
+---
+
+## Para casa `r emo::ji("house")`
+
+* Explorar pirâmides etários na planilha e no `r fa("r-project", fill = "steelblue")`.
+
+* Realizar a avaliação da área 1.
+
+* Ler capítulo 6 de [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
+
+## Próxima aula `r emo::ji("stats")`
+
+* Apresentar o tópico/artigo/notícia escolhido para a avaliação parcial 1.
+
+* "Aspectos estáticos da análise de populações: a idade como conceito demográfico central". `r emo::ji("key")`
+
+<!-- * Laboratório de `r fa("r-project", fill = "steelblue")` -->
+
+---
+
+<center>
+## Dúvidas, sugestões, críticas, ...? `r emo::ji("question")[1]`
+
+### Muito obrigado!
+<center>
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+Fonte: Imagem criada por IA.

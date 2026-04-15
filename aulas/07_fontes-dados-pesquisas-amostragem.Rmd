@@ -103,32 +103,13 @@ Alguns dos exemplos mais comuns:
 
 ## Pesquisas por Amostragens `r emo::ji("iphone")`
 
-* No Brasil, o IBGE vem promovendo o **Sistema Integrado de Pesquisas Domiciliares** (SIPD) que inclui:
-
-  + Pesquisa Nacional por Amostra de Domicílios Contínua (PNADc), 
-  
-  + Pesquisa Nacional de Saúde (PNS), 
-  
-  + Pesquisa de Orçamentos Familiares (POF), 
-  
-  + dentre outras pesquisas. 
-  
 * Geralmente, **levantamentos por amostra** coletam variáveis do tipo **estoque** e de **fluxo**. 
----
-
-## Pesquisas por Amostragens `r emo::ji("iphone")`
-
-  
-* Se o interesse é  fluxo podemos distinguir entre levantamentos: 
+* Podemos distinguir entre levantamentos: 
   
   + **prospectivos** (ou longitudinais, coorte(?)), uma amostra de pessoas é entrevistada periodicamente, para detectar as mudanças ocorridas na sua situação, 
   
-  + **retrospectivos**, uma amostra coletada em apenas uma entrevista e, 
+  + **retrospectivos**, uma amostra coletada em **apenas uma entrevista** e, 
   
-      + na medida em que precisar de dados de **fluxo**, reconstrói os eventos relevantes do passado com base na **memória do entrevistado**, 
-      
-      + geralmente preferida devido à sua menor complexidade e custo, 
-      
 <!-- --- -->
 
 <!-- # História da demografia `r emo::ji("scroll")` -->
@@ -142,19 +123,33 @@ Alguns dos exemplos mais comuns:
 
 * **Coorte** é um grupo de indivíduos que compartilham uma experiência, característica demográfica (ex: ano de nascimento) ou evento comum ao longo de um período definido.
 
-* Exemplo: Estudo Longitudinal de Saúde do Adulto (ELSA), Ministério da Saúde e pelo Ministério da Ciência e Tecnologia do Brasil, investigação multicêntrica,
+  + **Maior objetividade** e **menor omissão** de informação, 
+  
+  + Mas no âmbito local dificuldades como **esvaziamento da amostra** original ao longo do tempo, por causa da emigração, e outros processos
+  
+  + **Elevado custo** de inquéritos deste tipo faz com que não sejam aplicados frequentemente.
+
+---
+
+## Pesquisas por Amostragens - Coorte `r emo::ji("iphone")`
+
+* Exemplo: **Estudo Longitudinal de Saúde do Adulto** (ELSA), Ministério da Saúde e pelo Ministério da Ciência e Tecnologia do Brasil, investigação multicêntrica,
       
-      + amostra de 15 mil funcionários, com idades de 35-74 anos, de seis instituições públicas de ensino superior e pesquisa das regiões Nordeste, Sul e Sudeste do Brasil, para investigar a incidência e os fatores de risco para doenças crônicas, especialmente as cardiovasculares e o diabetes;
+  + amostra de 15 mil funcionários, com idades de 35-74 anos, de seis instituições públicas de ensino superior e pesquisa das regiões Nordeste, Sul e Sudeste do Brasil, para investigar a incidência e os fatores de risco para doenças crônicas, especialmente as cardiovasculares e o diabetes;
       
-* Amostra não representativa, mas podemos melhorar??? Combinar fontes diferentes e nível de informações diferentes?
+  + amostra não probabilística, representativa de toda população adulta do Brasil? 
+      
+      + mas podemos melhorar??? Combinar fontes diferentes e nível de informações diferentes?
 
 ---
 
 ## Pesquisas por Amostragens - Retrospectivo `r emo::ji("iphone")`
 
-* **Levantamento retrospectivo** realiza apenas **uma entrevista**, **se precisar de dados de fluxo**, reconstrói os eventos relevantes do passado com **base na memória** do entrevistado. 
+* Levantamento **retrospectivo** geralmente coleta dados de **estoque**, 
 
-  + Menor complexidade e custo
+  + se precisar de dados de **fluxo**, reconstrói os eventos relevantes do passado com **base na memória** do entrevistado. 
+
+      + Menor complexidade e custo
 
   + Viéses sistemáticos: 
   
@@ -162,19 +157,27 @@ Alguns dos exemplos mais comuns:
       
       + seletividade como efeito do contexto passado, ex. entrevistados sobreviventes.
 
+---
 
+## Pesquisas por Amostragens `r emo::ji("iphone")`
+
+* Viéses em Pesquisas por amostragem
+
+  + Tanto no desenho como na sua execução.
+  
+      + ex. entrevistas por telefone, 
+      
+      + ou deixar decisoes para o entrevistador.
+
+* Crescente taxa de **não resposta** (inclusive nos censos), principalmente nos países mais desenvolvidos.
 
 ---
 
 ## Pesquisas por Amostragens `r emo::ji("iphone")`
 
-* Viéses em Pesquisas Por amostragem
 
-  + Tanto no desenho como na sua execução.
-
-
-* Mais sobre **Sistema Integrado de Pesquisas Domiciliares** (SIPD).
-
+* No Brasil, o IBGE vem promovendo o **Sistema Integrado de Pesquisas Domiciliares** (SIPD):
+  
   + Amostra Mestra e operacionalização.
   
 
@@ -190,7 +193,7 @@ Alguns dos exemplos mais comuns:
 
 ## Pesquisas por Amostragens `r emo::ji("iphone")`
 
-Exemplos de Pesquisas/survey do IBGE
+Exemplos de Pesquisas/survey do IBGE que se baseiam no SIPD:
 
 *  [PNS - Pesquisa Nacional de Saúde](https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html?=&t=o-que-e) 
 
@@ -199,6 +202,8 @@ Exemplos de Pesquisas/survey do IBGE
 *  [PNAD - Pesquisa Nacional por Amostras de Domicílios](https://www.ibge.gov.br/estatisticas/sociais/trabalho/9171-pesquisa-nacional-por-amostra-de-domicilios-continua-mensal.html?=&t=o-que-e) 
 
 *  [PeNSE - Pesquisa Nacional de Saúde do Escolar](https://www.ibge.gov.br/estatisticas/sociais/saude/9134-pesquisa-nacional-de-saude-do-escolar.html?=&t=o-que-e)
+
+* Dentre outras.
 
 ---
 
@@ -213,7 +218,7 @@ zações para a construção civil.
 
 * Dados das companhias telefônicas sobre o deslocamento dos telefones móveis (celulares).
 
-* Anúncios de empregos e migracao, mercado de trabalho.
+* Anúncios de empregos, migracao e mercado de trabalho.
 
 * *Social media* e outros tipos de *big data*.
 
@@ -266,7 +271,7 @@ zações para a construção civil.
 
 * Sobre a leitura das fontes de dados demográficos e o papel das pesquisas por amostragem (complexa),
 
-  + o que eh mais importante destacar para a Estatística e Atuariais?
+  + o que é mais importante destacar para a Estatística e Atuariais?
 
 <!-- + Mais dados maior pop e mais variaveis, -->
 <!--       + como trata-los, diferentes fontes e diferentes níveis,  -->
@@ -292,9 +297,9 @@ demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
 
 ## Próxima aula `r emo::ji("stats")`
 
-* Apresentar o resumo do tópico escolhido do capítulo 3.
+* Apresentar o tópico escolhido/artigo/notícia escolhido para a avaliação parcial 1.
 
-* cont. Fonte de dados demográficos - pesquisas por amostragem. `r emo::ji("fountain")`
+* "Aspectos estáticos da análise de populações: a idade como conceito demográfico central". `r emo::ji("key")`
 
 <!-- * Laboratório de `r fa("r-project", fill = "steelblue")` -->
 
@@ -304,15 +309,17 @@ demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
 
 ### Avaliacao area 1 `r emo::ji("bomb")`
 
-Escolher um artigo, notícia, ..., que envolva afirmações sobre características demográficas para que possamos repetir/estender as análises, em período diferente ou região, ou outra característica. 
+Escolher um artigo, notícia, ..., tópico, que envolva **afirmações sobre características demográficas** para que possamos **repetir as análises** e, se possível, estender para um período diferente ou região, ou outra característica. 
 
-* Aprofundar a discussão mostrando diferenças por região, gênero, etária, entia, ... . (Desigualdades, inequidades e vulnerabilidade, diversidade, inclusão/inclusividade)?
+* Aprofundar a discussão mostrando diferenças por região, gênero, etária, entia, ... . 
+
+  + Explorar diferenças como desigualdades, iniquidades, vulnerabilidade, diversidade, inclusão/inclusividade)?
 
 Possíveis caminhos:
 
-* teoria demográfica, projeção populacional e seus componentes, ou descrever um fenômeno demográfico;
+* teoria demográfica, projeção populacional e seus componentes, ou **descrever** um fenômeno demográfico;
   
-* ou levantar possíveis fatores/determinantes/causas do relacionamento entre características demográficas escolhidas. 
+* ou **investigar possíveis fatores**/determinantes/causas relacionados às características demográficas escolhidas. 
 
 
 ---

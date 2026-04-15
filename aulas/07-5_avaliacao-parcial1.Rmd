@@ -1,0 +1,463 @@
+---
+title: "MAT02262 - Estatística Demográfica I"
+subtitle: "Avaliação Parcial 1"
+type: "lecture"
+author: "Markus Stein"
+institute: "Departamento de Estatística, IME/UFRGS"
+date: "2026/1"
+output:
+  xaringan::moon_reader:
+    # css: ["assets/remark.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      titleSlideClass: [center, middle]
+---
+
+class: inverse, middle, center
+
+```{r libs, echo=FALSE, message=FALSE, warning=FALSE}
+library(xaringanExtra)
+library(emo)
+library(fontawesome)
+```
+
+
+```{r xaringan-logo, echo=FALSE}
+# install.packages("remotes")
+# remotes::install_github('yihui/xaringan')
+# remotes::install_github("gadenbuie/xaringanExtra")
+# xaringanExtra::use_logo(
+#   image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png"
+# )
+use_logo( here::here('img/logo_dest.png'))
+```
+
+# Avaliação área 1
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+
+---
+
+## Avaliação área 1 `r emo::ji("bulb")`
+
+Escolha um artigo, notícia, ..., tópico, hipótese, que envolva uma **afirmação sobre características demográficas**.
+
+* **Repetir as análises** com dados atualizados, 
+
+  + **se possível**, estender para um período diferente ou região, ou outra característica.
+
+  + Nesse caso, aprofundar a discussão pode ser mostrar diferenças por região, gênero, etária, etnia, ... . 
+
+      + Explorar desigualdades, iniquidades, vulnerabilidade, diversidade, inclusão/inclusividade)?
+
+* **Comparar** os resultados com a **publicação original** e **discutir** as possíveis **diferenças** encontradas e possibilidades que as expliquem.
+
+---
+
+## Avaliação área 1 `r emo::ji("bulb")`
+
+* Possíveis caminhos: `r emo::ji("doubt")`
+
+  + teoria demográfica, projeção populacional e seus componentes, ou **descrever** um fenômeno demográfico;
+  
+  + ou **investigar possíveis preditores**/fatores/determinantes/causas relacionados às características demográficas escolhidas.
+
+* Usar diferentes fontes de **dados**: `r emo::ji("fountain")`
+
+  + censo, registro civil, pesquisas por amostragem.
+
+      + Combinar differentes fontes?
+  
+  + Novas fontes de dados? telefonia, avisos de emprego, ...
+
+* Obter os dados de:
+
+  + **Planilhas prontas**, IBGE/SIDRA, + DATASUS/Tabnet) ou 
+  
+  + **códigos** R/python... `r fa("r-project", fill = "steelblue")`.
+  
+---
+
+## Avaliação área 1 `r emo::ji("target")`
+
+### Requisitos da avaliação. `r emo::ji("white_check_mark")`
+
+1. Qual a hipótese inicial? População alvo.
+
+2. Quais variáveis utilizará? Período e região analisadas.
+
+3. Dados de estoque ou fluxo: prospectivo ou retrospectivo? Análise direta ou indireta?
+
+4. Quais fontes de dados foram utilizadas? Descrever a fonte e obter os dados.
+<!-- Usar uma pesquisa por amostragem e outra fonte. -->
+
+5. Resumo dos dados e análise exploratória: tabelas, gráficos/mapas, medidas.
+
+6. Discussão da hipótese inicial com base na informação produzida e comparação com a publicação escolhida.
+
+---
+
+## Avaliação área 1 `r emo::ji("bomb")`
+
+### Cronograma `r emo::ji("calendar")`
+
+**Semana 1** | de 08/04 a 14/08
+-------------|--------------
+08/04        | indicar integrantes, publicação e hipótese/tópico
+13 ou 15/04 | apresentar o tópico escolhido
+até 15/04 | entregar base de dados em tabela ou código (`r fa("r-project", fill = "steelblue")` ou Python, ...)
+
+**Semana 2** | de 15/04 a 21/04
+-------------|--------------
+ | análise exploratória, reproduzir a análise (*extra se estender*)
+
+**Semana 3** | de 22/04 a 28/04
+-------------|--------------
+ | resultados, discussão e relatório
+
+**Entrega** | 29/04
+------------|--------------
+ | relatório e/ou apresentação
+
+---
+
+## Avaliação área 1 `r emo::ji("bomb")`
+
+**Entregar o trabalho** em forma de:
+
+* **texto** descrevendo os resultados tipo resumo de evento (5 páginas); 
+  
+  **ou**
+
+* **apresentação** no formato de uma apresentação em congresso (15 slides). \\
+
+
+
+**Exemplos de publicações** no Brasil
+
+* [Agência IBGE Notícias - Estatísticas Sociais](https://agenciadenoticias.ibge.gov.br/agencia-noticias.html?editoria=sociais)
+
+* [Revista Retratos - IBGE](https://agenciadenoticias.ibge.gov.br/agencia-noticias.html?editoria=revistaretratos)
+
+* [Repositório de Publicações da ABEP](https://proceedings.science/org/abep/papers?lang=pt-br)
+
+---
+
+## Avaliação área 1 `r emo::ji("bomb")`
+
+Exemplo de publicações que chegam nas redes sociais
+
+.pull-left[
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='70%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'pesquisa_pense_drogas.png'))
+```
+]
+.pull-right[
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='80%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'pesquisa_pense_drogas2.png'))
+```
+]
+
+
+<!-- --- -->
+
+<!-- # Ideias para desafios de dados -->
+
+<!-- --- -->
+
+<!-- ## Desafio de Dados Estatística e Demografia -->
+
+<!-- **Desafio de dados** (*datathons* / *hackathons* / *competitions*) relacionados a **Estatística** e **Demografia**: -->
+
+<!-- ### Formato pedagógico: ``*Short Datathon*'' -->
+
+<!-- * Algumas universidades usam *mini-hackathons* de poucas horas ou dias para ensinar análise de dados. -->
+
+<!-- Esses eventos incentivam: -->
+
+<!-- * trabalho em equipe -->
+<!-- * exploração de dados reais -->
+<!-- * visualização e comunicação de resultados. -->
+
+<!-- --- -->
+
+<!-- ## Desafios de Dados - Exemplos -->
+
+<!-- ### World Bank / DrivenData – Poverty Prediction Challenge -->
+
+<!-- * Usar **dados de pesquisas domiciliares** para estimar: -->
+<!-- 	+ consumo domiciliar -->
+<!-- 	+ taxa de pobreza da população -->
+
+<!-- * Simulação de uma situação comum: pesquisas antigas têm dados completos, mas pesquisas recentes têm dados incompletos. -->
+
+<!-- * Objetivo: **imputar** variáveis faltantes e **estimar indicadores populacionais**. -->
+
+<!-- * **Competências trabalhadas** -->
+<!--   + imputação de dados -->
+<!--   + inferência populacional -->
+<!--   + análise de surveys -->
+<!--   + estimação de indicadores agregados -->
+
+<!-- --- -->
+
+<!-- ## Desafios de Dados - Exemplos -->
+
+<!-- ### UN / UNDP – Data Dive for Development Hackathon -->
+
+<!-- Hackathon internacional focado em **análise de dados para políticas públicas e desenvolvimento**. -->
+
+<!-- Participantes precisam: -->
+
+<!-- * explorar **bases de dados sociais e econômicas** -->
+<!-- * produzir **análises e visualizações** -->
+<!-- * propor **recomendações para políticas públicas**. -->
+
+<!-- O foco é menos em modelagem e mais em: -->
+
+<!-- * análise exploratória -->
+<!-- * storytelling com dados -->
+<!-- * interpretação de indicadores sociais. -->
+
+<!-- --- -->
+
+<!-- ## Desafios de Dados - Exemplos -->
+
+<!-- ### UNDP – Depopulation Data Challenge -->
+
+<!-- Um desafio especificamente relacionado a **demografia regional**. -->
+
+<!-- Objetivo: -->
+
+<!-- * estudar **processos de despovoamento** -->
+<!-- * combinar dados tradicionais (censos, registros administrativos) com **novas fontes de dados**: -->
+
+<!--   * dados de mobilidade -->
+<!--   * redes sociais -->
+<!--   * anúncios de emprego -->
+<!--   * imagens de satélite. -->
+
+<!-- Esse tipo de desafio mostra um caminho interessante: -->
+
+<!-- **integrar dados demográficos clássicos com novas fontes de dados.** -->
+
+<!-- --- -->
+
+<!-- ## Desafios de Dados - Exemplos -->
+
+<!-- ### UN Big Data Hackathon -->
+
+<!-- Organizado pelo sistema de estatística da ONU. -->
+
+<!-- Objetivo: -->
+
+<!-- * usar dados para analisar **problemas ligados aos Objetivos de Desenvolvimento Sustentável (ODS)**. -->
+
+<!-- Muitos desafios envolvem: -->
+
+<!-- * desigualdade -->
+<!-- * migração -->
+<!-- * pobreza -->
+<!-- * mobilidade populacional. -->
+
+<!-- --- -->
+
+<!-- ## Desafios de Dados - Exemplos -->
+
+<!-- ### ITU Data Hackathon – Demografia e conectividade -->
+
+<!-- Um desafio recente pede que equipes: -->
+
+<!-- * identifiquem **subpopulações excluídas da conectividade digital** -->
+<!-- * combinem dados demográficos com infraestrutura e indicadores socioeconômicos -->
+<!-- * proponham soluções de políticas públicas. -->
+
+<!-- Isso envolve diretamente: -->
+
+<!-- * estrutura etária -->
+<!-- * desigualdade regional -->
+<!-- * educação e renda. -->
+
+<!-- --- -->
+
+<!-- ## Desafios de Dados - Sugestões -->
+
+<!-- ### Desafio 1 — Evolução demográfica do Brasil -->
+
+<!-- **Pergunta** -->
+
+<!-- Como mudou a estrutura etária do Brasil entre 1970 e 2022? -->
+
+<!-- **Dados possíveis** -->
+
+<!-- * Censos do IBGE -->
+<!-- * World Bank -->
+<!-- * UN Population Division -->
+
+<!-- **Tarefas** -->
+
+<!-- 1. Construir pirâmides etárias -->
+<!-- 2. Estimar: -->
+<!--    * razão de dependência -->
+<!--    * envelhecimento populacional -->
+<!-- 3. Interpretar implicações para: -->
+<!--    * previdência -->
+<!--    * mercado de trabalho -->
+
+<!-- --- -->
+
+<!-- ### Desafios de Dados - Sugestões -->
+
+<!-- ## Desafio 2 — Desigualdades demográficas regionais -->
+
+<!-- Pergunta: -->
+
+<!-- > Como diferem os padrões demográficos entre estados brasileiros? -->
+
+<!-- Análises possíveis: -->
+
+<!-- * fecundidade -->
+<!-- * mortalidade infantil -->
+<!-- * esperança de vida -->
+<!-- * migração interna. -->
+
+<!-- Resultado esperado: -->
+
+<!-- * mapas -->
+<!-- * gráficos -->
+<!-- * interpretação. -->
+
+<!-- --- -->
+
+<!-- ## Desafios de Dados - Sugestões -->
+
+<!-- ### Desafio 3 — Replicação de artigo demográfico -->
+
+<!-- Os alunos reproduzem uma análise clássica, por exemplo: -->
+
+<!-- * queda da fecundidade no Brasil -->
+<!-- * transição demográfica -->
+<!-- * envelhecimento populacional. -->
+
+<!-- Tarefas: -->
+
+<!-- 1. reproduzir gráficos do artigo -->
+<!-- 2. atualizar com dados recentes -->
+<!-- 3. discutir diferenças. -->
+
+<!-- Esse formato é **muito usado em cursos de economia e estatística**. -->
+
+<!-- --- -->
+
+<!-- ## Desafios de Dados - Sugestões -->
+
+<!-- ### Desafio 4 — Migração interna -->
+
+<!-- Pergunta: -->
+
+<!-- * Quais estados brasileiros ganham ou perdem população por migração? -->
+
+<!-- Usar: -->
+
+<!-- * dados de residência anterior (Censo) -->
+<!-- * PNAD. -->
+
+<!-- Análises possíveis: -->
+
+<!-- * matriz origem-destino -->
+<!-- * mapas de fluxos migratórios -->
+<!-- * perfil demográfico dos migrantes. -->
+
+<!-- --- -->
+
+<!-- ## Desafios de Dados - Sugestões -->
+
+<!-- ### Estrutura simples para aplicar na disciplina -->
+
+<!-- Sugestão de formato: -->
+
+<!-- **Semana 1** 08/04 a 14/08 -->
+
+<!-- * apresentar desafio - 08/04 -->
+<!-- * entregar bases de dados - ate 15/08 -->
+
+<!-- **Semana 2** - 15/04 a 21/04 -->
+
+<!-- * análise exploratória que reproduz a hipotese (extra se estender) -->
+
+<!-- **Semana 3** - 22/04 a 28/04 -->
+
+<!-- * resultados, discussao e relatório -->
+
+<!-- **Entrega** - 29/04 -->
+
+<!-- * dados em tabela ou código (`R` ou Python, ...) -->
+<!-- * gráfico principal, tabela, medidas, ... -->
+<!-- * interpretação demográfica. -->
+
+---
+
+## Exemplo de Desafio(?):
+
+### “Brasil em transição demográfica”
+
+Objetivo:
+
+Reproduzir **três fatos estilizados da demografia brasileira**:
+
+1. queda da fecundidade
+2. aumento da expectativa de vida
+3. envelhecimento populacional
+
+Com dados de:
+
+* IBGE
+* DataSUS
+* World Bank
+* UN.
+
+Usar a criatividade para gerar **resultados visualmente muito bons**.
+
+<!-- --- -->
+
+<!-- [1]: https://www.drivendata.org/competitions/305/competition-worldbank-poverty/?utm_source=chatgpt.com "Competition: Poverty Prediction Challenge" -->
+<!-- [2]: https://www.undp.org/policy-centre/seoul/events/data-dive-development-hackathon-2025?utm_source=chatgpt.com "Data Dive for Development Hackathon 2025 | United Nations Development Programme" -->
+<!-- [3]: https://lab.undp.org.rs/depopulation-data-challenge/?utm_source=chatgpt.com "Depopulation Data Challenge – UNDP Accelerator Labs" -->
+<!-- [4]: https://unstats.un.org/bigdata/events/2022/hackathon/?utm_source=chatgpt.com "UN Big Data Hackathon 2022 — UN-CEBD" -->
+<!-- [5]: https://www.itu.int/itu-d/sites/projectumc/2025/08/28/umc-data-hackathon/?utm_source=chatgpt.com "Data Hackathon - UMC" -->
+<!-- [6]: https://arxiv.org/abs/1903.07539?utm_source=chatgpt.com "Short Datathon for the Interdisciplinary Development of Data Analysis and Visualization Skills" -->
+
+---
+
+## Para casa `r emo::ji("house")`
+
+* Realizar a avaliação da área 1.
+
+* Ler capítulo 6 de [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
+
+## Próxima aula `r emo::ji("stats")`
+
+* Apresentar o tópico/artigo/notícia escolhido para a avaliação parcial 1.
+
+* "Aspectos estáticos da análise de populações: a idade como conceito demográfico central". `r emo::ji("key")`
+
+<!-- * Laboratório de `r fa("r-project", fill = "steelblue")` -->
+
+---
+
+<center>
+## Dúvidas, sugestões, críticas, ...? `r emo::ji("question")[1]`
+
+### Muito obrigado!
+<center>
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+Fonte: Imagem criada por IA.
