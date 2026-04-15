@@ -99,12 +99,44 @@ sivamente restrito
 	+ Ex., **pessoas com menos de 15 anos**, a idade exata de 14,9999…… anos é incluída neste grupo, mas a idade 
 exata de 15,0000... anos não. 
 
-	+ **uma pessoa com a idade de 14 anos** , sem algarismos atrás da vírgula, a ideia subjacente é a de idade em anos completos. Em 
-realidade, uma pessoa assim descrita pode ter qualquer idade exata entre 14,0000..... e 14,9999…… 
-anos, mas não pode ter 15,0000 anos. 
+	+ **uma pessoa com a idade de 14 anos** , sem algarismos atrás da vírgula, a ideia subjacente é a de idade em anos completos. 
+	
+	    + Uma pessoa assim descrita pode ter qualquer idade exata entre 14,0000..... e 14,9999…… anos, mas não pode ter 15,0000 anos.
 
-* Notação padronizada de quantidades demográficas: $_{n}P_x$.
+---
 
+## Notação de quantidades demográficas `r emo::ji("capital_abcd")` `r emo::ji("abcd")`
+
+Quantidades/contagens/frequências populacinais: letras maiúsculas, $P$, $D$, $N$, ....
+
+* **subscritos**: $_{n}P_x$.
+
+  + $x$: idade (inicial).
+  
+  + $n$: amplitude etária (do intervalo).
+  
+$_{5}P_{15}$ = *População de 15 a 19 anos inteiros* (15,0000.... a 19,9999...... anos exatos) 
+
+* **período**: $_{n}P_x (t)$.
+
+  + $t$: determinado momento.
+  
+      + $_{5}P_50(2015)$ = *População de 50-54 anos inteiros existente no 1º de janeiro de 2015* 
+
+* **último intervalo**: $_{\omega}P_x(t) = P_{x^+}(t)$.
+
+---
+
+## Notação de quantidades demográficas `r emo::ji("capital_abcd")` `r emo::ji("abcd")`
+
+* dados de fluxo, ex. nascimentos ou defunções, é preciso indicar o início e o final do período.
+
+$_{5}D_{50}(2015,2020)$ = *Defunções ocorridas entre o 1º de janeiro de 2015 e o 31º de dezembro de 2019, de pessoas que no momento da sua morte tinham 50-54 anos completos*
+
+
+* proporções, taxas ou probabilidades: letras minúsculas, p, t, ....
+
+  + $_{5}p_{50}(2015)$ = *Proporção da população com 50-54 anos inteiros no 1º de janeiro de 2015* 
 ---
 
 ## Piramide etária `r emo::ji("key")`
@@ -119,9 +151,9 @@ anos, mas não pode ter 15,0000 anos.
 
 Páginas com pirâmides de todo munndo:
 
-* populationpyramid.net - versão mais recente das estimativas e projeções da Divisão de População das Nações Unidas de 1950 até 2100
+* [populationpyramid.net](populationpyramid.net) - versão mais recente das estimativas e projeções da Divisão de População das Nações Unidas de 1950 até 2100
 
-* www.gapminder.org
+* [www.gapminder.org](www.gapminder.org)
 
 
 ---

@@ -134,7 +134,7 @@ até 15/04 | entregar base de dados em tabela ou código (`r fa("r-project", fil
   
   **ou**
 
-* **apresentação** no formato de uma apresentação em congresso (15 slides). \\
+* **apresentação** no formato de uma apresentação em congresso (15 slides).
 
 
 

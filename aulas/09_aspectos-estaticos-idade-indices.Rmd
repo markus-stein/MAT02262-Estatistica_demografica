@@ -1,0 +1,197 @@
+---
+title: "MAT02262 - Estatística Demográfica I"
+subtitle: "Caracterizações da Distribuição por idade - Índices"
+type: "lecture"
+author: "Markus Stein"
+institute: "Departamento de Estatística, IME/UFRGS"
+date: "2026/1"
+output:
+  xaringan::moon_reader:
+    # css: ["assets/remark.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      titleSlideClass: [center, middle]
+---
+
+class: inverse, middle, center
+
+```{r libs, echo=FALSE, message=FALSE, warning=FALSE}
+library(xaringanExtra)
+library(emo)
+library(fontawesome)
+```
+
+
+```{r xaringan-logo, echo=FALSE}
+# install.packages("remotes")
+# remotes::install_github('yihui/xaringan')
+# remotes::install_github("gadenbuie/xaringanExtra")
+# xaringanExtra::use_logo(
+#   image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png"
+# )
+use_logo( here::here('img/logo_dest.png'))
+```
+
+# Caracterizações da Distribuição por idade - Índices
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+
+---
+
+## Caracterizações da Distribuição por idade - Índices `r emo::ji("chart_with_upwards_trend")`
+
+### Discussão `r emo::ji("speaking")`
+
+A partir da leitura do Capítulo 6 de [Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837):
+
+* Algo novo que tenha aprendido sobre índices represntativos de faixas etárias? 
+  + A pirâmide etária pode ser útil para derivar quantidades de fluxo?
+
+* Comentários? Curiosidades?
+
+*Lembrando*: 
+
+O **conceito de idade** é central para a demografia. A **pirâmide etária** retrata a estrutura detalhada da distribuição por idades.
+
+---
+
+## Caracterizações da Distribuição por idade - Índices `r emo::ji("chart_with_upwards_trend")`
+
+* Para fins práticos pode ser mais interessante analisar a distribuição de uma forma mais agregada do que a pirâmide etária. 
+
+
+* Os grupos de idades mais comumente usados são os de
+
+	+ crianças, 
+
+	+ juventude, 
+
+	+ pessoas em idade economicamente ativa e 
+
+	+ idosos ou adultos maiores. 
+
+* As definições destes grupos variam. As Nações Unidas definem:
+	
+	+ **crianças** como pessoas de **até 14 anos completos**;
+
+	+ **juventude** como pessoas **de 15-24 anos**;
+
+	+ **idosas ou adultos maiores** como pessoas **maiores de 60 anos** (em países em 
+desenvolvimento) **ou 65 anos** (em países menos desenvolvidos), 
+
+			+ existem propostas para elevar a idade oficial que marca a terceira idade para 75 anos;
+
+	+ **pessoas em idade ativa** é comumente definida como **15-64 anos**, 
+
+			+ alguns autores usam 20 anos como o limite inferior 
+
+			+ as estatísticas do trabalho tendem a usar limites superiores mais altos ou inclusive nenhum limite superior.
+
+---
+
+## Caracterizações da Distribuição por idade - Índices `r emo::ji("chart_with_upwards_trend")`
+
+Para dimensionar a importância de cada um desses grupos existem alguns índices padrão 
+
+* *Razão de Dependência Total* ($RDT$) 
+
+$$
+RDT = \frac{ (\text{População de 0-14 anos + População de 65+ anos}) }{ \text{População de 15-64 anos} } \times 100 \\
+RDT = \frac{ \left( _{15}P_0 + P_{65^+} \right) }{ _{50}P_{15} } \times 100
+$$
+
+	+ Consiste de duas partes. 
+
+			+ *Razão de Dependência dos Jovens* ($RDJ$) 
+
+			+ *Razão de Dependência dos Idosos* ($RDI$) 
+
+	+ Ex. Caso de Angola 2014.
+
+	+ E no Brasil 2022???
+
+* Limites de idade (15 e 65 anos) usados na $RDT$ são, até certo ponto, arbitrários e sujeitos a definições alternativas. 
+
+* Considerar pessoas **potencialmente ativas ou inativas** ou números de **pessoas efetivamente ativas ou inativas**?
+
+---
+
+## Caracterizações da Distribuição por idade - Índices `r emo::ji("chart_with_upwards_trend")`
+
+* *Índice de Envelhecimento* ($IE$) da população
+
+$$
+IE = \frac{População de 60+ anos}{População de 0-14 anos} \times 100 \\
+IE = \frac{P_{60^+}}{_{15}P_0} \times 100
+$$
+
+	+ Ex. Caso de Angola 2014.
+
+	+ E no Brasil 2022???
+
+
+---
+
+## Caracterizações da Distribuição por idade - Índices `r emo::ji("chart_with_upwards_trend")`
+
+Outros indicadores da estrutura estária :
+
+* A relação existente entre a população com 75 e mais anos e a população com 65 e mais anos, muitas vezes chamada o **Índice de Longevidade**
+
+* **Razões (ou percentagens) de juventude** que expressam o peso do grupo etário de 
+15-24 anos como porcentagem da população total ou alternativamente da população com 15 anos 
+ou mais
+
+---
+
+## Caracterizações da Distribuição por idade - Índices `r emo::ji("chart_with_upwards_trend")`
+
+Comentários gerais
+
+* Pirâmides etárias também podem derivar quantidades de fluxo, como a natalidade, no passado.
+
+	+ retrato da história demgráfica dos últimos cinco, seis ou sete décadas
+
+* (natalidade, mortalidade e migração) atuam simultaneamente, a pirâmide etária por si só geralmente não é suficiente para 
+reconstruir toda a história, sem a ajuda de elementos adicionais, como séries históricas de taxas de 
+natalidade e/ou mortalidade. 
+
+---
+
+## Para casa `r emo::ji("house")`
+
+* Calcular os índices apresentados com base no Censo 2022 do IBGE
+
+<!-- Explorar pirâmides etários na planilha e no `r fa("r-project", fill = "steelblue")`. -->
+
+* Realizar a avaliação da área 1.
+
+* Ler capítulo 6 de [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
+
+## Próxima aula `r emo::ji("stats")`
+
+* Apresentar o tópico/artigo/notícia escolhido para a avaliação parcial 1.
+
+* "Aspectos estáticos da análise de populações: a idade como conceito demográfico central". `r emo::ji("key")`
+
+<!-- * Laboratório de `r fa("r-project", fill = "steelblue")` -->
+
+---
+
+<center>
+## Dúvidas, sugestões, críticas, ...? `r emo::ji("question")[1]`
+
+### Muito obrigado!
+<center>
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+Fonte: Imagem criada por IA.
