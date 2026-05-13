@@ -171,7 +171,7 @@ demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
 
 * Apresentar o tópico/artigo/notícia escolhido para a avaliação parcial 1.
 
-* "Aspectos estáticos da análise de populações: a idade como conceito demográfico central". `r emo::ji("key")`
+* "Aspectos estáticos da análise de populações: a idade e índices". `r emo::ji("chart_with_upwards_trend")`
 
 <!-- * Laboratório de `r fa("r-project", fill = "steelblue")` -->
 

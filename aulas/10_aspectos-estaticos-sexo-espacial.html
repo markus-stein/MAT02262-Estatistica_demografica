@@ -16,7 +16,7 @@ class: center, middle, title-slide
 # MAT02262 - Estatística Demográfica I
 ]
 .subtitle[
-## Caracterizações da Distribuição por idade - Índices
+## Caracterizações da Distribuição por sexo e espacial
 ]
 .author[
 ### Markus Stein
@@ -83,168 +83,199 @@ top:1em;right:1em;
 A partir da leitura do Capítulo 6 de [Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa](https://www.blucher.com.br/metodos
 demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837):
 
-* Algo novo que tenha aprendido sobre índices representativos de faixas etárias? 
-  + O que os índices indicam?
+* Algo novo que tenha aprendido sobre composição de sexo/gênero de uma população? E sobre composição espacial?
+
+  +  Como representar? O que os índices indicam?
 
 * Comentários? Curiosidades?
 
 *Lembrando*: 
 
-O **conceito de idade** é central para a demografia. A **pirâmide etária** retrata a estrutura detalhada da distribuição por idades.
+A característica **idade** pode ser representada de maneira mais agregada, por índices, do que a **pirâmide etária** retrata. Principalmente representando grupo etários de interesse: crianças, juventude, pessoas em idade economicamente ativa e idosos ou adultos maiores. 
 
 ---
 
-## Caracterizações da Distribuição por idade - Índices 📈
+## Caracterizações da Distribuição por Sexo 🚻
 
-* Para fins práticos pode ser mais interessante analisar a distribuição de uma forma mais agregada do que a pirâmide etária. 
+* Junto com a idade, o **sexo é a outra característica básica** que define uma população num 
+momento específico no tempo. 
 
-* Os **grupos de idades** (faixas etárias) mais comumente usados são os de
+  + Questão conceitual quanto à distinção entre as palavras **"sexo"** e **"gênero"**.
 
-	+ crianças, 
+      + O **sexo** de uma pessoa é uma **característica biológica** com a qual nasce (e que – salvo casos relativamente raros – não muda???). 
 
-	+ juventude, 
-
-	+ pessoas em idade economicamente ativa e 
-
-	+ idosos ou adultos maiores. 
+      + O **gênero** é uma **construção social** que descreve como as categorias biológicas de masculino ou feminino são representadas como identidades sociais.
 
 ---
 
-## Caracterizações da Distribuição por idade - Índices 📈
+## Caracterizações da Distribuição por Sexo 🚻
 
-* As definições destes grupos variam. As Nações Unidas definem:
-	
-	+ **crianças** como pessoas de **até 14 anos completos**;
-
-	+ **juventude** como pessoas **de 15-24 anos**;
-
-	+ **idosas ou adultos maiores** como pessoas **maiores de 60 anos** (em países em 
-desenvolvimento) **ou 65 anos** (em países menos desenvolvidos), 
-
-	    + existem propostas para elevar a idade oficial que marca a terceira idade para 75 anos;
-
-	+ **pessoas em idade ativa** é comumente definida como **15-64 anos**, 
-
-      + alguns autores usam 20 anos como o limite inferior 
-
-      + as estatísticas do trabalho tendem a usar limites superiores mais altos ou inclusive nenhum limite superior.
-
----
-
-## Caracterizações da Distribuição por idade - Índices 📈
-
-Para dimensionar a importância de cada um desses grupos existem alguns índices padrão 
-
-* *Razão de Dependência Total* (`\(RDT\)`) 
+* Razão de Sexos (antigamente também chamada Razão de Masculinidade) (`\(RS_t\)`)
 
 `$$\begin{aligned}
-RDT &amp;= \frac{ (\textit{População de 0-14 anos + População de 65+ anos}) }{ \textit{População de 15-64 anos} } \times 100 \\
- &amp;= \frac{ \left( _{15}P_0 + P_{65^+} \right) }{ _{50}P_{15} } \times 100
+RS_t &amp;= \frac{ \textit{Número de homens} }{ \textit{Número de mulheres} } \times 100 \\
+ &amp;= \frac{ P_{0^+}^H }{ P_{0^+}^M } \times 100
+\end{aligned}$$`
+
+* Quantidade de fácil obtenção, porém este indicador tem, em princípio, pouco poder 
+explicativo. 
+
+* Ex. Caso de Angola 2014.
+
+	+ E no Brasil 2022???
+
+---
+
+## Caracterizações da Distribuição por Sexo 🚻
+
+* Razão de Sexos ao Nascer (à Nascença) (RS_0)
+
+`$$\begin{aligned}
+RS_0 &amp;= \frac{ \textit{Número de homens com 0 anos} }{ \textit{Número de mulheres com 0 anos} } \times 100 \\
+ &amp;= \frac{ _{1}P_0^H }{ _{1}P_0^M } \times 100 ???
 \end{aligned}$$`
 
 
-Consiste de duas partes. 
+* Na composição por sexo ao nascimento da espécie humana, há uma ligeira tendência ao predomínio do sexo masculino. 
 
-* *Razão de Dependência dos Jovens* (`\(RDJ = \frac{ _{15}P_0 }{ _{50}P_{15} } \times 100\)`) 
+  + A razão de sexo natural ao nascer, utilizando o termo da OMS, é geralmente considerada como 
+sendo cerca de 105, ou seja, em média cerca de 105 homens por cada 100 mulheres ao nascer. 
 
-* *Razão de Dependência dos Idosos* (`\(RDI = \frac{ P_{65^+} }{ _{50}P_{15} } \times 100\)`) 
+Possíveis explicações:
 
-	+ Ex. Caso de Angola 2014.
+1. Mortalidade diferencial - meninos têm maior mortalidade infantil - “compensação” biológica
 
-	    + E no Brasil 2022???
-
----
-
-## Caracterizações da Distribuição por idade - Índices 📈
-
-* Limites de idade (15 e 65 anos) usados na `\(RDT\)` são, até certo ponto, arbitrários e sujeitos a definições alternativas. 
-
-* Considerar pessoas **potencialmente ativas ou inativas** ou números de **pessoas efetivamente ativas ou inativas**?
+2. Seleção natural (Fisher) proporção tende ao equilíbrio ao longo da vida
 
 ---
 
-## Caracterizações da Distribuição por idade - Índices 📈
+## Caracterizações da Distribuição por Sexo 🚻
 
-* *Índice de Envelhecimento* (`\(IE\)`) da população
 
-`$$\begin{aligned}
-IE &amp;= \frac{ \textit{População de 60+ anos} }{ \textit{População de 0-14 anos}} \times 100 \\
- &amp;= \frac{P_{60^+}}{_{15}P_0} \times 100
-\end{aligned}$$`
+* Valores fora do intervalo de 103-107 (**Revisão de literatura sobre o assunto???**) possuem qualidade deficiente ou são resultado, principalmente de intervenções de ordem:
+
+  + Cultural e seletivas por sexo, como a valoração de filhos do sexo masculino seja, provocan
+do interrupção da gravidez, seja omitindo o registro de nascimentos de filhas. 
+
+  + Sanitária:
 
 * Ex. Caso de Angola 2014.
 
   + E no Brasil 2022???
 
-
+  + The Global Health Observatory, WHO, Indicator Metadata Registry List: [Sex ratio at birth (male births per female births](https://www.who.int/data/gho/indicator-metadata-registry/imr-details/sex-ratio-at-birth-%28male-births-per-female-births%29)
 ---
 
-## Caracterizações da Distribuição por idade - Índices 📈
+## Caracterizações da Distribuição por Sexo 🚻
 
-* Idade mediana
+* Razão de Sexos por idade (`\(RS_x\)`), calculada por idade da própria pessoa:
 
-  + Idade média
+`$$\begin{aligned}
+RS_0 &amp;= \frac{ \textit{Número de homens com 0 anos} }{ \textit{Número de mulheres com 0 anos} } \times 100 \\
+ &amp;= \frac{ _{1}P_0^H }{ _{1}P_0^M } \times 100 ???
+\end{aligned}$$`
+
+* Ex. Índia calcula a razão para crianças menores de 6 anos, `\(RS_{0-5}\)`, para expressar o deficit além do esperado de meninas em comparação com os meninos, devido ao aborto seletivo e os maus tratos de meninas. 
+
+  + Esta é uma alternativa para o uso de `\(RS_0\)`, já que este pode ser mais difícil de calcular, devido às deficiências do sistema de registro civil4. 
   
-
 * Ex. Caso de Angola 2014.
 
   + E no Brasil 2022???
+  
+* a informação desagregada por sexo relaciona-se 
+com as possibilidades de ajuste da distribuição da população por sexo.
 
 ---
 
-## Caracterizações da Distribuição por idade - Índices 📈
+## PADRONIZAÇÃO/ESTANDARIZAÇÃO 📈
 
-* **Razão de Crianças / Mulheres (RCM)**
+* Na análise de população encontra-se frequentemente situações em que um determinado indicador é influenciado por outros fatores,  além daquilo que se pretende medir. 
 
-`$$\begin{aligned}
-RCM &amp;= \frac{ \textit{População de 0-4 anos} }{ \textit{Mulheres de 15-49 anos}} \times 100 \\
- &amp;= \frac{ _{5}P_0 }{ _{35}P_{15} } \times 100
-\end{aligned}$$`
+  * Ex. o número de migrantes de região A para região B obviamente depende 
+  
+      + do tamanho da região A, do tamanho da região B e 
+      
+      + do tempo durante o qual a migração foi observada. 
 
-* Uma versão alternativa da RCM usa mulheres de 15-44 anos no denominador.
+* Ex.  Censo de Portugal de 2011 encontrou-se que 13,22% das mulheres de 15 anos 
+ou mais eram viúvas. No Censo brasileiro de 2010, esta proporção era apenas 8,72%. 
 
----
+  + A diferença poderia explicar-se de diferentes maneiras
 
-## Caracterizações da Distribuição por idade - Índices 📈
-
-Outros indicadores da estrutura estária :
-
-
-* A relação existente entre a população com 75 e mais anos e a população com 65 e mais anos, muitas vezes chamada o **Índice de Longevidade**
-
-* **Razões (ou percentagens) de juventude** que expressam o peso do grupo etário de 15-24 anos como porcentagem da população total ou alternativamente da população com 15 anos ou mais
+* Padronização direta `\(\times\)` indireta
 
 ---
 
-## Caracterizações da Distribuição por idade - Índices 📈
+##  DISTRIBUIÇÃO ESPACIAL 🌎
 
-Comentários gerais
+* A segunda variável estática mais importante é a **localização geográfica** das 
+pessoas, ou seja, a distribuição espacial da população. 
 
-* Pirâmides etárias também podem derivar quantidades de fluxo, como a natalidade, no passado.
+  + Ex. **densidade demográfica**, o **grau de urbanização**, a 
+distribuição por **tamanho de cidades** e o grau de **concentração da população**.
 
-	+ retrato da história demgráfica dos últimos cinco, seis ou sete décadas
+  + **Densidade demográfica**da região `\(i\)`: `\(D_i = \frac{P_i}{A_i}\)`: `\(P_i\)` é a população da região `\(i\)` e `\(A_i\)` sua área total. 
+  
+* Tendência a exagerar a importância densidade demográfica, conexão com a noção de "**superpopulação**" ou "**capacidade de carga**".
 
-* (natalidade, mortalidade e migração) atuam simultaneamente, a pirâmide etária por si só geralmente não é suficiente para 
-reconstruir toda a história, sem a ajuda de elementos adicionais, como séries históricas de taxas de 
-natalidade e/ou mortalidade. 
+* Densidade demográfica com relação à **área cultivável** e não à área terrestre total,
 
-* DETERMINANTES DA ESTRUTURA ETÁRIA
-
-  + critérios prospectivos - critério de envelhecimento em dois anos distintos e compara a mudançac efetiva do indicador com a mudança **contrafatual** que teria sido observada caso a mortalidade (ou a 
-fecundidade ou a migração) tivesse permanecido constante.
-
-      + Grande maioria dos países é a fecundidade que pesa mais.
+* **Grau de urbanização** evidentemente depende de como se entende o "**urbano**".
 
 ---
 
-## Caracterizações da Distribuição por idade - Índices 📈
+##  DISTRIBUIÇÃO ESPACIAL 🌎
 
-Comentários gerais
+* Índices que quantificam as características espaciais da população:
 
-* RELEVÂNCIA DA ESTRUTURA ETÁRIA PARA AS POLÍTICAS PÚBLICAS
+  + proporção da população urbana que mora na maior cidade do país;
+  
+  + proporção que mora numa das três ou das cinco maiores cidades ou que vive em 
+cidades com mais de 1 milhão de habitantes. 
 
-  + Alguns dos índices mencionados nos parágrafos anteriores encontram-se ao centro de debates sobre questões de política.
+      + Todas estas medidas focalizam o extremo da distribuição populacional, ou seja, os lugares com as maiores concentrações demográficas. 
 
+  + O **Índice de Gini**, não é um indicador propriamente demográfico, surge mais frequentemente no contexto da medição da desigualdade de renda, educação, ... .
+  
+      + Entretanto, ao substituir “renda” por “população” o mesmo pode ser usado de forma análoga para quantificar desequilíbrios na distribuição da população pelo espaço. 
+      
+---
+
+##  DISTRIBUIÇÃO ESPACIAL 🌎
+
+O **coeficiente de Gini** mede o grau de **desigualdade/concentração** de uma distribuição:
+
+`$$G = 1 - \sum (pA_i - pA_{i-1})(pP_i - pP_{i-1})$$`
+
+onde:
+* `\(A_i\)`: proporção acumulada área até o município `\(i\)`.
+* `\(P_i\)`: população acumulada área até o município `\(i\)`.
+
+
+Valores:
+* `\(G = 0\)`: distribuição uniforme  
+* `\(G = 1\)`: concentração máxima
+
+* Existem diferentes maneiras de calcular o Índice de Gini, mas o mais tradicional 
+e o mais intuitivo envolve o uso do **diagrama de Lorenz**. 
+
+* [On the Measurement of Inequality](https://faculty.ucr.edu/~jorgea/econ261/atkinson_inequality.pdf) - ANTHONY B. ATKINSON - 
+
+---
+
+##  DISTRIBUIÇÃO ESPACIAL 🌎
+
+* Índice de Gini e diagrama de Lorenz:
+
+  + no Excel - ver planilha
+	
+  + no <svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg> (*"achei material de gini para renda, estimativas baseadas no PIB.... PNAD"*)
+      + https://rpubs.com/fjp/gini
+      + https://analisemacro.com.br/economia/indicadores/como-estimar-o-indice-de-gini-no-r/
+      + https://eventos.ibge.gov.br/downloads/smi2017/apresentacoes/conferencias/C9_Djalma_Pessoa_SMI2017.pdf
+
+* Outros índices: índice de Moran, autocorrelação/simlaridade espacial.
 
 ---
 
@@ -254,16 +285,16 @@ Comentários gerais
 
 &lt;!-- Explorar pirâmides etários na planilha e no <svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg>. --&gt;
 
-* Realizar a avaliação da área 1.
+* Apresentar a avaliação da área 1.
 
-* Ler capítulo 6 de [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
+* Ler capítulo 7 de [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
 demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
 
 ## Próxima aula 📊
 
-* Apresentar o tópico/artigo/notícia escolhido para a avaliação parcial 1.
+* Apresentar a avaliação parcial 1.
 
-* "Aspectos estáticos da análise de populações:  CARACTERIZAÇÃO DA DISTRIBUIÇÃO POR SEXO". 🚻
+* CARACTERÍSTICAS, EVENTOS, PROPORÇÕES, TAXAS E PROBABILIDADES. 📈
 
 &lt;!-- * Laboratório de <svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg> --&gt;
 

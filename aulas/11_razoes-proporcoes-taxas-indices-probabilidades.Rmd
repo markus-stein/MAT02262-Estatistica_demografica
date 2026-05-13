@@ -1,0 +1,488 @@
+---
+title: "MAT02262 - Estatística Demográfica I"
+subtitle: "Caracterizações da Distribuição por sexo e espacial"
+type: "lecture"
+author: "Markus Stein"
+institute: "Departamento de Estatística, IME/UFRGS"
+date: "2026/1"
+output:
+  xaringan::moon_reader:
+    # css: ["assets/remark.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      titleSlideClass: [center, middle]
+---
+
+class: inverse, middle, center
+
+```{r libs, echo=FALSE, message=FALSE, warning=FALSE}
+library(xaringanExtra)
+library(emo)
+library(fontawesome)
+```
+
+
+```{r xaringan-logo, echo=FALSE}
+# install.packages("remotes")
+# remotes::install_github('yihui/xaringan')
+# remotes::install_github("gadenbuie/xaringanExtra")
+# xaringanExtra::use_logo(
+#   image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png"
+# )
+use_logo( here::here('img/logo_dest.png'))
+```
+
+# CARACTERÍSTICAS, EVENTOS, PROPORÇÕES, TAXAS E PROBABILIDADES
+
+---
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+
+---
+
+## CARACTERÍSTICAS, EVENTOS, PROPORÇÕES, TAXAS E PROBABILIDADES `r emo::ji("chart_with_upwards_trend")`
+
+### Discussão `r emo::ji("speaking")`
+
+A partir da leitura do Capítulo 7 de [Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837):
+
+* Algo novo que tenha aprendido sobre razões/proporções/taxas/índices/probabilidades?
+
+  +  Como representar? ?
+
+  + Coortes e diagrama de Lexis?
+
+* Comentários? Curiosidades?
+
+*Lembrando*: 
+
+**Razões** são divisões entre duas quantidades... 
+
+---
+
+## RAZÕES, PROPORÇÕES, TAXAS E ÍNDICES
+
+* Qual o conceito de **"taxas"**? 
+
+	+ Qual sua diferença de outros termos como “proporção”, “razão”, “índice” e “probabilidade”?
+
+* Estes termos têm em comum pois são o resultado de uma divisão entre dois números. 
+
+* Demógrafos tendem a ser bastante cuidadosos com o uso apropriado de 
+cada termo, dependendo daquilo que está no numerador e no denominador. Ex.: 
+
+	+ A **razão de sexos**, é uma razão e não uma proporção porque o numerador não faz 
+parte do denominador. 
+
+	+ O **grau de urbanização** de uma população, ou seja, o número de habitantes 
+urbanos dividido pela população total
+
+
+---
+
+* Taxas e probabilidades são quantidades dinâmicas que envolvem tanto variáveis de fluxo como de estoque. 
+
+* O termo "índice" que é o mais geral de todos. Qualquer número que quantifica uma relação observada no mundo natural ou social
+
+---
+
+CRESCIMENTO DA POPULAÇÃO
+
+* Taxas anual e instantânea.
+
+	+ Anual:  $r_{anual} = \left( P \left( t + \delta t \right) / P(t))1/\delta t – 1$
+
+	+ Instantânea: $r_{inst} = \ln( P ( t + \delta t) / P(t)) / \delta t$
+
+---
+
+CRESCIMENTO DA POPULAÇÃO
+
+* Por consequência, a população após $\delta t$ tempo
+
+	+ Anual: $P( t + \delta t) = P(t) \times (1+r_{anual}) \delta t$
+
+	+ Instantânea: $P( t + \delta t) = P(t) \times e^{r_{inst} \delta t}$  
+
+* Relação entre as taxas:
+
+	+ $r_{inst.} = \ln (1 + r_{anual})$
+
+	+ Diferença pequena entre as taxas?
+
+			+ Ex: América latinha.
+			
+			+ E no Brasil, com base no Censo 2022?
+
+* Comportamento das taxas no mundo:
+	
+	+ Taxas ainda muito elevadas de alguns países africanos, como Angola e Guiné Equatorial
+
+	+ Taxas negativas do Japão, Rússia e Portugal. 
+
+	+ Brasil e a China têm nível baixo do número médio de filhos das famílias 
+
+			+ mostram predisposição para o declínio populacional, mas ainda aparecem com taxas positivas de crescimento. 
+
+			+ Fenômeno transitório conhecido com inércia demográfica, 
+
+	+ Influência da migração internacional em Cabo Verde e Macau.
+
+---
+
+## Tempo de duplicação 
+
+* Tempo de duplicação é o tempo necessário para que uma população que cresce com certa taxa alcance o dobro do seu tamanho inicial.
+
+	+ visualizar as implicações de uma determinada taxa de crescimento a mais longo prazo.
+
+$$\text{Tempo de Duplicação} = \log(2) / \log(1+r_{anual}) \approx \ln(2) / r_{inst} = 0,6931 / r_{inst}$$
+ 
+* Utilidade prática hoje em dia???
+
+---
+
+## Fórmula Básica da Contabilidade Demográfica
+
+* Populações podem ser descritas em termos de variáveis de estoque e de fluxo, mas estes dois aspectos não são independentes. 
+
+	+ **Consistência demográfica**(ou populacional???): as mudanças que ocorrem tanto no tamanho como na composição da população ao longo do tempo devem ser consistentes com os processos de 
+mudança aos quais a população está exposta, descritos pelas variáveis de fluxo. 
+
+**Fórmula Básica da Contabilidade Demográfica** ou Equação de Equilíbrio/Balanço Demográfico/Populacional ou Equação Compensadora ou Equação de Concordância (“Growth Balance Equation”, em inglês):
+
+$$P(t+n) = P(t) + N(t,t+n) – D(t,t+n) + I(t,t+n) – E(t,t+n),$$
+
+* $P(t)$ e $P(t+n)$ são as populações existentes nos momentos $t$ e $t+n$, e 
+* $N(t,t+n)$, $D(t,t+n)$, $I(t,t+n)$ e $E(t,t+n)$ são nascimentos, óbitos, imigração e emigração ocorridos entre $t$ e $t+n$, respectivamente. 
+
+* Qualquer divergência desta fórmula pode indicar uma de duas coisas:
+
+	+ Uma ou mais quantidades que constam da fórmula podem ter sido medidas incorretamente; ou
+
+	+ As unidades territoriais correspondentes às populações em $t$ e $t+n$ podem não ser as mesmas, ex. município ou província cujos limites foram modificados durante o período.
+
+* Populações que não têm migração, $I(t,t+n) – E(t,t+n) = 0$ são conhecidas como populações 
+fechadas. 
+
+* A componente de crescimento da população que não envolve migração (ou seja, nascimen
+tos menos óbitos) é chamada vegetativo (em inglês, “natural growth”). A terminologia “crescimento 
+natural” às vezes é usada em português também, mas o termo “vegetativo” merece preferência.
+
+* Equação de equilíbrio é usada frequentemente para estimar E(t,t+n) ou I(t,t+n)-E(t,t+n) em circunstân
+cias onde todas as componentes da equação são conhecidas, com a exceção da migração.
+
+---
+
+## Coorte
+
+* Não é só a evolução da população que precisa cumprir com certos requisitos de consistência. 
+
+	+ O mesmo acontece também com subpopulações. 
+
+* *Lembrando*: Uma coorte é um grupo de pessoas que passaram por um mesmo evento demográfico durante o mesmo período. Neste caso, o evento é o nascimento e o
+
+* Ex. o número de mulheres solteiras de 20-24 anos em 2010 foi diferente do número de solteiras de 25-29 anos em 2015 mas 
+estes dois grupos têm algo em comum: 
+
+	+ a grande maioria das mulheres que fizeram parte do segundo grupo também já fazia parte do primeiro 5 anos antes. 
+
+	+ São as mulheres nascidas entre 1985 e 1989 cujo número de solteiras vai diminuindo no tempo na medida em que elas se casam 
+ou unem e algumas morrem ou migram. 
+
+* Uma coorte de nascimentos é o mesmo daquilo que comumente se chama uma geração. 
+
+* A palavra "coorte" pode ser usada para descrever outros grupos,
+
+	+ o conjunto de pessoas que se graduaram da escola secundária em 2008, ou
+	
+	+ o conjunto de mulheres que tiveram o seu primeiro filho entre 2010 e 2014. 
+
+---
+
+## Coorte - Diagrama de lexis.
+
+* A situação de um indivíduo ou de um grupo de indivíduos dentro da evolução demográfica de uma população pode ser caracterizada em termos de três características: 
+1. Tempo ou ano, mês e dia do calendário; 
+2. Idade exata ou intervalo de idade; e 
+3. Coorte ou data de nascimento. 
+
+* Estas características são dependentes entre elas: sabendo duas delas pode-se calcular a terceira. 
+
+* Exemplos:
+
+	* 1 característica em intervalo e 1 exata: as pessoas que compõem a coorte de nascimentos de 1995-1999 no 1º de janeiro de 2008 tinham 13-17 anos completos de idade. 
+
+	* Ambas características em intervalo: durante o período de 2010-2014, a coorte nascida em 1985-1989 tinha entre 20 e 30 anos de idade. 
+
+			+ Mas não todas as pessoas que em algum momento deste período tiveram entre 20 e 30 anos de idade pertenciam à coorte de nascimentos de 1985-1989. 
+
+			+ em particular uma pessoa que no 1º de janeiro de 2011 tinha 28 anos nasceu em 1982, assim pertencia a uma coorte de nascimentos diferente.
+
+
+* **Diagrama de Lexis**: visualizar as diferentes relações entre tempo, idade e coorte no que toca a características e fluxos da população.
+
+	+ O eixo horizontal do diagrama representa o tempo. 
+
+	+ O eixo vertical representa a idade. 
+
+	+ linha diagonal ascendente é a **trajetória da vida** ou linha vital de cada pessoa. 
+
+			+ Cada vez que passa um ano calendário no tempo, uma pessoa fica um ano mais velha.
+
+* A representação de uma **coorte** é um conjunto de linhas vitais que formam uma **banda diagonal** no diagrama.
+
+* Exemplo: um indivíduo nascido no 1º de julho de 1982 que no 1º de janeiro de 2011 tem 28,5 anos de idade.
+
+---
+
+* Na prática???
+
+* Exemplos.
+
+* Como construir o diagrama?
+
+	+ Planilha?
+
+	+ R
+      + https://rpubs.com/marcosfs2006/apendice_computacional
+      + https://rpubs.com/rafaeldeacypreste/lexis_diagram
+      + https://rpubs.com/cleodecker/diagramalexis
+      
+---
+
+## Coorte
+
+* TAXAS E PROBABILIDADES
+	
+	+ taxas centrais e taxas iniciais.
+
+* CONVERSÃO DE TAXAS CENTRAIS EM TAXAS INICIAIS
+
+* COORTES SINTÉTICAS
+
+*  A SAZONALIDADE DOS EVENTOS DEMOGRÁFICOS
+
+
+
+<!-- ## Caracterizações da Distribuição por Sexo `r emo::ji("restroom")` -->
+
+<!-- * Junto com a idade, o **sexo é a outra característica básica** que define uma população num  -->
+<!-- momento específico no tempo.  -->
+
+<!--   + Questão conceitual quanto à distinção entre as palavras **"sexo"** e **"gênero"**. -->
+
+<!--       + O **sexo** de uma pessoa é uma **característica biológica** com a qual nasce (e que – salvo casos relativamente raros – não muda???).  -->
+
+<!--       + O **gênero** é uma **construção social** que descreve como as categorias biológicas de masculino ou feminino são representadas como identidades sociais. -->
+
+<!-- --- -->
+
+<!-- ## Caracterizações da Distribuição por Sexo `r emo::ji("restroom")` -->
+
+<!-- * Razão de Sexos (antigamente também chamada Razão de Masculinidade) ($RS_t$) -->
+
+<!-- $$\begin{aligned} -->
+<!-- RS_t &= \frac{ \textit{Número de homens} }{ \textit{Número de mulheres} } \times 100 \\ -->
+<!--  &= \frac{ P_{0^+}^H }{ P_{0^+}^M } \times 100 -->
+<!-- \end{aligned}$$ -->
+
+<!-- * Quantidade de fácil obtenção, porém este indicador tem, em princípio, pouco poder  -->
+<!-- explicativo.  -->
+
+<!-- * Ex. Caso de Angola 2014. -->
+
+<!-- 	+ E no Brasil 2022??? -->
+
+<!-- --- -->
+
+<!-- ## Caracterizações da Distribuição por Sexo `r emo::ji("restroom")` -->
+
+<!-- * Razão de Sexos ao Nascer (à Nascença) (RS_0) -->
+
+<!-- $$\begin{aligned} -->
+<!-- RS_0 &= \frac{ \textit{Número de homens com 0 anos} }{ \textit{Número de mulheres com 0 anos} } \times 100 \\ -->
+<!--  &= \frac{ _{1}P_0^H }{ _{1}P_0^M } \times 100 ??? -->
+<!-- \end{aligned}$$ -->
+
+
+<!-- * Na composição por sexo ao nascimento da espécie humana, há uma ligeira tendência ao predomínio do sexo masculino.  -->
+
+<!--   + A razão de sexo natural ao nascer, utilizando o termo da OMS, é geralmente considerada como  -->
+<!-- sendo cerca de 105, ou seja, em média cerca de 105 homens por cada 100 mulheres ao nascer.  -->
+
+<!-- Possíveis explicações: -->
+
+<!-- 1. Mortalidade diferencial - meninos têm maior mortalidade infantil - “compensação” biológica -->
+
+<!-- 2. Seleção natural (Fisher) proporção tende ao equilíbrio ao longo da vida -->
+
+<!-- --- -->
+
+<!-- ## Caracterizações da Distribuição por Sexo `r emo::ji("restroom")` -->
+
+
+<!-- * Valores fora do intervalo de 103-107 (**Revisão de literatura sobre o assunto???**) possuem qualidade deficiente ou são resultado, principalmente de intervenções de ordem: -->
+
+<!--   + Cultural e seletivas por sexo, como a valoração de filhos do sexo masculino seja, provocan -->
+<!-- do interrupção da gravidez, seja omitindo o registro de nascimentos de filhas.  -->
+
+<!--   + Sanitária: -->
+
+<!-- * Ex. Caso de Angola 2014. -->
+
+<!--   + E no Brasil 2022??? -->
+
+<!--   + The Global Health Observatory, WHO, Indicator Metadata Registry List: [Sex ratio at birth (male births per female births](https://www.who.int/data/gho/indicator-metadata-registry/imr-details/sex-ratio-at-birth-%28male-births-per-female-births%29) -->
+<!-- --- -->
+
+<!-- ## Caracterizações da Distribuição por Sexo `r emo::ji("restroom")` -->
+
+<!-- * Razão de Sexos por idade ($RS_x$), calculada por idade da própria pessoa: -->
+
+<!-- $$\begin{aligned} -->
+<!-- RS_0 &= \frac{ \textit{Número de homens com 0 anos} }{ \textit{Número de mulheres com 0 anos} } \times 100 \\ -->
+<!--  &= \frac{ _{1}P_0^H }{ _{1}P_0^M } \times 100 ??? -->
+<!-- \end{aligned}$$ -->
+
+<!-- * Ex. Índia calcula a razão para crianças menores de 6 anos, $RS_{0-5}$, para expressar o deficit além do esperado de meninas em comparação com os meninos, devido ao aborto seletivo e os maus tratos de meninas.  -->
+
+<!--   + Esta é uma alternativa para o uso de $RS_0$, já que este pode ser mais difícil de calcular, devido às deficiências do sistema de registro civil4.  -->
+
+<!-- * Ex. Caso de Angola 2014. -->
+
+<!--   + E no Brasil 2022??? -->
+
+<!-- * a informação desagregada por sexo relaciona-se  -->
+<!-- com as possibilidades de ajuste da distribuição da população por sexo. -->
+
+<!-- --- -->
+
+<!-- ## PADRONIZAÇÃO/ESTANDARIZAÇÃO `r emo::ji("chart_with_upwards_trend")` -->
+
+<!-- * Na análise de população encontra-se frequentemente situações em que um determinado indicador é influenciado por outros fatores,  além daquilo que se pretende medir.  -->
+
+<!--   * Ex. o número de migrantes de região A para região B obviamente depende  -->
+
+<!--       + do tamanho da região A, do tamanho da região B e  -->
+
+<!--       + do tempo durante o qual a migração foi observada.  -->
+
+<!-- * Ex.  Censo de Portugal de 2011 encontrou-se que 13,22% das mulheres de 15 anos  -->
+<!-- ou mais eram viúvas. No Censo brasileiro de 2010, esta proporção era apenas 8,72%.  -->
+
+<!--   + A diferença poderia explicar-se de diferentes maneiras -->
+
+<!-- * Padronização direta $\times$ indireta -->
+
+<!-- --- -->
+
+<!-- ##  DISTRIBUIÇÃO ESPACIAL `r emo::ji("earth_americas")` -->
+
+<!-- * A segunda variável estática mais importante é a **localização geográfica** das  -->
+<!-- pessoas, ou seja, a distribuição espacial da população.  -->
+
+<!--   + Ex. **densidade demográfica**, o **grau de urbanização**, a  -->
+<!-- distribuição por **tamanho de cidades** e o grau de **concentração da população**. -->
+
+<!--   + **Densidade demográfica**da região $i$: $D_i = \frac{P_i}{A_i}$: $P_i$ é a população da região $i$ e $A_i$ sua área total.  -->
+
+<!-- * Tendência a exagerar a importância densidade demográfica, conexão com a noção de "**superpopulação**" ou "**capacidade de carga**". -->
+
+<!-- * Densidade demográfica com relação à **área cultivável** e não à área terrestre total, -->
+
+<!-- * **Grau de urbanização** evidentemente depende de como se entende o "**urbano**". -->
+
+<!-- --- -->
+
+<!-- ##  DISTRIBUIÇÃO ESPACIAL `r emo::ji("earth_americas")` -->
+
+<!-- * Índices que quantificam as características espaciais da população: -->
+
+<!--   + proporção da população urbana que mora na maior cidade do país; -->
+
+<!--   + proporção que mora numa das três ou das cinco maiores cidades ou que vive em  -->
+<!-- cidades com mais de 1 milhão de habitantes.  -->
+
+<!--       + Todas estas medidas focalizam o extremo da distribuição populacional, ou seja, os lugares com as maiores concentrações demográficas.  -->
+
+<!--   + O **Índice de Gini**, não é um indicador propriamente demográfico, surge mais frequentemente no contexto da medição da desigualdade de renda, educação, ... . -->
+
+<!--       + Entretanto, ao substituir “renda” por “população” o mesmo pode ser usado de forma análoga para quantificar desequilíbrios na distribuição da população pelo espaço.  -->
+
+<!-- --- -->
+
+<!-- ##  DISTRIBUIÇÃO ESPACIAL `r emo::ji("earth_americas")` -->
+
+<!-- O **coeficiente de Gini** mede o grau de **desigualdade/concentração** de uma distribuição: -->
+
+<!-- $$G = 1 - \sum (pA_i - pA_{i-1})(pP_i - pP_{i-1})$$ -->
+
+<!-- onde: -->
+<!-- * $A_i$: proporção acumulada área até o município $i$. -->
+<!-- * $P_i$: população acumulada área até o município $i$. -->
+
+
+<!-- Valores: -->
+<!-- * $G = 0$: distribuição uniforme   -->
+<!-- * $G = 1$: concentração máxima -->
+
+<!-- * Existem diferentes maneiras de calcular o Índice de Gini, mas o mais tradicional  -->
+<!-- e o mais intuitivo envolve o uso do **diagrama de Lorenz**.  -->
+
+<!-- * [On the Measurement of Inequality](https://faculty.ucr.edu/~jorgea/econ261/atkinson_inequality.pdf) - ANTHONY B. ATKINSON -  -->
+
+<!-- --- -->
+
+##  DISTRIBUIÇÃO ESPACIAL `r emo::ji("earth_americas")`
+
+* Índice de Gini e diagrama de Lorenz:
+
+  + no Excel - ver planilha
+	
+  + no `r fa("r-project", fill = "steelblue")` (*"achei material de gini para renda, estimativas baseadas no PIB.... PNAD"*)
+      + https://rpubs.com/fjp/gini
+      + https://analisemacro.com.br/economia/indicadores/como-estimar-o-indice-de-gini-no-r/
+      + https://eventos.ibge.gov.br/downloads/smi2017/apresentacoes/conferencias/C9_Djalma_Pessoa_SMI2017.pdf
+
+* Outros índices: índice de Moran, autocorrelação/simlaridade espacial.
+
+---
+
+## Para casa `r emo::ji("house")`
+
+* Calcular os índices apresentados com base no Censo 2022 do IBGE
+
+<!-- Explorar pirâmides etários na planilha e no `r fa("r-project", fill = "steelblue")`. -->
+
+* Apresentar a avaliação da área 1.
+
+* Ler capítulo 7 de [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
+
+## Próxima aula `r emo::ji("stats")`
+
+* Apresentar a avaliação parcial 1.
+
+* CARACTERÍSTICAS, EVENTOS, PROPORÇÕES, TAXAS E PROBABILIDADES. `r emo::ji("chart_with_upwards_trend")`
+
+<!-- * Laboratório de `r fa("r-project", fill = "steelblue")` -->
+
+---
+
+<center>
+## Dúvidas, sugestões, críticas, ...? `r emo::ji("question")[1]`
+
+### Muito obrigado!
+<center>
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', paged.print=FALSE}
+knitr::include_graphics(here::here('aulas/imagens', 'imagem_demografica.png'))
+```
+Fonte: Imagem criada por IA.

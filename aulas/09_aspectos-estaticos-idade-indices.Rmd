@@ -104,33 +104,25 @@ Para dimensionar a importância de cada um desses grupos existem alguns índices
 
 * *Razão de Dependência Total* ($RDT$) 
 
-$$RDT = \frac{ (\text{População de 0-14 anos + População de 65+ anos}) }{ \text{População de 15-64 anos} } \times 100 \\
-RDT = \frac{ \left( _{15}P_0 + P_{65^+} \right) }{ _{50}P_{15} } \times 100$$
-
-
-
 $$\begin{aligned}
-RDT &= \frac{ (\text{População de 0-14 anos + População de 65+ anos}) }{ \text{População de 15-64 anos} } \times 100 \\
+RDT &= \frac{ (\textit{População de 0-14 anos + População de 65+ anos}) }{ \textit{População de 15-64 anos} } \times 100 \\
  &= \frac{ \left( _{15}P_0 + P_{65^+} \right) }{ _{50}P_{15} } \times 100
 \end{aligned}$$
 
 
-$$
-\begin{equation} \label{eq1}
-\begin{split}
-\end{split}
-\end{equation}
-$$
-
 Consiste de duas partes. 
 
-* *Razão de Dependência dos Jovens* ($RDJ$) 
+* *Razão de Dependência dos Jovens* ($RDJ = \frac{ _{15}P_0 }{ _{50}P_{15} } \times 100$) 
 
-* *Razão de Dependência dos Idosos* ($RDI$) 
+* *Razão de Dependência dos Idosos* ($RDI = \frac{ P_{65^+} }{ _{50}P_{15} } \times 100$) 
 
 	+ Ex. Caso de Angola 2014.
 
-	+ E no Brasil 2022???
+	    + E no Brasil 2022???
+
+---
+
+## Caracterizações da Distribuição por idade - Índices `r emo::ji("chart_with_upwards_trend")`
 
 * Limites de idade (15 e 65 anos) usados na $RDT$ são, até certo ponto, arbitrários e sujeitos a definições alternativas. 
 
@@ -142,15 +134,41 @@ Consiste de duas partes.
 
 * *Índice de Envelhecimento* ($IE$) da população
 
-$$
-IE = \frac{População de 60+ anos}{População de 0-14 anos} \times 100 \\
-IE = \frac{P_{60^+}}{_{15}P_0} \times 100
-$$
+$$\begin{aligned}
+IE &= \frac{ \textit{População de 60+ anos} }{ \textit{População de 0-14 anos}} \times 100 \\
+ &= \frac{P_{60^+}}{_{15}P_0} \times 100
+\end{aligned}$$
 
-	+ Ex. Caso de Angola 2014.
+* Ex. Caso de Angola 2014.
 
-	+ E no Brasil 2022???
+  + E no Brasil 2022???
 
+
+---
+
+## Caracterizações da Distribuição por idade - Índices `r emo::ji("chart_with_upwards_trend")`
+
+* Idade mediana
+
+  + Idade média
+  
+
+* Ex. Caso de Angola 2014.
+
+  + E no Brasil 2022???
+
+---
+
+## Caracterizações da Distribuição por idade - Índices `r emo::ji("chart_with_upwards_trend")`
+
+* **Razão de Crianças / Mulheres (RCM)**
+
+$$\begin{aligned}
+RCM &= \frac{ \textit{População de 0-4 anos} }{ \textit{Mulheres de 15-49 anos}} \times 100 \\
+ &= \frac{ _{5}P_0 }{ _{35}P_{15} } \times 100
+\end{aligned}$$
+
+* Uma versão alternativa da RCM usa mulheres de 15-44 anos no denominador.
 
 ---
 
@@ -158,11 +176,10 @@ $$
 
 Outros indicadores da estrutura estária :
 
+
 * A relação existente entre a população com 75 e mais anos e a população com 65 e mais anos, muitas vezes chamada o **Índice de Longevidade**
 
-* **Razões (ou percentagens) de juventude** que expressam o peso do grupo etário de 
-15-24 anos como porcentagem da população total ou alternativamente da população com 15 anos 
-ou mais
+* **Razões (ou percentagens) de juventude** que expressam o peso do grupo etário de 15-24 anos como porcentagem da população total ou alternativamente da população com 15 anos ou mais
 
 ---
 
@@ -177,6 +194,24 @@ Comentários gerais
 * (natalidade, mortalidade e migração) atuam simultaneamente, a pirâmide etária por si só geralmente não é suficiente para 
 reconstruir toda a história, sem a ajuda de elementos adicionais, como séries históricas de taxas de 
 natalidade e/ou mortalidade. 
+
+* DETERMINANTES DA ESTRUTURA ETÁRIA
+
+  + critérios prospectivos - critério de envelhecimento em dois anos distintos e compara a mudançac efetiva do indicador com a mudança **contrafatual** que teria sido observada caso a mortalidade (ou a 
+fecundidade ou a migração) tivesse permanecido constante.
+
+      + Grande maioria dos países é a fecundidade que pesa mais.
+
+---
+
+## Caracterizações da Distribuição por idade - Índices `r emo::ji("chart_with_upwards_trend")`
+
+Comentários gerais
+
+* RELEVÂNCIA DA ESTRUTURA ETÁRIA PARA AS POLÍTICAS PÚBLICAS
+
+  + Alguns dos índices mencionados nos parágrafos anteriores encontram-se ao centro de debates sobre questões de política.
+
 
 ---
 
@@ -195,7 +230,7 @@ demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
 
 * Apresentar o tópico/artigo/notícia escolhido para a avaliação parcial 1.
 
-* "Aspectos estáticos da análise de populações: a idade como conceito demográfico central". `r emo::ji("key")`
+* "Aspectos estáticos da análise de populações:  CARACTERIZAÇÃO DA DISTRIBUIÇÃO POR SEXO". `r emo::ji("restroom")`
 
 <!-- * Laboratório de `r fa("r-project", fill = "steelblue")` -->
 

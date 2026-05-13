@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>MAT02262 - Estatística Demográfica I</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Markus Stein" />
+    <script src="libs/header-attrs-2.29/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, title-slide
+
+.title[
+# MAT02262 - Estatística Demográfica I
+]
+.subtitle[
+## Caracterizações da Distribuição por sexo e espacial
+]
+.author[
+### Markus Stein
+]
+.institute[
+### Departamento de Estatística, IME/UFRGS
+]
+.date[
+### 2026/1
+]
+
+---
+
+
+class: inverse, middle, center
+
+
+
+
+<div>
+<style type="text/css">.xaringan-extra-logo {
+width: 110px;
+height: 128px;
+z-index: 0;
+background-image: url(C:/Users/Markus/Documents/MAT02262-Estatistica_demografica/img/logo_dest.png);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+top:1em;right:1em;
+}
+</style>
+<script>(function () {
+  let tries = 0
+  function addLogo () {
+    if (typeof slideshow === 'undefined') {
+      tries += 1
+      if (tries < 10) {
+        setTimeout(addLogo, 100)
+      }
+    } else {
+      document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
+        .forEach(function (slide) {
+          const logo = document.createElement('div')
+          logo.classList = 'xaringan-extra-logo'
+          logo.href = null
+          slide.appendChild(logo)
+        })
+    }
+  }
+  document.addEventListener('DOMContentLoaded', addLogo)
+})()</script>
+</div>
+
+# CARACTERÍSTICAS, EVENTOS, PROPORÇÕES, TAXAS E PROBABILIDADES
+
+---
+
+&lt;img src="imagens/imagem_demografica.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## CARACTERÍSTICAS, EVENTOS, PROPORÇÕES, TAXAS E PROBABILIDADES 📈
+
+### Discussão 🗣
+
+A partir da leitura do Capítulo 7 de [Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837):
+
+* Algo novo que tenha aprendido sobre razões/proporções/taxas/índices/probabilidades?
+
+  +  Como representar? ?
+
+  + Coortes e diagrama de Lexis?
+
+* Comentários? Curiosidades?
+
+*Lembrando*: 
+
+**Razões** são divisões entre duas quantidades... 
+
+---
+
+## RAZÕES, PROPORÇÕES, TAXAS E ÍNDICES
+
+* Qual o conceito de **"taxas"**? 
+
+	+ Qual sua diferença de outros termos como “proporção”, “razão”, “índice” e “probabilidade”?
+
+* Estes termos têm em comum pois são o resultado de uma divisão entre dois números. 
+
+* Demógrafos tendem a ser bastante cuidadosos com o uso apropriado de 
+cada termo, dependendo daquilo que está no numerador e no denominador. Ex.: 
+
+	+ A **razão de sexos**, é uma razão e não uma proporção porque o numerador não faz 
+parte do denominador. 
+
+	+ O **grau de urbanização** de uma população, ou seja, o número de habitantes 
+urbanos dividido pela população total
+
+
+---
+
+* Taxas e probabilidades são quantidades dinâmicas que envolvem tanto variáveis de fluxo como de estoque. 
+
+* O termo "índice" que é o mais geral de todos. Qualquer número que quantifica uma relação observada no mundo natural ou social
+
+---
+
+CRESCIMENTO DA POPULAÇÃO
+
+* Taxas anual e instantânea.
+
+	+ Anual:  `\(r_{anual} = \left( P \left( t + \delta t \right) / P(t))1/\delta t – 1\)`
+
+	+ Instantânea: `\(r_{inst} = \ln( P ( t + \delta t) / P(t)) / \delta t\)`
+
+---
+
+CRESCIMENTO DA POPULAÇÃO
+
+* Por consequência, a população após `\(\delta t\)` tempo
+
+	+ Anual: `\(P( t + \delta t) = P(t) \times (1+r_{anual}) \delta t\)`
+
+	+ Instantânea: `\(P( t + \delta t) = P(t) \times e^{r_{inst} \delta t}\)`  
+
+* Relação entre as taxas:
+
+	+ `\(r_{inst.} = \ln (1 + r_{anual})\)`
+
+	+ Diferença pequena entre as taxas?
+
+			+ Ex: América latinha.
+			
+			+ E no Brasil, com base no Censo 2022?
+
+* Comportamento das taxas no mundo:
+	
+	+ Taxas ainda muito elevadas de alguns países africanos, como Angola e Guiné Equatorial
+
+	+ Taxas negativas do Japão, Rússia e Portugal. 
+
+	+ Brasil e a China têm nível baixo do número médio de filhos das famílias 
+
+			+ mostram predisposição para o declínio populacional, mas ainda aparecem com taxas positivas de crescimento. 
+
+			+ Fenômeno transitório conhecido com inércia demográfica, 
+
+	+ Influência da migração internacional em Cabo Verde e Macau.
+
+---
+
+## Tempo de duplicação 
+
+* Tempo de duplicação é o tempo necessário para que uma população que cresce com certa taxa alcance o dobro do seu tamanho inicial.
+
+	+ visualizar as implicações de uma determinada taxa de crescimento a mais longo prazo.
+
+`$$\text{Tempo de Duplicação} = \log(2) / \log(1+r_{anual}) \approx \ln(2) / r_{inst} = 0,6931 / r_{inst}$$`
+ 
+* Utilidade prática hoje em dia???
+
+---
+
+## Fórmula Básica da Contabilidade Demográfica
+
+* Populações podem ser descritas em termos de variáveis de estoque e de fluxo, mas estes dois aspectos não são independentes. 
+
+	+ **Consistência demográfica**(ou populacional???): as mudanças que ocorrem tanto no tamanho como na composição da população ao longo do tempo devem ser consistentes com os processos de 
+mudança aos quais a população está exposta, descritos pelas variáveis de fluxo. 
+
+**Fórmula Básica da Contabilidade Demográfica** ou Equação de Equilíbrio/Balanço Demográfico/Populacional ou Equação Compensadora ou Equação de Concordância (“Growth Balance Equation”, em inglês):
+
+`$$P(t+n) = P(t) + N(t,t+n) – D(t,t+n) + I(t,t+n) – E(t,t+n),$$`
+
+* `\(P(t)\)` e `\(P(t+n)\)` são as populações existentes nos momentos `\(t\)` e `\(t+n\)`, e 
+* `\(N(t,t+n)\)`, `\(D(t,t+n)\)`, `\(I(t,t+n)\)` e `\(E(t,t+n)\)` são nascimentos, óbitos, imigração e emigração ocorridos entre `\(t\)` e `\(t+n\)`, respectivamente. 
+
+* Qualquer divergência desta fórmula pode indicar uma de duas coisas:
+
+	+ Uma ou mais quantidades que constam da fórmula podem ter sido medidas incorretamente; ou
+
+	+ As unidades territoriais correspondentes às populações em `\(t\)` e `\(t+n\)` podem não ser as mesmas, ex. município ou província cujos limites foram modificados durante o período.
+
+* Populações que não têm migração, `\(I(t,t+n) – E(t,t+n) = 0\)` são conhecidas como populações 
+fechadas. 
+
+* A componente de crescimento da população que não envolve migração (ou seja, nascimen
+tos menos óbitos) é chamada vegetativo (em inglês, “natural growth”). A terminologia “crescimento 
+natural” às vezes é usada em português também, mas o termo “vegetativo” merece preferência.
+
+* Equação de equilíbrio é usada frequentemente para estimar E(t,t+n) ou I(t,t+n)-E(t,t+n) em circunstân
+cias onde todas as componentes da equação são conhecidas, com a exceção da migração.
+
+---
+
+## Coorte
+
+* Não é só a evolução da população que precisa cumprir com certos requisitos de consistência. 
+
+	+ O mesmo acontece também com subpopulações. 
+
+* *Lembrando*: Uma coorte é um grupo de pessoas que passaram por um mesmo evento demográfico durante o mesmo período. Neste caso, o evento é o nascimento e o
+
+* Ex. o número de mulheres solteiras de 20-24 anos em 2010 foi diferente do número de solteiras de 25-29 anos em 2015 mas 
+estes dois grupos têm algo em comum: 
+
+	+ a grande maioria das mulheres que fizeram parte do segundo grupo também já fazia parte do primeiro 5 anos antes. 
+
+	+ São as mulheres nascidas entre 1985 e 1989 cujo número de solteiras vai diminuindo no tempo na medida em que elas se casam 
+ou unem e algumas morrem ou migram. 
+
+* Uma coorte de nascimentos é o mesmo daquilo que comumente se chama uma geração. 
+
+* A palavra "coorte" pode ser usada para descrever outros grupos,
+
+	+ o conjunto de pessoas que se graduaram da escola secundária em 2008, ou
+	
+	+ o conjunto de mulheres que tiveram o seu primeiro filho entre 2010 e 2014. 
+
+---
+
+## Coorte - Diagrama de lexis.
+
+* A situação de um indivíduo ou de um grupo de indivíduos dentro da evolução demográfica de uma população pode ser caracterizada em termos de três características: 
+1. Tempo ou ano, mês e dia do calendário; 
+2. Idade exata ou intervalo de idade; e 
+3. Coorte ou data de nascimento. 
+
+* Estas características são dependentes entre elas: sabendo duas delas pode-se calcular a terceira. 
+
+* Exemplos:
+
+	* 1 característica em intervalo e 1 exata: as pessoas que compõem a coorte de nascimentos de 1995-1999 no 1º de janeiro de 2008 tinham 13-17 anos completos de idade. 
+
+	* Ambas características em intervalo: durante o período de 2010-2014, a coorte nascida em 1985-1989 tinha entre 20 e 30 anos de idade. 
+
+			+ Mas não todas as pessoas que em algum momento deste período tiveram entre 20 e 30 anos de idade pertenciam à coorte de nascimentos de 1985-1989. 
+
+			+ em particular uma pessoa que no 1º de janeiro de 2011 tinha 28 anos nasceu em 1982, assim pertencia a uma coorte de nascimentos diferente.
+
+
+* **Diagrama de Lexis**: visualizar as diferentes relações entre tempo, idade e coorte no que toca a características e fluxos da população.
+
+	+ O eixo horizontal do diagrama representa o tempo. 
+
+	+ O eixo vertical representa a idade. 
+
+	+ linha diagonal ascendente é a **trajetória da vida** ou linha vital de cada pessoa. 
+
+			+ Cada vez que passa um ano calendário no tempo, uma pessoa fica um ano mais velha.
+
+* A representação de uma **coorte** é um conjunto de linhas vitais que formam uma **banda diagonal** no diagrama.
+
+* Exemplo: um indivíduo nascido no 1º de julho de 1982 que no 1º de janeiro de 2011 tem 28,5 anos de idade.
+
+---
+
+* Na prática???
+
+* Exemplos.
+
+* Como construir o diagrama?
+
+	+ Planilha?
+
+	+ R
+      + https://rpubs.com/marcosfs2006/apendice_computacional
+      + https://rpubs.com/rafaeldeacypreste/lexis_diagram
+      + https://rpubs.com/cleodecker/diagramalexis
+      
+---
+
+## Coorte
+
+* TAXAS E PROBABILIDADES
+	
+	+ taxas centrais e taxas iniciais.
+
+* CONVERSÃO DE TAXAS CENTRAIS EM TAXAS INICIAIS
+
+* COORTES SINTÉTICAS
+
+*  A SAZONALIDADE DOS EVENTOS DEMOGRÁFICOS
+
+
+
+&lt;!-- ## Caracterizações da Distribuição por Sexo 🚻 --&gt;
+
+&lt;!-- * Junto com a idade, o **sexo é a outra característica básica** que define uma população num  --&gt;
+&lt;!-- momento específico no tempo.  --&gt;
+
+&lt;!--   + Questão conceitual quanto à distinção entre as palavras **"sexo"** e **"gênero"**. --&gt;
+
+&lt;!--       + O **sexo** de uma pessoa é uma **característica biológica** com a qual nasce (e que – salvo casos relativamente raros – não muda???).  --&gt;
+
+&lt;!--       + O **gênero** é uma **construção social** que descreve como as categorias biológicas de masculino ou feminino são representadas como identidades sociais. --&gt;
+
+&lt;!-- --- --&gt;
+
+&lt;!-- ## Caracterizações da Distribuição por Sexo 🚻 --&gt;
+
+&lt;!-- * Razão de Sexos (antigamente também chamada Razão de Masculinidade) (`\(RS_t\)`) --&gt;
+
+&lt;!-- $$\begin{aligned} --&gt;
+&lt;!-- RS_t &amp;= \frac{ \textit{Número de homens} }{ \textit{Número de mulheres} } \times 100 \\ --&gt;
+&lt;!--  &amp;= \frac{ P_{0^+}^H }{ P_{0^+}^M } \times 100 --&gt;
+&lt;!-- \end{aligned}$$ --&gt;
+
+&lt;!-- * Quantidade de fácil obtenção, porém este indicador tem, em princípio, pouco poder  --&gt;
+&lt;!-- explicativo.  --&gt;
+
+&lt;!-- * Ex. Caso de Angola 2014. --&gt;
+
+&lt;!-- 	+ E no Brasil 2022??? --&gt;
+
+&lt;!-- --- --&gt;
+
+&lt;!-- ## Caracterizações da Distribuição por Sexo 🚻 --&gt;
+
+&lt;!-- * Razão de Sexos ao Nascer (à Nascença) (RS_0) --&gt;
+
+&lt;!-- $$\begin{aligned} --&gt;
+&lt;!-- RS_0 &amp;= \frac{ \textit{Número de homens com 0 anos} }{ \textit{Número de mulheres com 0 anos} } \times 100 \\ --&gt;
+&lt;!--  &amp;= \frac{ _{1}P_0^H }{ _{1}P_0^M } \times 100 ??? --&gt;
+&lt;!-- \end{aligned}$$ --&gt;
+
+
+&lt;!-- * Na composição por sexo ao nascimento da espécie humana, há uma ligeira tendência ao predomínio do sexo masculino.  --&gt;
+
+&lt;!--   + A razão de sexo natural ao nascer, utilizando o termo da OMS, é geralmente considerada como  --&gt;
+&lt;!-- sendo cerca de 105, ou seja, em média cerca de 105 homens por cada 100 mulheres ao nascer.  --&gt;
+
+&lt;!-- Possíveis explicações: --&gt;
+
+&lt;!-- 1. Mortalidade diferencial - meninos têm maior mortalidade infantil - “compensação” biológica --&gt;
+
+&lt;!-- 2. Seleção natural (Fisher) proporção tende ao equilíbrio ao longo da vida --&gt;
+
+&lt;!-- --- --&gt;
+
+&lt;!-- ## Caracterizações da Distribuição por Sexo 🚻 --&gt;
+
+
+&lt;!-- * Valores fora do intervalo de 103-107 (**Revisão de literatura sobre o assunto???**) possuem qualidade deficiente ou são resultado, principalmente de intervenções de ordem: --&gt;
+
+&lt;!--   + Cultural e seletivas por sexo, como a valoração de filhos do sexo masculino seja, provocan --&gt;
+&lt;!-- do interrupção da gravidez, seja omitindo o registro de nascimentos de filhas.  --&gt;
+
+&lt;!--   + Sanitária: --&gt;
+
+&lt;!-- * Ex. Caso de Angola 2014. --&gt;
+
+&lt;!--   + E no Brasil 2022??? --&gt;
+
+&lt;!--   + The Global Health Observatory, WHO, Indicator Metadata Registry List: [Sex ratio at birth (male births per female births](https://www.who.int/data/gho/indicator-metadata-registry/imr-details/sex-ratio-at-birth-%28male-births-per-female-births%29) --&gt;
+&lt;!-- --- --&gt;
+
+&lt;!-- ## Caracterizações da Distribuição por Sexo 🚻 --&gt;
+
+&lt;!-- * Razão de Sexos por idade (`\(RS_x\)`), calculada por idade da própria pessoa: --&gt;
+
+&lt;!-- $$\begin{aligned} --&gt;
+&lt;!-- RS_0 &amp;= \frac{ \textit{Número de homens com 0 anos} }{ \textit{Número de mulheres com 0 anos} } \times 100 \\ --&gt;
+&lt;!--  &amp;= \frac{ _{1}P_0^H }{ _{1}P_0^M } \times 100 ??? --&gt;
+&lt;!-- \end{aligned}$$ --&gt;
+
+&lt;!-- * Ex. Índia calcula a razão para crianças menores de 6 anos, `\(RS_{0-5}\)`, para expressar o deficit além do esperado de meninas em comparação com os meninos, devido ao aborto seletivo e os maus tratos de meninas.  --&gt;
+
+&lt;!--   + Esta é uma alternativa para o uso de `\(RS_0\)`, já que este pode ser mais difícil de calcular, devido às deficiências do sistema de registro civil4.  --&gt;
+
+&lt;!-- * Ex. Caso de Angola 2014. --&gt;
+
+&lt;!--   + E no Brasil 2022??? --&gt;
+
+&lt;!-- * a informação desagregada por sexo relaciona-se  --&gt;
+&lt;!-- com as possibilidades de ajuste da distribuição da população por sexo. --&gt;
+
+&lt;!-- --- --&gt;
+
+&lt;!-- ## PADRONIZAÇÃO/ESTANDARIZAÇÃO 📈 --&gt;
+
+&lt;!-- * Na análise de população encontra-se frequentemente situações em que um determinado indicador é influenciado por outros fatores,  além daquilo que se pretende medir.  --&gt;
+
+&lt;!--   * Ex. o número de migrantes de região A para região B obviamente depende  --&gt;
+
+&lt;!--       + do tamanho da região A, do tamanho da região B e  --&gt;
+
+&lt;!--       + do tempo durante o qual a migração foi observada.  --&gt;
+
+&lt;!-- * Ex.  Censo de Portugal de 2011 encontrou-se que 13,22% das mulheres de 15 anos  --&gt;
+&lt;!-- ou mais eram viúvas. No Censo brasileiro de 2010, esta proporção era apenas 8,72%.  --&gt;
+
+&lt;!--   + A diferença poderia explicar-se de diferentes maneiras --&gt;
+
+&lt;!-- * Padronização direta `\(\times\)` indireta --&gt;
+
+&lt;!-- --- --&gt;
+
+&lt;!-- ##  DISTRIBUIÇÃO ESPACIAL 🌎 --&gt;
+
+&lt;!-- * A segunda variável estática mais importante é a **localização geográfica** das  --&gt;
+&lt;!-- pessoas, ou seja, a distribuição espacial da população.  --&gt;
+
+&lt;!--   + Ex. **densidade demográfica**, o **grau de urbanização**, a  --&gt;
+&lt;!-- distribuição por **tamanho de cidades** e o grau de **concentração da população**. --&gt;
+
+&lt;!--   + **Densidade demográfica**da região `\(i\)`: `\(D_i = \frac{P_i}{A_i}\)`: `\(P_i\)` é a população da região `\(i\)` e `\(A_i\)` sua área total.  --&gt;
+
+&lt;!-- * Tendência a exagerar a importância densidade demográfica, conexão com a noção de "**superpopulação**" ou "**capacidade de carga**". --&gt;
+
+&lt;!-- * Densidade demográfica com relação à **área cultivável** e não à área terrestre total, --&gt;
+
+&lt;!-- * **Grau de urbanização** evidentemente depende de como se entende o "**urbano**". --&gt;
+
+&lt;!-- --- --&gt;
+
+&lt;!-- ##  DISTRIBUIÇÃO ESPACIAL 🌎 --&gt;
+
+&lt;!-- * Índices que quantificam as características espaciais da população: --&gt;
+
+&lt;!--   + proporção da população urbana que mora na maior cidade do país; --&gt;
+
+&lt;!--   + proporção que mora numa das três ou das cinco maiores cidades ou que vive em  --&gt;
+&lt;!-- cidades com mais de 1 milhão de habitantes.  --&gt;
+
+&lt;!--       + Todas estas medidas focalizam o extremo da distribuição populacional, ou seja, os lugares com as maiores concentrações demográficas.  --&gt;
+
+&lt;!--   + O **Índice de Gini**, não é um indicador propriamente demográfico, surge mais frequentemente no contexto da medição da desigualdade de renda, educação, ... . --&gt;
+
+&lt;!--       + Entretanto, ao substituir “renda” por “população” o mesmo pode ser usado de forma análoga para quantificar desequilíbrios na distribuição da população pelo espaço.  --&gt;
+
+&lt;!-- --- --&gt;
+
+&lt;!-- ##  DISTRIBUIÇÃO ESPACIAL 🌎 --&gt;
+
+&lt;!-- O **coeficiente de Gini** mede o grau de **desigualdade/concentração** de uma distribuição: --&gt;
+
+&lt;!-- `$$G = 1 - \sum (pA_i - pA_{i-1})(pP_i - pP_{i-1})$$` --&gt;
+
+&lt;!-- onde: --&gt;
+&lt;!-- * `\(A_i\)`: proporção acumulada área até o município `\(i\)`. --&gt;
+&lt;!-- * `\(P_i\)`: população acumulada área até o município `\(i\)`. --&gt;
+
+
+&lt;!-- Valores: --&gt;
+&lt;!-- * `\(G = 0\)`: distribuição uniforme   --&gt;
+&lt;!-- * `\(G = 1\)`: concentração máxima --&gt;
+
+&lt;!-- * Existem diferentes maneiras de calcular o Índice de Gini, mas o mais tradicional  --&gt;
+&lt;!-- e o mais intuitivo envolve o uso do **diagrama de Lorenz**.  --&gt;
+
+&lt;!-- * [On the Measurement of Inequality](https://faculty.ucr.edu/~jorgea/econ261/atkinson_inequality.pdf) - ANTHONY B. ATKINSON -  --&gt;
+
+&lt;!-- --- --&gt;
+
+##  DISTRIBUIÇÃO ESPACIAL 🌎
+
+* Índice de Gini e diagrama de Lorenz:
+
+  + no Excel - ver planilha
+	
+  + no <svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg> (*"achei material de gini para renda, estimativas baseadas no PIB.... PNAD"*)
+      + https://rpubs.com/fjp/gini
+      + https://analisemacro.com.br/economia/indicadores/como-estimar-o-indice-de-gini-no-r/
+      + https://eventos.ibge.gov.br/downloads/smi2017/apresentacoes/conferencias/C9_Djalma_Pessoa_SMI2017.pdf
+
+* Outros índices: índice de Moran, autocorrelação/simlaridade espacial.
+
+---
+
+## Para casa 🏠
+
+* Calcular os índices apresentados com base no Censo 2022 do IBGE
+
+&lt;!-- Explorar pirâmides etários na planilha e no <svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg>. --&gt;
+
+* Apresentar a avaliação da área 1.
+
+* Ler capítulo 7 de [FOZ,Grupo de. Métodos Demográficos: Uma Visão Desde os Países de Língua Portuguesa. SãoPaulo:Blucher,2021.](https://www.blucher.com.br/metodos
+demograficos-uma-visao-desde-os-paises-de-lingua-portuguesa_9786555500837).
+
+## Próxima aula 📊
+
+* Apresentar a avaliação parcial 1.
+
+* CARACTERÍSTICAS, EVENTOS, PROPORÇÕES, TAXAS E PROBABILIDADES. 📈
+
+&lt;!-- * Laboratório de <svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg> --&gt;
+
+---
+
+&lt;center&gt;
+## Dúvidas, sugestões, críticas, ...? ❓
+
+### Muito obrigado!
+&lt;center&gt;
+
+&lt;img src="imagens/imagem_demografica.png" width="50%" style="display: block; margin: auto;" /&gt;
+Fonte: Imagem criada por IA.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+  "highlightStyle": "github",
+  "highlightLines": true,
+  "countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
